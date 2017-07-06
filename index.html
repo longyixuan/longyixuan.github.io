@@ -157,6 +157,65 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-raty学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/06/raty学习/">raty</a>
+    </h1>
+  
+
+        
+        <a href="/2017/07/06/raty学习/" class="archive-article-date">
+  	<time datetime="2017-07-06T07:26:06.099Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>强大的评星插件，兼容各版本浏览器</p>
+</blockquote>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>首先下载<a href="https://github.com/longyixuan/raty" target="_blank" rel="external">raty</a>插件</p>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/jquery.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/jquery.raty.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>路径根据你的项目路径更正</p>
+<h3 id="Html结构"><a href="#Html结构" class="headerlink" title="Html结构"></a>Html结构</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"width:500px; margin:100px auto;"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"demo"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"function-demo"</span> <span class="attr">class</span>=<span class="string">"target-demo"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"function-hint"</span> <span class="attr">class</span>=<span class="string">"hint"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="js调用"><a href="#js调用" class="headerlink" title="js调用"></a>js调用</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  $.fn.raty.defaults.path = <span class="string">'img'</span>; <span class="comment">//设置图片路径，即星星图片</span></div><div class="line">  $(<span class="string">'#function-demo'</span>).raty(&#123;</div><div class="line">        <span class="attr">number</span>: <span class="number">5</span>, <span class="comment">//多少个星星设置</span></div><div class="line">        targetType: <span class="string">'hint'</span>, <span class="comment">//类型选择，number是数字值，hint，是设置的数组值</span></div><div class="line">        path: <span class="string">'img'</span>,</div><div class="line">        <span class="attr">hints</span>: [<span class="string">'差'</span>, <span class="string">'一般'</span>, <span class="string">'好'</span>, <span class="string">'非常好'</span>, <span class="string">'全五星'</span>],</div><div class="line">        <span class="attr">cancelOff</span>: <span class="string">'cancel-off-big.png'</span>,</div><div class="line">        <span class="attr">cancelOn</span>: <span class="string">'cancel-on-big.png'</span>,</div><div class="line">        <span class="attr">size</span>: <span class="number">24</span>,</div><div class="line">        <span class="attr">starHalf</span>: <span class="string">'star-half-big.png'</span>,</div><div class="line">        <span class="attr">starOff</span>: <span class="string">'star-off-big.png'</span>,</div><div class="line">        <span class="attr">starOn</span>: <span class="string">'star-on-big.png'</span>,</div><div class="line">        <span class="attr">target</span>: <span class="string">'#function-hint'</span>,</div><div class="line">        <span class="attr">cancel</span>: <span class="literal">false</span>,</div><div class="line">        <span class="attr">targetKeep</span>: <span class="literal">true</span>,</div><div class="line">        <span class="attr">targetText</span>: <span class="string">'请选择评分'</span>,</div><div class="line">        <span class="attr">click</span>: <span class="function"><span class="keyword">function</span>(<span class="params">score, evt</span>) </span>&#123;</div><div class="line">            alert(<span class="string">'ID: '</span> + $(<span class="keyword">this</span>).attr(<span class="string">'id'</span>) + <span class="string">"\nscore: "</span> + score + <span class="string">"\nevent: "</span> + evt.type);</div><div class="line">        &#125;</div><div class="line">    &#125;);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h3 id="更多参数"><a href="#更多参数" class="headerlink" title="更多参数"></a>更多参数</h3><blockquote>
+<p>cancel            : false,<br>cancelHint        : ‘cancel this rating!’,<br>cancelOff        : ‘cancel-off.png’,<br>cancelOn        : ‘cancel-on.png’,<br>cancelPlace        : ‘left’,<br>click            : undefined,<br>half            : false,<br>halfShow        : true,<br>hints            : [‘bad’, ‘poor’, ‘regular’, ‘good’, ‘gorgeous’],<br>iconRange        : undefined,<br>mouseover        : undefined,<br>noRatedMsg        : ‘not rated yet’,<br>number            : 5,<br>path            : ‘img/‘,<br>precision        : false,<br>round            : { down: .25, full: .6, up: .76 },<br>readOnly        : false,<br>score            : undefined,<br>scoreName        : ‘score’,<br>single            : false,<br>size            : 16,<br>space            : true,<br>starHalf        : ‘star-half.png’,<br>starOff            : ‘star-off.png’,<br>starOn            : ‘star-on.png’,<br>target            : undefined,<br>targetFormat    : ‘{score}’,<br>targetKeep        : false,<br>targetText        : ‘’,<br>targetType        : ‘hint’,<br>width            : undefined</p>
+</blockquote>
+<h3 id="改变样式"><a href="#改变样式" class="headerlink" title="改变样式"></a>改变样式</h3><p>做一组图片，放在img下，对应图片的引用路径即可</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/07/06/raty学习/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
     <article id="post-hexo学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -264,11 +323,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">git命令</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">git命令</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
         		</li>
       		
 		</ul>
@@ -385,19 +444,11 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">git,命令</a>
+                <a href="javascript:void(0)" class="js-tag color1">git命令</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">git命令</a>
               </li>
             
             <div class="clearfix"></div>
