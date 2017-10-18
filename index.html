@@ -479,7 +479,7 @@
 <p>EJS是一个JavaScript模板库，用来从JSON数据中生成HTML字符串。</p>
 </blockquote>
 <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install ejs</div></pre></td></tr></table></figure>
-<h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//template.ejs:</span></div><div class="line">&lt;% <span class="keyword">if</span>(comic) &#123; %&gt;</div><div class="line">    &lt;h2&gt;&lt;%=comic.name%&gt;&lt;/h2&gt;</div><div class="line">&lt;% &#125; %&gt;</div><div class="line"></div><div class="line"><span class="comment">//test.js:</span></div><div class="line"><span class="keyword">var</span> comic = &#123;<span class="attr">name</span>: <span class="string">'one  piece'</span>&#125;;</div><div class="line"></div><div class="line"><span class="comment">// 渲染文件模板,</span></div><div class="line"><span class="comment">// comic.ejs 包含 header.ejs footer.ejs, </span></div><div class="line"><span class="comment">// 若include了文件 必须指定 filename参数 , 参数为文件路径，</span></div><div class="line"><span class="comment">// 文件所在目录为查找include资源的目录  path.diranme(specialFilepath) </span></div><div class="line"><span class="keyword">var</span> html = ejs.render( fs.readFileSync(<span class="string">'comic.ejs'</span>, <span class="string">'utf8'</span>), &#123;<span class="string">'comic'</span>: comic&#125;, &#123;<span class="attr">filename</span>: __dirname+<span class="string">'\\abc.js'</span>&#125;);</div><div class="line"><span class="built_in">console</span>.log(html);</div></pre></td></tr></table></figure>
+<h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//template.ejs:</span></div><div class="line">&lt;% <span class="keyword">if</span>(comic) &#123; %&gt;</div><div class="line">    <span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;<span class="name">%=comic.name%</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></div><div class="line">&lt;% &#125; %&gt;</div><div class="line"></div><div class="line"><span class="comment">//test.js:</span></div><div class="line"><span class="keyword">var</span> comic = &#123;<span class="attr">name</span>: <span class="string">'one  piece'</span>&#125;;</div><div class="line"></div><div class="line"><span class="comment">// 渲染文件模板,</span></div><div class="line"><span class="comment">// comic.ejs 包含 header.ejs footer.ejs, </span></div><div class="line"><span class="comment">// 若include了文件 必须指定 filename参数 , 参数为文件路径，</span></div><div class="line"><span class="comment">// 文件所在目录为查找include资源的目录  path.diranme(specialFilepath) </span></div><div class="line"><span class="keyword">var</span> html = ejs.render( fs.readFileSync(<span class="string">'comic.ejs'</span>, <span class="string">'utf8'</span>), &#123;<span class="string">'comic'</span>: comic&#125;, &#123;<span class="attr">filename</span>: __dirname+<span class="string">'\\abc.js'</span>&#125;);</div><div class="line"><span class="built_in">console</span>.log(html);</div></pre></td></tr></table></figure>
 <h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ul>
 <li><p>ejs.compile() ejs.render()</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> template = ejs.compile(str, options); <span class="comment">//=&gt; function</span></div><div class="line">template(data); <span class="comment">//=&gt; html</span></div><div class="line"></div><div class="line">ejs.render(str, data, options); <span class="comment">//=&gt;html</span></div><div class="line"></div><div class="line"><span class="comment">//or 把str data options都放在一个object中传入</span></div><div class="line">ejs.render(allOptions);</div></pre></td></tr></table></figure>
@@ -500,7 +500,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> ejs = <span class="built_in">require</span>(<span class="string">'ejs'</span>);</div><div class="line"><span class="keyword">var</span> users = [<span class="string">'lufy'</span>, <span class="string">'zoro'</span>, <span class="string">'nami'</span>];</div><div class="line"></div><div class="line"><span class="comment">//渲染字符串模板时，指定分隔符</span></div><div class="line"><span class="comment">//&lt;%= ... %&gt; 输出变量 输出表达式的结果</span></div><div class="line"><span class="keyword">var</span> ret1 = ejs.render(<span class="string">'&lt;?=users.join(" | "); ?&gt; '</span>, &#123;<span class="attr">users</span>: users&#125;, &#123;<span class="attr">delimiter</span>: <span class="string">'?'</span>&#125;);</div><div class="line"><span class="built_in">console</span>.log(ret1);  <span class="comment">//=&gt;lufy | zoro | nami</span></div><div class="line"></div><div class="line"><span class="comment">// 全局指定分隔符</span></div><div class="line">ejs.delimiter = <span class="string">'$'</span>;</div><div class="line"><span class="keyword">var</span> ret2 = ejs.render(<span class="string">'&lt;$= users.join(" | "); $&gt;'</span>, &#123;<span class="attr">users</span>: users&#125;);</div><div class="line"><span class="built_in">console</span>.log(ret2);</div></pre></td></tr></table></figure>
 </li>
 <li><p>页面布局<br>ejs没有显式的支持布局功能，但是可以通过 include 页头页脚的方式，实现基本的布局。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//comic.ejs:</span></div><div class="line">&lt;%- include(<span class="string">'header'</span>); %&gt;</div><div class="line">&lt;h1&gt;hot comic now: &lt;/h1&gt;</div><div class="line">&lt;% <span class="keyword">if</span>(comic) &#123; %&gt;</div><div class="line">    &lt;h2&gt;&lt;%= comic.name %&gt;&lt;/h2&gt;</div><div class="line">&lt;% &#125; %&gt;</div><div class="line">&lt;%- include('footer')  %&gt;</div><div class="line"></div><div class="line">//test.js:</div><div class="line">var html = ejs.render( fs.readFileSync('comic.ejs', 'utf8'), &#123;'comic': comic&#125;, &#123;filename: __dirname+'\\abc.js'&#125;);</div></pre></td></tr></table></figure></li>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//comic.ejs:</span></div><div class="line">&lt;%- include(<span class="string">'header'</span>); %&gt;</div><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>hot comic now: <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></div><div class="line">&lt;% <span class="keyword">if</span>(comic) &#123; %&gt;</div><div class="line">    <span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;<span class="name">%=</span> <span class="attr">comic.name</span> %&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></div><div class="line">&lt;% &#125; %&gt;</div><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">%-</span> <span class="attr">include</span>('<span class="attr">footer</span>')  %&gt;</span></span></div><div class="line"></div><div class="line">//test.js:</div><div class="line">var html = ejs.render( fs.readFileSync('comic.ejs', 'utf8'), &#123;'comic': comic&#125;, &#123;filename: __dirname+'\\abc.js'&#125;);</div></pre></td></tr></table></figure></li>
 </ul>
 
       
@@ -639,6 +639,11 @@
       
     </div>
     <div class="article-info article-info-index">
+      
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a class="article-tag-list-link color3">置顶</a>
+        </div>
       
       
       
@@ -829,11 +834,11 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ejs</a>
+                <a href="javascript:void(0)" class="js-tag color4">Vue</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Vue</a>
+                <a href="javascript:void(0)" class="js-tag color4">ejs</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -842,10 +847,6 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">sass</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -858,6 +859,10 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">sass</a>
               </li>
             
             <div class="clearfix"></div>
