@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/07/08/Vue起步/index.html">
 <meta property="og:site_name" content="龙逸轩个人博客">
 <meta property="og:description" content="Vue.js 是一套构建用户界面的渐进式框架。与其他重量级框架不同的是，Vue 采用自底向上增量开发的设计。Vue 的核心库只关注视图层，它不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与单文件组件和 Vue 生态系统支持的库结合使用时，Vue 也完全能够为复杂的单页应用程序提供驱动。它还拥有类似 Angular 的双向数据绑定，以及类似 React 的虚拟DOM。Vue的特点：（">
-<meta property="og:updated_time" content="2017-07-07T08:50:37.697Z">
+<meta property="og:updated_time" content="2017-10-23T02:57:54.153Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue起步">
 <meta name="twitter:description" content="Vue.js 是一套构建用户界面的渐进式框架。与其他重量级框架不同的是，Vue 采用自底向上增量开发的设计。Vue 的核心库只关注视图层，它不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与单文件组件和 Vue 生态系统支持的库结合使用时，Vue 也完全能够为复杂的单页应用程序提供驱动。它还拥有类似 Angular 的双向数据绑定，以及类似 React 的虚拟DOM。Vue的特点：（">
@@ -185,6 +185,7 @@
 <li><strong>watch：</strong> 一个对象，键是需要观察的表达式，值是对应回调函数。值也可以是方法名，或者包含选项的对象。Vue 实例将会在实例化时调用 $watch()，遍历 watch 对象的每一个属性。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">el</span>: <span class="string">'#id'</span>,</div><div class="line">  <span class="attr">data</span>: &#123; <span class="attr">a</span> : <span class="number">1</span> &#125;,</div><div class="line">  <span class="attr">methods</span>: &#123;</div><div class="line">	<span class="attr">fun1</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;,</div><div class="line">	<span class="attr">fun2</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;,</div><div class="line">	....</div><div class="line"> &#125;,</div><div class="line"> <span class="attr">computed</span>: &#123;</div><div class="line">    <span class="attr">fun1</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	    <span class="keyword">return</span> <span class="keyword">this</span>.a*<span class="number">2</span></div><div class="line">    &#125;,</div><div class="line">    ....</div><div class="line"> &#125;,</div><div class="line"> <span class="attr">props</span>: [<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>],</div><div class="line"> <span class="attr">watch</span>:&#123;</div><div class="line">	 <span class="attr">a</span>: &#123;</div><div class="line">		 <span class="attr">handler</span>: <span class="function"><span class="keyword">function</span>(<span class="params">val,oldVal</span>)</span>&#123;</div><div class="line">			....</div><div class="line">		 &#125;,</div><div class="line">		 <span class="attr">deep</span>: <span class="literal">true</span>, <span class="comment">//深度监控</span></div><div class="line">	 &#125; </div><div class="line"> &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 </li>
 </ul>
+<a id="more"></a>
 <h4 id="vue的指令"><a href="#vue的指令" class="headerlink" title="vue的指令"></a>vue的指令</h4><ul>
 <li><strong>v-text：</strong>更新元素的 textContent。如果要更新部分的 textContent ，需要使用 <code></code> 插值。</li>
 <li><strong>v-html：</strong>更新元素的 innerHTML 。<code>注意：内容按普通 HTML 插入 - 不会作为 Vue 模板进行编译 。如果试图使用 v-html 组合模板,可以重新考虑是否通过使用组件来替代。</code> </li>
@@ -457,19 +458,11 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ejs</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">git命令</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
+                <a href="javascript:void(0)" class="js-tag color5">sass</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -485,7 +478,15 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">sass</a>
+                <a href="javascript:void(0)" class="js-tag color4">Vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">git命令</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
             
             <div class="clearfix"></div>

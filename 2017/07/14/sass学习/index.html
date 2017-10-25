@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/07/14/sass学习/index.html">
 <meta property="og:site_name" content="龙逸轩个人博客">
 <meta property="og:description" content="sass带你走不同的css道路  文件后缀名sass有两种后缀名文件：一种后缀名为sass，不使用大括号和分号；另一种就是我们这里使用的scss文件，这种和我们平时写的css文件格式差不多，使用大括号和分号。而本教程中所说的所有sass文件都指后缀名为scss的文件。在此也建议使用后缀名为scss的文件，以避免sass后缀名的严格格式要求报错。123456789101112131415//文件">
-<meta property="og:updated_time" content="2017-07-14T02:49:29.448Z">
+<meta property="og:updated_time" content="2017-10-23T02:56:30.721Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sass语法">
 <meta name="twitter:description" content="sass带你走不同的css道路  文件后缀名sass有两种后缀名文件：一种后缀名为sass，不使用大括号和分号；另一种就是我们这里使用的scss文件，这种和我们平时写的css文件格式差不多，使用大括号和分号。而本教程中所说的所有sass文件都指后缀名为scss的文件。在此也建议使用后缀名为scss的文件，以避免sass后缀名的严格格式要求报错。123456789101112131415//文件">
@@ -177,6 +177,7 @@
 <p>sass带你走不同的css道路</p>
 </blockquote>
 <h3 id="文件后缀名"><a href="#文件后缀名" class="headerlink" title="文件后缀名"></a>文件后缀名</h3><p>sass有两种后缀名文件：一种后缀名为sass，不使用大括号和分号；另一种就是我们这里使用的scss文件，这种和我们平时写的css文件格式差不多，使用大括号和分号。而本教程中所说的所有sass文件都指后缀名为scss的文件。在此也建议使用后缀名为scss的文件，以避免sass后缀名的严格格式要求报错。<br><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//文件后缀名为sass的语法</span></div><div class="line"><span class="selector-tag">body</span></div><div class="line">  <span class="attribute">background</span>: <span class="number">#eee</span></div><div class="line">  font-size:<span class="number">12px</span></div><div class="line">p</div><div class="line">  background: <span class="number">#0982c1</span></div><div class="line"></div><div class="line">//文件后缀名为scss的语法  </div><div class="line">body &#123;</div><div class="line">  background: <span class="number">#eee</span>;</div><div class="line">  <span class="attribute">font-size</span>:<span class="number">12px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">p</span>&#123;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#0982c1</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
 <h3 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h3><p>sass的导入<code>@import</code>规则和CSS的有所不同，编译时会将<code>@import</code>的scss文件合并进来只生成一个CSS文件。但是如果你在sass文件中导入css文件如<code>@import &#39;reset.css&#39;</code>，那效果跟普通CSS导入样式文件一样，导入的css文件不会合并到编译后的文件中，而是以<code>@import</code>方式存在。<br>所有的sass导入文件都可以忽略后缀名.scss。一般来说基础的文件命名方法以_开头，如<code>_mixin.scss</code>。这种文件在导入的时候可以不写下划线，可写成<code>@import &quot;mixin&quot;</code>。<br>被导入sass文件a.scss：<br><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//a.scss</span></div><div class="line"><span class="comment">//-------------------------------</span></div><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#eee</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>需要导入样式的sass文件b.scss：<br><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">import</span> <span class="string">"reset.css"</span>;</div><div class="line">@<span class="keyword">import</span> <span class="string">"a"</span>;</div><div class="line"><span class="selector-tag">p</span>&#123;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#0982c1</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>转译出来的b.css样式：<br><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">import</span> <span class="string">"reset.css"</span>;</div><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#eee</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">p</span>&#123;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#0982c1</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
@@ -432,19 +433,11 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ejs</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">git命令</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
+                <a href="javascript:void(0)" class="js-tag color5">sass</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -460,7 +453,15 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">sass</a>
+                <a href="javascript:void(0)" class="js-tag color4">Vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">git命令</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
             
             <div class="clearfix"></div>
