@@ -149,6 +149,83 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-three学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/25/three学习/">three.js 简单实例</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/25/three学习/" class="archive-article-date">
+  	<time datetime="2017-10-25T03:49:17.145Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<blockquote>
+<p><strong>Three.js</strong>是通过对WebGL接口的封装与简化而形成的一个易用的图形库。</p>
+</blockquote>
+<h3 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h3><ul>
+<li>构建一个三维空间 </li>
+<li>Three中称之为场景(Scene)选择一个观察点，并确定观察方向/角度等 </li>
+<li>Three中称之为相机(Camera)在场景中添加供观察的物体 </li>
+<li>Three中的物体有很多种，包括Mesh,Line,Points等，它们都继承自Object3D类将观察到的场景渲染到屏幕上的指定区域 </li>
+<li>Three中使用Renderer完成这一工作</li>
+</ul>
+<h3 id="概念解释"><a href="#概念解释" class="headerlink" title="概念解释"></a>概念解释</h3><ul>
+<li><strong>Scene</strong>：场景是所有物体的容器，也对应着我们创建的三维世界。</li>
+<li><strong>Camera 坐标系</strong>：Camera是三维世界中的观察者，为了观察这个世界，首先我们要描述空间中的位置。 </li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">三维</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">动画</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/10/25/three学习/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
     <article id="post-sass学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -389,7 +466,7 @@
 <p>EJS是一个JavaScript模板库，用来从JSON数据中生成HTML字符串。</p>
 </blockquote>
 <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install ejs</div></pre></td></tr></table></figure>
-<h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//template.ejs:</span></div><div class="line">&lt;% <span class="keyword">if</span>(comic) &#123; %&gt;</div><div class="line">    &lt;h2&gt;&lt;%=comic.name%&gt;&lt;/h2&gt;</div><div class="line">&lt;% &#125; %&gt;</div><div class="line"></div><div class="line"><span class="comment">//test.js:</span></div><div class="line"><span class="keyword">var</span> comic = &#123;<span class="attr">name</span>: <span class="string">'one  piece'</span>&#125;;</div><div class="line"></div><div class="line"><span class="comment">// 渲染文件模板,</span></div><div class="line"><span class="comment">// comic.ejs 包含 header.ejs footer.ejs, </span></div><div class="line"><span class="comment">// 若include了文件 必须指定 filename参数 , 参数为文件路径，</span></div><div class="line"><span class="comment">// 文件所在目录为查找include资源的目录  path.diranme(specialFilepath) </span></div><div class="line"><span class="keyword">var</span> html = ejs.render( fs.readFileSync(<span class="string">'comic.ejs'</span>, <span class="string">'utf8'</span>), &#123;<span class="string">'comic'</span>: comic&#125;, &#123;<span class="attr">filename</span>: __dirname+<span class="string">'\\abc.js'</span>&#125;);</div><div class="line"><span class="built_in">console</span>.log(html);</div></pre></td></tr></table></figure>
+<h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//template.ejs:</span></div><div class="line">&lt;% <span class="keyword">if</span>(comic) &#123; %&gt;</div><div class="line">    <span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;<span class="name">%=comic.name%</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></div><div class="line">&lt;% &#125; %&gt;</div><div class="line"></div><div class="line"><span class="comment">//test.js:</span></div><div class="line"><span class="keyword">var</span> comic = &#123;<span class="attr">name</span>: <span class="string">'one  piece'</span>&#125;;</div><div class="line"></div><div class="line"><span class="comment">// 渲染文件模板,</span></div><div class="line"><span class="comment">// comic.ejs 包含 header.ejs footer.ejs, </span></div><div class="line"><span class="comment">// 若include了文件 必须指定 filename参数 , 参数为文件路径，</span></div><div class="line"><span class="comment">// 文件所在目录为查找include资源的目录  path.diranme(specialFilepath) </span></div><div class="line"><span class="keyword">var</span> html = ejs.render( fs.readFileSync(<span class="string">'comic.ejs'</span>, <span class="string">'utf8'</span>), &#123;<span class="string">'comic'</span>: comic&#125;, &#123;<span class="attr">filename</span>: __dirname+<span class="string">'\\abc.js'</span>&#125;);</div><div class="line"><span class="built_in">console</span>.log(html);</div></pre></td></tr></table></figure>
         
           <a class="article-more-a" href="/2017/07/07/ejs学习/#more">more >></a>
         
@@ -640,7 +717,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2017 yinxl
+    		&copy; 2018 yinxl
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -722,6 +799,18 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">git命令</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ejs</a>
               </li>
              
@@ -742,15 +831,11 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Vue</a>
+                <a href="javascript:void(0)" class="js-tag color3">三维</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">git命令</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
+                <a href="javascript:void(0)" class="js-tag color3">动画</a>
               </li>
             
             <div class="clearfix"></div>
