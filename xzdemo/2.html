@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>学职测评-碎片化测评</title>
+    <link rel="stylesheet" href="http://t1.chei.com.cn/common/ch/iconfont.css" />
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="src/css/wap.css">
+    <script src="src/js/wap.js"></script>
+    <script src="src/js/vue.min.js"></script>
+</head>
+<body>
+    <div class="xz-layout" id="app" v-cloak>
+        <div class="xz-header">
+            <h1>思维力测评</h1>
+            <i class="iconfont xz-header_close">&#xe65c;</i>
+            <i class="iconfont xz-header_more">&#xe696;</i>
+        </div>
+        <div class="xz-content">
+            <h2>思维力测评</h2>
+            <div class="xz-content-line"></div>
+            <div class="xz-content-foreword">
+                <p>指导语：阅读以下句子，选择你对这些句子的同意程度。</p>
+            </div>
+            <input type="hidden" name="sphSurveyId" value='sphSurveyId'/>
+            <input type="hidden" name="optionIds" :value="checkedList" />
+            <div class="xz-content-topic" v-for="item,index in List.list" v-if="index==currIndex">
+                <h3 class="xz-content-topic_title">{{item.title}}</h3>
+                <div class="xz-content-topic_index"><span class="curr">{{index+1}}</span><span class="split">/</span><span class="total">{{List.page.total}}</span></div>
+                <div class="xz-content-topic_key">
+                    <ul>
+                        <li v-for="opt in List.optionList" :class="opt.value==item.value?'active':''" :key="'opt'+index" @click="chose(opt.value,item)">{{opt.name}}</li>
+                    </ul>
+                </div>
+                <div class="xz-content-chose">
+                    <button type="button" class="xz-content-chose_button xz-content-chose_pre" @click="pre" v-if="currIndex!==0">上一题</button>
+                    <button type="button" class="xz-content-chose_button xz-content-chose_next" @click="next" v-if="currIndex!=List.page.total-1&&item.checked">下一题</button>
+                    <button type="button" class="xz-content-chose_button xz-content-chose_next" @click="submit" v-if="currIndex==List.page.total-1">提  交</button>
+                </div>
+            </div>
+            <div class="xz-alert" :style="{display: alertStatus}">
+                <div class="xz-alert_bg"></div>
+                <div class="xz-alert-content animated" :class="animated">
+                    <div class="xz-alert-content_close">
+                        <div class="close-btn" @click="closeAlert"><i class="iconfont">&#xe65c;</i></div>
+                        <div class="close-line"></div>
+                    </div>
+                    <div class="xz-alert-content_bg">
+                        <img src="src/image/alert_icon.png" alt="">
+                    </div>
+                    <h4>您当前是未登录状态</h4>
+                    <div class="xz-alert-footer">
+                        <a href="###">微信授权登录</a>
+                        <a href="3.html">任性做测试</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: function() {
+                return {
+                    List: {"page":{"current":1,"total":27,"pageSizeOpts":["1","5","10"]},"optionList":[{"name":"完全不符合","value":"1"},{"name":"很不符合","value":"2"},{"name":"有点不符合","value":"3"},{"name":"不确定","value":"4"},{"name":"有点符合","value":"5"},{"name":"很符合","value":"6"},{"name":"完全符合","value":"7"}],"list":[{"title":"1.为了找到符合我预期的东西，我通常会持续搜索。","options":[{"optionId":"ckao7aafjexx1tbe","alias":"1"},{"optionId":"serlki6lnddee703","alias":"2"},{"optionId":"boleq957e72ayjrr","alias":"3"},{"optionId":"tx04j3pau2yqajur","alias":"4"},{"optionId":"5jqkv5x7pp1ylyrv","alias":"5"},{"optionId":"q2xuyunvzph1uuar","alias":"6"},{"optionId":"jl8f58pxl3bi7q98","alias":"7"}]},{"title":"2.我发现自己会去许多不同的商店，直到找到想要的东西。","options":[{"optionId":"1zyrpeimi3jgfb2b","alias":"1"},{"optionId":"wvob2fl7lh0owe8o","alias":"2"},{"optionId":"226ashvh4u3b5nyf","alias":"3"},{"optionId":"1o2roxlj23bgo79x","alias":"4"},{"optionId":"02q4b9juogz1gr8v","alias":"5"},{"optionId":"l8975stwnah2zlyh","alias":"6"},{"optionId":"bf2o6z57vxry41t7","alias":"7"}]},{"title":"3.选购某件商品时，我不介意花费几个小时来寻找它。","options":[{"optionId":"40y432hhs1ts54ka","alias":"1"},{"optionId":"r6ln5y17ondklpen","alias":"2"},{"optionId":"771ink20e8tlag02","alias":"3"},{"optionId":"xao90wn58krofhi7","alias":"4"},{"optionId":"x1t4haq448yf20pz","alias":"5"},{"optionId":"1nvhun3fmr6gt79n","alias":"6"},{"optionId":"3qnjxbr8fczqsxfv","alias":"7"}]},{"title":"4.网络购物时，我会花费很长时间浏览商品。","options":[{"optionId":"u29rxwiwm5d85szz","alias":"1"},{"optionId":"kn7qzdwiq8i3ujap","alias":"2"},{"optionId":"0unwjjistpdnxw03","alias":"3"},{"optionId":"o3oy3ed9dgo9q6fo","alias":"4"},{"optionId":"4npbtblb67auves8","alias":"5"},{"optionId":"8inylnj5tdgd6a4u","alias":"6"},{"optionId":"lhmhzlex2fjohc04","alias":"7"}]},{"title":"5.购物时，我会计划用许多时间来寻找某样东西。","options":[{"optionId":"0ps3co86duk38a3y","alias":"1"},{"optionId":"b9rqpi51sipukcrg","alias":"2"},{"optionId":"eua02c606f16tvio","alias":"3"},{"optionId":"na0lvbu9k7ofkz5p","alias":"4"},{"optionId":"g7e6dkkjjta75l3z","alias":"5"},{"optionId":"tk0v9vdcvefsthah","alias":"6"},{"optionId":"iccoqwi39i9hg3ht","alias":"7"}]},{"title":"6.我会一直逛街，直到找到一件符合我所有标准的东西。","options":[{"optionId":"b0wn7tn2kznd7lad","alias":"1"},{"optionId":"3kbresg871v5yn9h","alias":"2"},{"optionId":"v8r2ho3v3n3tmc9u","alias":"3"},{"optionId":"ri43rgm69j7un3dj","alias":"4"},{"optionId":"t2n3u9cjplt8m7oq","alias":"5"},{"optionId":"fl23qfw1c6uwu073","alias":"6"},{"optionId":"c25v4gk3y9rj6flz","alias":"7"}]},{"title":"7.叫外卖时，我会查看很多餐点，再做决定。","options":[{"optionId":"uyervybtrw8l9y51","alias":"1"},{"optionId":"wmodp0bt5sxmobeb","alias":"2"},{"optionId":"dfk0m9qu6ksfes1l","alias":"3"},{"optionId":"ucei3fb6ytooytqw","alias":"4"},{"optionId":"vrwizs1gunzejviv","alias":"5"},{"optionId":"df4x0fh2akshmvx4","alias":"6"},{"optionId":"sytgxbknev9ba8dr","alias":"7"}]},{"title":"8.买电脑时我会在尽可能多的产品中进行比较。","options":[{"optionId":"y8pzplm1s593yzjp","alias":"1"},{"optionId":"p58emlrs3f5xcos9","alias":"2"},{"optionId":"8eb7qoxr4pefbh15","alias":"3"},{"optionId":"530e4f218f8ddyoq","alias":"4"},{"optionId":"79nm3ia1f7wrtbtm","alias":"5"},{"optionId":"cket9xyvuwurpha4","alias":"6"},{"optionId":"ohg08t5xcn2f0rlj","alias":"7"}]},{"title":"9.看到想要的东西时，我总是试图在购买前找到最好的折扣。","options":[{"optionId":"nca67v5r0pia8s9w","alias":"1"},{"optionId":"e3wslmygwexmw6gs","alias":"2"},{"optionId":"2086zwhze6xe2s52","alias":"3"},{"optionId":"pxc21l5nmedtlsig","alias":"4"},{"optionId":"o33s51x4lb3cns2i","alias":"5"},{"optionId":"eab3yl7wmmaj2pnh","alias":"6"},{"optionId":"lx8thux7wh7wiukl","alias":"7"}]},{"title":"10.即使是做简单的决定，我还是常常觉得困难。","options":[{"optionId":"hbyvus3lt7zxxc4y","alias":"1"},{"optionId":"l3qorvlaoneh9k09","alias":"2"},{"optionId":"xaxhjw0wyz5rkz3r","alias":"3"},{"optionId":"lomvrfmvsacvmw87","alias":"4"},{"optionId":"i6bijm4futbo9cqo","alias":"5"},{"optionId":"9wwy5c64w0oojn6k","alias":"6"},{"optionId":"1rdhza34cxygmz0x","alias":"7"}]},{"title":"11.在已经做出决定之后，我也经常想着改变主意。","options":[{"optionId":"srf65kf79zvp2s9i","alias":"1"},{"optionId":"16ve3vvt1vuw0udt","alias":"2"},{"optionId":"6e4iu8saeyplc6pj","alias":"3"},{"optionId":"i5x33y5wsg233n9m","alias":"4"},{"optionId":"vwf3mvhfwahtxo25","alias":"5"},{"optionId":"hfy93jqnhjn3ofsv","alias":"6"},{"optionId":"gl3dnniluloc5nd2","alias":"7"}]},{"title":"12.我发现自己经常面临困难的决策。","options":[{"optionId":"51efzald9t1h4aj1","alias":"1"},{"optionId":"dehniewb8xl703gs","alias":"2"},{"optionId":"zt33vnalfwvz2s4i","alias":"3"},{"optionId":"dah2f5dbfme1urlp","alias":"4"},{"optionId":"6ebp75917a3dppxj","alias":"5"},{"optionId":"c5epr874uepge13n","alias":"6"},{"optionId":"e06eueq4iea65s94","alias":"7"}]},{"title":"13.我会在两个相似的选项间犹豫很久，迟迟不能做最终的决定。","options":[{"optionId":"nbx9ojhdanegijy0","alias":"1"},{"optionId":"4j296g2hw5rz1igd","alias":"2"},{"optionId":"h1ixqdjk2o6ulyab","alias":"3"},{"optionId":"3w5jhjrmz9wbnneq","alias":"4"},{"optionId":"q6kxz710u59a6prs","alias":"5"},{"optionId":"8ar44lnqm95ntqgb","alias":"6"},{"optionId":"zucv6hf9vnrvemmy","alias":"7"}]},{"title":"14.对我而言，在两个好选项之间抉择很难。","options":[{"optionId":"6u1zjopluegyod0l","alias":"1"},{"optionId":"jya47b6v1lz9yrxn","alias":"2"},{"optionId":"2mfkuxpvpdu1gqou","alias":"3"},{"optionId":"j85rxg82qvpxgxu2","alias":"4"},{"optionId":"b0podgbw2vuba67n","alias":"5"},{"optionId":"2jmye1ny02nf5gcv","alias":"6"},{"optionId":"1gqz4hjsa8eh0p5l","alias":"7"}]},{"title":"15.我经常会延迟那些艰难的选择，直到最后期限。","options":[{"optionId":"lo4t4b2bfpnm58f6","alias":"1"},{"optionId":"t0nwrfqzsa76aqea","alias":"2"},{"optionId":"b55lgrhpm42jnory","alias":"3"},{"optionId":"qa00uvfdlnpbyuy3","alias":"4"},{"optionId":"083tek4wdz7xh5ph","alias":"5"},{"optionId":"49c241dm4ej8nled","alias":"6"},{"optionId":"5gqmiscoh7z5u7nq","alias":"7"}]},{"title":"16.即使我已经想好了我要选什么，我有时也会拖延决策。","options":[{"optionId":"k9krvhe2l7ewhfoi","alias":"1"},{"optionId":"9i3oohbh1vaqdubd","alias":"2"},{"optionId":"hvfmdf19tnafrkyg","alias":"3"},{"optionId":"ck26883z9nrpgecm","alias":"4"},{"optionId":"cm2gounfj02afjn5","alias":"5"},{"optionId":"jlz96wvaajgltu65","alias":"6"},{"optionId":"sapcmvukwlz1f2nj","alias":"7"}]},{"title":"17.在决策之前，我经常多次改变主意。","options":[{"optionId":"mdhcqcraw06zqzdm","alias":"1"},{"optionId":"qfcv0mwlbbkfsr31","alias":"2"},{"optionId":"vt1nb3zg1h8qhtie","alias":"3"},{"optionId":"leypmrg4tsmliqti","alias":"4"},{"optionId":"946vj6wmzbszznrz","alias":"5"},{"optionId":"9u8ww1yyk3lmldv8","alias":"6"},{"optionId":"9upo4p4h24qm0jui","alias":"7"}]},{"title":"18.我常常担心做出错误决策。","options":[{"optionId":"bj1ruyifj0prx2jm","alias":"1"},{"optionId":"t3qdng9e9y4ek7af","alias":"2"},{"optionId":"qiyogkcgz3tfeqrn","alias":"3"},{"optionId":"dcc7xq2rkg8bfcfm","alias":"4"},{"optionId":"fybb1rwjaxqbc1e1","alias":"5"},{"optionId":"zkx1k8y9kr22ka10","alias":"6"},{"optionId":"1rodj1buc5rirnwv","alias":"7"}]},{"title":"19.当课程论文有多个题目可以选择时，我感到难以决定。","options":[{"optionId":"in2ktqw9kl4np0gj","alias":"1"},{"optionId":"ga4qos7v0stt67qd","alias":"2"},{"optionId":"rae0wsxdxxrh9kok","alias":"3"},{"optionId":"dh7py22g2oknzy22","alias":"4"},{"optionId":"w8zr9eazikiwbsuk","alias":"5"},{"optionId":"v2zfr137z7gl85yg","alias":"6"},{"optionId":"99qkv3s13bfa4x5h","alias":"7"}]},{"title":"20.选影碟真难，为了挑一部最好看的片子，我总要费一番周折。","options":[{"optionId":"fh2nkhjii5kvq1xq","alias":"1"},{"optionId":"c9etskqp17n852t8","alias":"2"},{"optionId":"co5a988rnwwculfc","alias":"3"},{"optionId":"kt4ublg53f6lk5yu","alias":"4"},{"optionId":"6lrjq4vszim8ano2","alias":"5"},{"optionId":"aoocbq6rqwb2ewsp","alias":"6"},{"optionId":"ejxbne5rpe8o78cs","alias":"7"}]},{"title":"21.购物时，我发现找到自己真正喜欢的衣服是非常困难的事情。","options":[{"optionId":"o61jxqgql9r6r0bn","alias":"1"},{"optionId":"v3rx0ax66kjsxs4y","alias":"2"},{"optionId":"mwcaieqp4iqqzlse","alias":"3"},{"optionId":"yjke9cr4hlqrf7i0","alias":"4"},{"optionId":"jpte0mpmcbb1t3y8","alias":"5"},{"optionId":"iltdxrjwjcqtbos2","alias":"6"},{"optionId":"rdj2w6bwwobdrhoc","alias":"7"}]},{"title":"22.每件事情我都力求做到最好。","options":[{"optionId":"70ezychg7hnggtl5","alias":"1"},{"optionId":"b076euey1a5mkgsh","alias":"2"},{"optionId":"65ukm7qnlo8tpw1n","alias":"3"},{"optionId":"yz94qltayomhn4mh","alias":"4"},{"optionId":"bferj0glqe224qsd","alias":"5"},{"optionId":"g9wlw4sfnna22pon","alias":"6"},{"optionId":"ga9w7exq5qt7b6fz","alias":"7"}]},{"title":"23.不管做什么，我总为自己设立最高的标准。","options":[{"optionId":"mqhkjjsdt5d4byni","alias":"1"},{"optionId":"36xgnvkt75o3f2st","alias":"2"},{"optionId":"jj0uhmb4swun7p4g","alias":"3"},{"optionId":"0cgfr9lkv1obtsl8","alias":"4"},{"optionId":"8mwedcv82oywugi4","alias":"5"},{"optionId":"qve0798uxktv7xti","alias":"6"},{"optionId":"oui5mfz5pf8bsf5y","alias":"7"}]},{"title":"24.在一般情况下，我都会追求最佳选项。","options":[{"optionId":"1n9fridralimywgc","alias":"1"},{"optionId":"g4xuhl3z5b9j9w52","alias":"2"},{"optionId":"apmu32l3llwkejev","alias":"3"},{"optionId":"y2zfburutrd1thaw","alias":"4"},{"optionId":"c3sevr327qfmyk3d","alias":"5"},{"optionId":"dexgekje5zj4gcpg","alias":"6"},{"optionId":"rnhtmqys3yefkk4w","alias":"7"}]},{"title":"25.选择最佳选项已经成为了我的一种习惯。","options":[{"optionId":"i76ab57v2885evci","alias":"1"},{"optionId":"4xirufsxldm4zfca","alias":"2"},{"optionId":"sqo52jk9ndc3mqh6","alias":"3"},{"optionId":"nzrnp1wuyledmtu5","alias":"4"},{"optionId":"4x8gngt0oer76rnc","alias":"5"},{"optionId":"2rvy9ubll83hbl4r","alias":"6"},{"optionId":"ob9z9glguo8800u4","alias":"7"}]},{"title":"26.无论等多久，我都会等待最佳选项。","options":[{"optionId":"ws3k0o3vzhxpsoq2","alias":"1"},{"optionId":"vodrut7txtbzd2m2","alias":"2"},{"optionId":"qv27jomcr1w4u2uw","alias":"3"},{"optionId":"29l4dd0sr4i7hdbm","alias":"4"},{"optionId":"evh26lj0dyja5ntz","alias":"5"},{"optionId":"kxo15h5niavd5dio","alias":"6"},{"optionId":"c0831pa06ezg9z0u","alias":"7"}]},{"title":"27.我不喜欢将就一个“还不错”的选项。","options":[{"optionId":"i04n8hz7i8it396w","alias":"1"},{"optionId":"qmzq0enexpzyuhyw","alias":"2"},{"optionId":"b2uxc588mn1yjame","alias":"3"},{"optionId":"mmhkv9ubrt1nse6v","alias":"4"},{"optionId":"vk18uwqj2bqgbo03","alias":"5"},{"optionId":"suyldaz4bsa8juqy","alias":"6"},{"optionId":"rp67a7k67ypsa7zp","alias":"7"}]}]},
+                    currIndex: 0,
+                    alertStatus: 'none',
+                    animated: 'fadeInDownBig'
+                }
+            },
+            computed: {
+                 checkedList: function() {
+                    var putputList = [];
+                    for (var i = 0;i<this.List.list.length;i++) {
+                        if(this.List.list[i].checked) {
+                            var index = parseInt(this.List.list[i].value);
+                            putputList.push(this.List.list[i]['options'][index-1]['optionId']);
+                        }
+                    }
+                    return putputList;
+                }
+            },
+            methods: {
+                closeAlert: function() {
+                    this.alertStatus = 'none';
+                },
+                next: function() {
+                    if(this.currIndex<this.List.page.total-1){
+                        this.currIndex++;
+                    }
+                },
+                pre:function() {
+                    if(this.currIndex>0){
+                        this.currIndex--;
+                    }
+                },
+                chose: function(value,item) {
+                    this.$set( item, 'value', value );
+                    this.$set( item, 'checked', true );
+                    this.next();
+                },
+                submit: function() {
+                    this.alertStatus = 'block';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
