@@ -231,15 +231,15 @@ xz-layout {
 }
 
 .xz-content .xz-content-cutline .xz-content-cutline_icon {
-  margin: -0.32rem auto 0;
-  padding: 0 0 0 0.2rem;
+  margin: -0.45rem auto 0;
+  padding: 0 0.2rem;
   width: 0.88rem;
   background: #fff;
 }
 
 .xz-content .xz-content-cutline .xz-content-cutline_icon .xz-content-cutline_iconbg {
-  height: 0.66rem;
-  width: 0.66rem;
+  height: 0.9rem;
+  width: 0.9rem;
   border: 0.01rem solid #d2e9fc;
   border-radius: 50%;
   background: url("../image/index_icon.png?v=1523349589582") center center no-repeat;
