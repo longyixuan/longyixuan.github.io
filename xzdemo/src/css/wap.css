@@ -88,6 +88,11 @@ a:hover {
   zoom: 1;
 }
 
+html,
+body {
+  font-size: 100px;
+}
+
 [v-cloak] {
   display: none;
 }
@@ -115,10 +120,10 @@ xz-layout {
 }
 
 .xz-header h1 {
-  height: 0.9rem;
-  line-height: 0.9rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
   background: #2097f5;
-  font-size: 0.34rem;
+  font-size: 0.36rem;
   text-align: center;
   font-weight: 400;
 }
@@ -127,9 +132,9 @@ xz-layout {
 .xz-header .xz-header_more {
   position: absolute;
   top: 0;
-  height: 0.9rem;
-  line-height: 0.9rem;
-  font-size: 0.34rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  font-size: 0.36rem;
   padding: 0 0.3rem;
 }
 
@@ -149,7 +154,7 @@ xz-layout {
 .xz-content h2 {
   height: 0.6rem;
   line-height: 0.6rem;
-  font-size: 0.28rem;
+  font-size: 0.3rem;
   text-align: left;
   font-weight: 400;
 }
@@ -204,13 +209,13 @@ xz-layout {
 .xz-content .xz-content-go .xz-button {
   display: block;
   margin: 0 auto;
-  height: 0.78rem;
+  height: 0.76rem;
   width: 100%;
-  line-height: 0.78rem;
-  font-size: 0.28rem;
+  line-height: 0.76rem;
+  font-size: 0.3rem;
   color: #fff;
   background: #2097f5;
-  border-radius: 0.39rem;
+  border-radius: 0.38rem;
   text-align: center;
 }
 
@@ -242,7 +247,7 @@ xz-layout {
   width: 0.66rem;
   border: 0.01rem solid #d2e9fc;
   border-radius: 50%;
-  background: url("../image/index_icon.png?v=1523339153761") center center no-repeat;
+  background: url("../image/index_icon.png?v=1523349589582") center center no-repeat;
 }
 
 .xz-content .xz-content-other {
