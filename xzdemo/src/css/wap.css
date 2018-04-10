@@ -293,11 +293,11 @@ xz-layout {
 }
 
 .xz-content .xz-content-topic .xz-content-topic_key li {
-  height: 0.7rem;
-  line-height: 0.7rem;
+  height: 0.76rem;
+  line-height: 0.76rem;
   padding: 0 0.3rem;
   border: 0.01rem solid #dfdfdf;
-  border-radius: 0.7rem;
+  border-radius: 0.76rem;
   margin-bottom: 0.26rem;
 }
 
@@ -356,12 +356,12 @@ xz-layout {
 }
 
 .xz-content .xz-content-chose .xz-content-chose_button {
-  height: 0.6rem;
+  height: 0.76rem;
   padding: 0 0.3rem;
   border: 0.01rem solid #dfdfdf;
   margin-right: 0.4rem;
-  line-height: 0.6rem;
-  border-radius: 0.6rem;
+  line-height: 0.76rem;
+  border-radius: 0.76rem;
   background: #f9f9f9;
   color: #666;
 }
