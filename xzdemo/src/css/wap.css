@@ -448,11 +448,11 @@ xz-layout {
   width: 3rem;
   background: #f9f9f9;
   vertical-align: sub;
+  margin-left: 0.15rem;
 }
 
 .xz-content .part-score .part-score_progress .part-score_progressdo {
   width: 2rem;
-  margin-left: 0.15rem;
   height: 0.2rem;
   background: #90ceff;
 }
