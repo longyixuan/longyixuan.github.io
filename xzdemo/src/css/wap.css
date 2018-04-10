@@ -88,11 +88,6 @@ a:hover {
   zoom: 1;
 }
 
-html,
-body {
-  font-size: 100px;
-}
-
 [v-cloak] {
   display: none;
 }
@@ -174,7 +169,7 @@ xz-layout {
 
 .xz-content .xz-content-overview .overview-item {
   float: left;
-  margin-right: 0.6rem;
+  margin-right: 0.44rem;
 }
 
 .xz-content .xz-content-overview .overview-item:last-child {
