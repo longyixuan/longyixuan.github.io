@@ -221,6 +221,7 @@ xz-layout {
 .xz-content .xz-content-cutline {
   height: 0.66rem;
   padding: 0.01rem;
+  margin-top: 0.66rem;
 }
 
 .xz-content .xz-content-cutline .xz-content-cutline_line {
