@@ -116,6 +116,21 @@
             width: 100%;
             margin-top: 32px;
             background: #e6e6e6;
+            &.@{css-prefix}content-cutline_lines {
+                height: 1px;/*no*/
+                margin-top: 32px;
+                background: #e8e8e8;
+            }
+        }
+        .@{css-prefix}content-cutline_title {
+            width: 144px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            margin: -30px auto 0;
+            font-size: 22px;
+            background: #fff;
+            font-weight: 400;
         }
         .@{css-prefix}content-cutline_icon {
             margin: -45px auto 0;
@@ -128,13 +143,14 @@
                 border: 1px solid #d2e9fc; 
                 border-radius: 50%;
                 background: url('../image/index_icon.png') center center no-repeat;
+                background-size: 46px 22px;
             }
         }
     }
     .@{css-prefix}content-other {
         height: 100px;
         line-height: 100px;
-        font-size: 30px;
+        font-size: 28px;
         text-align: center;
         a {
             &:link,&:hover,&:active {
@@ -220,18 +236,20 @@
         font-size: 22px;
         text-align: center;
         .@{css-prefix}content-chose_button {
-            height: 76px;
+            height: 78px;
             padding: 0 50px;
             border: 1px solid #dfdfdf;
-            margin-right: 40px;
-            line-height: 76px;
-            border-radius: 76px;
+            margin-right: 45px;
+            line-height: 78px;
+            border-radius: 78px;
             background: #f9f9f9;
             color: #666;
             &:last-child {
                 margin-right: 0;
             }
             &.@{css-prefix}content-chose_pdf {
+                box-sizing: border-box;
+                width: 260px;
                 color: #fff;
                 background: @main-color;
                 display: inline-block;
@@ -240,6 +258,7 @@
                 }
             }
             &.@{css-prefix}content-chose_retest {
+                width: 260px;
                 color: #fff;
                 background: #9b9b9b;
             }
@@ -257,7 +276,7 @@
         line-height: 30px;
         text-align: center;
         color: #666;
-        font-size: 24px;
+        font-size: 18px;
         .iconfont {
             font-size: 24px;
             margin-right: 5px;
@@ -265,6 +284,26 @@
     }
     .@{css-prefix}content-result_part {
         margin-bottom: 30px;
+    }
+    .@{css-prefix}content-share {
+        background: url('../image/wxls.png') center center no-repeat;
+        background-size: 401px 342px;
+        height: 440px;
+        width: 100%;
+        padding-top: 1px;
+        img {
+            display: block;
+            height: 230px;
+            width: 230px;
+            margin: 0 auto; 
+        }
+        p {
+            text-indent: 0;
+            font-size: 18px;
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 0 5px #000;
+        }
     }
     .part-title {
         font-size: 28px;
@@ -277,7 +316,7 @@
         }
     }
     .part-score {
-        font-size: 20px;
+        font-size: 16px;
         padding-left: 42px;
         .curr {
             margin-left: 15px;
@@ -292,21 +331,21 @@
         }
         .part-score_progress {
             display: inline-block;
-            height: 20px;
-            width: 300px;
+            height: 26px;
+            width: 220px;
             background: #f9f9f9;
             vertical-align: sub;
             margin-left: 15px;
             .part-score_progressdo {
-                width: 200px;
-                height: 20px;
+                width: 150px;
+                height: 26px;
                 background: #90ceff;
             }
         }
     }
     .part-score-detail {
         padding-left: 42px;
-        font-size: 20px;
+        font-size: 18px;
         color: #666;
     }
     .part-content {
@@ -360,8 +399,18 @@
         font-size: 20px;
         margin-bottom: 20px;
     }
-    .part-directions, .part-summary {
-        font-size: 20px;
+    .part-directions{
+        font-size: 18px;
+        line-height: 1.5;
+        padding: 15px 10px;
+        border: 2px solid #cbcbcb;
+        border-radius: 6px;
+        margin-bottom: 30px;
+        margin-left: 42px;
+        color: #666;
+    }
+    .part-summary {
+        font-size: 22px;
         line-height: 1.5;
         padding: 15px 10px;
         border: 2px solid #cbcbcb;
@@ -373,23 +422,28 @@
         margin-bottom: 30px;
         .list-item {
             position: relative;
-            padding-left: 200px;
-            height: 190px;
-            margin-bottom: 20px;
+            padding: 16px 0 16px 210px;
+            height: 130px;
+            border-bottom: 1px solid #e8e8e8;
+            &:last-child {
+                border-bottom: 1px solid transparent;
+            }
             img {
                 position: absolute;
-                height: 190px;
-                width: 190px;
+                height: 130px;
+                width: 188px;
                 left: 0;
-                top: 0;
+                top: 16px;
             }
             .list-item_title {
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 400;
                 line-height: 1.5;
-                padding: 10px 0;
             }
             .test-num {
+                position: absolute;
+                bottom: 16px;
+                left: 210px;
                 font-size: 18px;
             }
         }
