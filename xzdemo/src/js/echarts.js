@@ -26,7 +26,7 @@ function renderTypeBar(data){ //维度图，折线
             },
             color: ['#5790d3','#F1524F'],
             grid: {
-                right: '20%',
+                right: '6%',
                 left: '6%',
                 top: '15%',
                 bottom: '10%'
@@ -35,15 +35,11 @@ function renderTypeBar(data){ //维度图，折线
                 type: 'value',
                 min: 1,
                 max: data.maxScore,
-                name: '单位：分',
                 splitNumber: data.maxScore*2,
                 axisLine: {
                     lineStyle: {
                         color: '#ccc'
                     }
-                },
-                nameTextStyle: {
-                    color: '#999'
                 }
             },
             yAxis: {

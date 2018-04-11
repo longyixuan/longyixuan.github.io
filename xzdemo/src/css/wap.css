@@ -567,6 +567,30 @@ a:hover {
   margin-bottom: 0.2rem;
 }
 
+.xz-content .part-chars-fz {
+  padding: 0 0.15rem 0 0.4rem;
+  margin-top: -0.2rem;
+  margin-bottom: 0.2rem;
+  color: #666;
+}
+
+.xz-content .part-chars-fz .part-chars-fz-item {
+  float: left;
+  text-align: center;
+}
+
+.xz-content .part-chars-fz .part-chars-fz-item.dfz {
+  width: 30%;
+}
+
+.xz-content .part-chars-fz .part-chars-fz-item.zfz {
+  width: 40%;
+}
+
+.xz-content .part-chars-fz .part-chars-fz-item.gfz {
+  width: 30%;
+}
+
 .xz-content .part-directions {
   font-size: 0.18rem;
   line-height: 1.5;
