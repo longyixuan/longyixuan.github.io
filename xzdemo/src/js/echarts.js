@@ -26,10 +26,10 @@ function renderTypeBar(data){ //维度图，折线
             },
             color: ['#5790d3','#F1524F'],
             grid: {
-                right: '10%',
-                left: '5%',
+                right: '20%',
+                left: '6%',
                 top: '15%',
-                bottom: '4%'
+                bottom: '10%'
             },
             xAxis: {
                 type: 'value',
@@ -39,8 +39,11 @@ function renderTypeBar(data){ //维度图，折线
                 splitNumber: data.maxScore*2,
                 axisLine: {
                     lineStyle: {
-                        color: '#999'
+                        color: '#ccc'
                     }
+                },
+                nameTextStyle: {
+                    color: '#999'
                 }
             },
             yAxis: {
@@ -49,8 +52,11 @@ function renderTypeBar(data){ //维度图，折线
                 name: '单位：人',
                 axisLine: {
                     lineStyle: {
-                        color: '#999'
+                        color: '#ccc'
                     }
+                },
+                nameTextStyle: {
+                    color: '#999'
                 }
             },
             series: [{
