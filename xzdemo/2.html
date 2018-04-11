@@ -26,7 +26,7 @@
             </div>
             <input type="hidden" name="sphSurveyId" value='sphSurveyId'/>
             <input type="hidden" name="optionIds" :value="checkedList" />
-            <div class="xz-content-topic" v-for="item,index in List.list" v-if="index==currIndex">
+            <div class="xz-content-topic animated fadeInUp" v-for="item,index in List.list" v-if="index==currIndex">
                 <h3 class="xz-content-topic_title">{{item.title}}</h3>
                 <div class="xz-content-topic_index"><span class="curr">{{index+1}}</span><span class="split">/</span><span class="total">{{List.page.total}}</span></div>
                 <div class="xz-content-topic_key">
