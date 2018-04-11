@@ -104,6 +104,72 @@ function renderTypeBar(data){ //维度图，折线
     myChart.setOption(option);
 }
 renderTypeBar(statsInfo[0]);
+var sphRadarData = [{name: "开放性1",max: 5,value: 3, avg: 2.3},
+{name: "开放性2",max: 5,value: 3, avg: 2.3},
+{name: "开放性3",max: 5,value: 3, avg: 2.3},
+{name: "开放性4",max: 5,value: 3, avg: 2.3},
+{name: "开放性5",max: 5,value: 3, avg: 2.3},
+{name: "开放性6",max: 5,value: 3, avg: 2.3},
+{name: "开放性7",max: 5,value: 3, avg: 2.3},
+{name: "开放性8",max: 5,value: 3, avg: 2.3},
+{name: "开放性9",max: 5,value: 3, avg: 2.3},
+{name: "开放性10",max: 5,value: 3, avg: 2.3},
+{name: "开放性11",max: 5,value: 3, avg: 2.3},
+{name: "开放性12",max: 5,value: 3, avg: 2.3}];
+function sphRadar(data){ //雷达图
+    var indicatorData = function(){
+        var indicator = [],
+            series = [],
+            seriesAvg = [];
+        for(var i = 0;i<data.length;i++){
+            indicator.push({name: data[i].name, max: data[i].maxScore});
+            series.push(data[i].value);
+            seriesAvg.push(data[i].avg);
+        }
+        return {"indicator": indicator, "series": series,"seriesAvg":seriesAvg};
+    };
+    var myChart = echarts.init(document.getElementById('chars-radar')),
+        option = {
+            tooltip: {},
+            color: ['#5790d3','#F1524F'],
+            legend: {
+                icon: 'circle',
+                left: 0,
+                data:['我的得分','大家的平均分'],
+                orient: 'vertical'
+            },
+            radar: {
+                shape: 'circle',
+                center: ['42%', '50%'],
+                radius: '55%',
+                name: {
+                    textStyle: {
+                        color: '#333',
+                        backgroundColor: '#999',
+                        borderRadius: 3,
+                        padding: [3, 5]
+                   }
+                },
+                indicator: indicatorData().indicator
+            },
+            series: [{
+                type: 'radar',
+                name: '我的得分 vs 大家的平均分',
+                data : [
+                    {
+                        value : indicatorData().series,
+                        name : '我的得分'
+                    },
+                    {
+                        value : indicatorData().seriesAvg,
+                        name : '大家的平均分'
+                    }
+                ]
+            }]
+        };
+    myChart.setOption(option);
+}
+sphRadar(sphRadarData);
 function takeScreenshot() {
 	var baseFontSize = parseInt(document.querySelector('html').style.fontSize);
     var canvas2 = document.createElement("canvas");

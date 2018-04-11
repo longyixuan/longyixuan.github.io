@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>学职测评-碎片化测评</title>
 	<link rel="stylesheet" href="http://t1.chei.com.cn/common/ch/iconfont.css" />
+	<link rel="stylesheet" href="http://t1.chei.com.cn/common/plugins/swiper/swiper.min.css" />
 	<link rel="stylesheet" href="src/css/wap.css">
-	<script src="http://t1.chei.com.cn/common/echarts/echarts3/echarts.min.js"></script>
 </head>
 <body>
 	<div class="xz-layout">
@@ -27,7 +27,7 @@
 				<div class="part-content">
 					<img src="src/image/image.jpg" alt="">
 					<div class="part-content-bg">
-						<!-- <span class="iconfont part-content-bg_arrow">&#xe602;</span> -->
+						<span class="iconfont part-content-bg_arrow">&#xe602;</span>
 						<h4 class="part-content_title">您的大五人格测评问卷类型属于【尽责性】类型</h4>
 						<p class="part-content_detail">您是一个充满了责任心，善于自我控制和自我约束的人，这与动物中的蜜蜂很相似。您非常重视自己的义务和承诺，即使遇到了很大的障碍或者诱惑也能坚持完成自己的本职工作。而且您对事物往往有自己的计划，喜欢按部就班的完成，考虑问题比较周密。</p>
 					</div>
@@ -44,6 +44,45 @@
 				<div class="part-score-detail">
 					您的得分超过了90%参与测评的人，排名20/310。				
 				</div>
+				<div class="part-score-detail_chars">
+					<h4 class="detail_chars_title">您的大五人格图</h4>
+					<div class="detail_chars_content" id="chars-radar" style="height: 400px;"></div>
+				</div>
+				<div class="container">
+					<div class="swiper-container swiper1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide selected">开放性</div>
+							<div class="swiper-slide">开放性</div>
+							<div class="swiper-slide">开放性</div>
+							<div class="swiper-slide">开放性</div>
+							<div class="swiper-slide">开放性</div>
+							<div class="swiper-slide">开放性</div>
+							<div class="swiper-slide">开放性</div>
+							<div class="swiper-slide">开放性</div>
+							<div class="swiper-slide">开放性</div>
+							<div class="swiper-slide">开放性</div>
+							<div class="swiper-slide">开放性</div>
+							<div class="swiper-slide">开放性</div>
+							<div class="swiper-slide">开放性</div>
+							<div class="swiper-slide">开放性</div>
+							<div class="swiper-slide">开放性</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="part-chars_type clearfix">
+					<ul>
+						<li>开放性1</li>
+						<li class="active">开放性2</li>
+						<li>开放性3</li>
+						<li>开放性4</li>
+						<li>开放性5</li>
+						<li>开放性6</li>
+						<li>开放性7</li>
+						<li>开放性8</li>
+						<li>开放性9</li>
+						<li>开放性10</li>
+					</ul>
+				</div> -->
 				<div class="part-chars" id="chars-line" style="height: 240px;"></div>
 				<div class="part-directions">上图为所有参与本测试的人得分分布情况；箭头所指位置为您在总体分布中的位置；本图会随参与人数的增加而变化，欢迎随时查看。</div>
 				<div class="part-summary">
@@ -112,10 +151,42 @@
 			</div>
 		</div>
 	</div>
+	<script src="http://t1.chei.com.cn/common/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://t1.chei.com.cn/common/plugins/swiper/swiper.min.js"></script>
+	<script src="http://t1.chei.com.cn/common/echarts/echarts3/echarts.min.js"></script>
 	<script src="src/js/wap.js"></script>
 	<script src="src/js/bluebird.min.js"></script>
-	<!-- <script src="src/js/jsPdf.debug.js"></script> -->
 	<script src="src/js/html2canvas.min.js"></script>
 	<script src="src/js/echarts.js"></script>
+	<script>
+		$(function() {
+			function setCurrentSlide(ele, index) {
+				$(".swiper1 .swiper-slide").removeClass("selected");
+				ele.addClass("selected");
+				//swiper1.initialSlide=index;
+			}
+
+			var swiper1 = new Swiper('.swiper1', {
+//					设置slider容器能够同时显示的slides数量(carousel模式)。
+//					可以设置为number或者 'auto'则自动根据slides的宽度来设定数量。
+//					loop模式下如果设置为'auto'还需要设置另外一个参数loopedSlides。
+				slidesPerView: 5.5,
+				paginationClickable: true,//此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。
+				spaceBetween: 0,//slide之间的距离（单位px）。
+				freeMode: true,//默认为false，普通模式：slide滑动时只滑动一格，并自动贴合wrapper，设置为true则变为free模式，slide会根据惯性滑动且不会贴合。
+				loop: false,//是否可循环
+				onTab: function(swiper) {
+					var n = swiper1.clickedIndex;
+				}
+			});
+			swiper1.slides.each(function(index, val) {
+				var ele = $(this);
+				ele.on("click", function() {
+					setCurrentSlide(ele, index);
+					//mySwiper.initialSlide=index;
+				});
+			});
+		});
+	</script>
 </body>
 </html>
