@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="src/css/wap.css">
     <script src="src/js/wap.js"></script>
     <script src="src/js/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </head>
 <body>
     <div class="xz-layout" id="app" v-cloak>
@@ -31,7 +32,7 @@
                 <div class="xz-content-topic_index"><span class="curr">{{index+1}}</span><span class="split">/</span><span class="total">{{List.page.total}}</span></div>
                 <div class="xz-content-topic_key">
                     <ul>
-                        <li v-for="opt in List.optionList" :class="opt.value==item.value?'active':''" :key="'opt'+index" @click="chose(opt.value,item)">{{opt.name}}</li>
+                        <li v-for="opt in List.optionList" class="waves-effect waves-light" :class="opt.value==item.value?'active':''" :key="'opt'+index" @click="chose(opt.value,item)">{{opt.name}}</li>
                     </ul>
                 </div>
                 <div class="xz-content-chose">
@@ -57,6 +58,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="xz-fixed-menu clearfix">
+            <ul>
+                <li class="menu-item">测评列表</li>
+                <li class="menu-item">我的测评</li>
+            </ul>
         </div>
     </div>
     <script>

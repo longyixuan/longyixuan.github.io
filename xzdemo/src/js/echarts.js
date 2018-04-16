@@ -192,8 +192,8 @@ function takeScreenshot() {
         document.body.appendChild(canvas);
         //canvas转换成url，然后利用a标签的download属性，直接下载，绕过上传服务器再下载
         var imgUrl = canvas.toDataURL('image/jpeg');
-        document.querySelector(".down").setAttribute('href',imgUrl);
         canvas2.style.display="none";
+        document.querySelector(".down").setAttribute('href',imgUrl);
     });
 }
 window.onload = function () {
