@@ -273,7 +273,7 @@ a:hover {
 .xz-carousel .swiper-slide {
   background: #ccc;
   color: #fff;
-  height: 3rem;
+  height: 4rem;
   text-align: center;
 }
 
@@ -509,6 +509,7 @@ a:hover {
 }
 
 .xz-content .xz-content-topic .xz-content-topic_key li:hover,
+.xz-content .xz-content-topic .xz-content-topic_key li:active,
 .xz-content .xz-content-topic .xz-content-topic_key li.active {
   background: #2097f5;
   color: #fff;
