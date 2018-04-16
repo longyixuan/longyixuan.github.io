@@ -40,35 +40,84 @@
 			<div class="xz-content-list" style="margin-bottom: 0">
 				<ul>
 					<li class="list-item">
-						<img src="src/image/coverimg.jpg" alt="">
+						<img originalsrc="src/image/coverimg.jpg" alt="">
 						<h4 class="list-item_title">你是否有成为神奇女侠的潜力？</h4>
 						<div class="list-item_other">
 							<span class="test-num">2082973人测试</span>
 						</div>
 					</li>
 					<li class="list-item">
-						<img src="src/image/jcfg.jpg" alt="">
+						<img originalsrc="src/image/jcfg.jpg" alt="">
 						<h4 class="list-item_title">你是否有成为神奇女侠的潜力？</h4>
 						<div class="list-item_other">
 							<span class="test-num">2082973人测试</span>
 						</div>
 					</li>
 					<li class="list-item">
-						<img src="src/image/shmyd.jpg" alt="">
+						<img originalsrc="src/image/shmyd.jpg" alt="">
 						<h4 class="list-item_title">你是否有成为神奇女侠的潜力？</h4>
 						<div class="list-item_other">
 							<span class="test-num">2082973人测试</span>
 						</div>
 					</li>
 					<li class="list-item">
-						<img src="src/image/swl.jpg" alt="">
+						<img originalsrc="src/image/swl.jpg" alt="">
 						<h4 class="list-item_title">你是否有成为神奇女侠的潜力？</h4>
 						<div class="list-item_other">
 							<span class="test-num">2082973人测试</span>
 						</div>
 					</li>
 					<li class="list-item">
-						<img src="src/image/sysyl.jpg" alt="">
+						<img originalsrc="src/image/sysyl.jpg" alt="">
+						<h4 class="list-item_title">你是否有成为神奇女侠的潜力？</h4>
+						<div class="list-item_other">
+							<span class="test-num">2082973人测试</span>
+						</div>
+					</li>
+					<li class="list-item">
+						<img originalsrc="src/image/cjdx.jpg" alt="">
+						<h4 class="list-item_title">你是否有成为神奇女侠的潜力？</h4>
+						<div class="list-item_other">
+							<span class="test-num">2082973人测试</span>
+						</div>
+					</li>
+					<li class="list-item">
+						<img originalsrc="src/image/czl.jpg" alt="">
+						<h4 class="list-item_title">你是否有成为神奇女侠的潜力？</h4>
+						<div class="list-item_other">
+							<span class="test-num">2082973人测试</span>
+						</div>
+					</li>
+					<li class="list-item">
+						<img originalsrc="src/image/fwys.jpg" alt="">
+						<h4 class="list-item_title">你是否有成为神奇女侠的潜力？</h4>
+						<div class="list-item_other">
+							<span class="test-num">2082973人测试</span>
+						</div>
+					</li>
+					<li class="list-item">
+						<img originalsrc="src/image/gtzyhqx.jpg" alt="">
+						<h4 class="list-item_title">你是否有成为神奇女侠的潜力？</h4>
+						<div class="list-item_other">
+							<span class="test-num">2082973人测试</span>
+						</div>
+					</li>
+					<li class="list-item">
+						<img originalsrc="src/image/hzjs.jpg" alt="">
+						<h4 class="list-item_title">你是否有成为神奇女侠的潜力？</h4>
+						<div class="list-item_other">
+							<span class="test-num">2082973人测试</span>
+						</div>
+					</li>
+					<li class="list-item">
+						<img originalsrc="src/image/jdl.jpg" alt="">
+						<h4 class="list-item_title">你是否有成为神奇女侠的潜力？</h4>
+						<div class="list-item_other">
+							<span class="test-num">2082973人测试</span>
+						</div>
+					</li>
+					<li class="list-item">
+						<img originalsrc="src/image/jjlg.jpg" alt="">
 						<h4 class="list-item_title">你是否有成为神奇女侠的潜力？</h4>
 						<div class="list-item_other">
 							<span class="test-num">2082973人测试</span>
@@ -84,13 +133,28 @@
 			</ul>
 		</div>
 	</div>
+	<script src="http://t1.chei.com.cn/common/jquery/1.9.1/jquery.min.js"></script>
+	<script src="src/js/lazyLoad.js"></script>
 	<script src="http://t1.chei.com.cn/common/plugins/swiper/swiper.min.js"></script>
 	<script>
 		var mySwiper = new Swiper ('.swiper-container', {
 			autoplay: 2000,
 			loop: true,
 			pagination : '.swiper-pagination'
-        })        
+        })
+        $(function () {
+			$("img").delayLoading({
+				defaultImg: "image/image.jpg",           // 预加载前显示的图片
+				errorImg: "",                        // 读取图片错误时替换图片(默认：与defaultImg一样)
+				imgSrcAttr: "originalSrc",           // 记录图片路径的属性(默认：originalSrc，页面img的src属性也要替换为originalSrc)
+				beforehand: 0,                       // 预先提前多少像素加载图片(默认：0)
+				event: "scroll",                     // 触发加载图片事件(默认：scroll)
+				duration: "normal",                  // 三种预定淡出(入)速度之一的字符串("slow", "normal", or "fast")或表示动画时长的毫秒数值(如：1000),默认:"normal"
+				container: window,                   // 对象加载的位置容器(默认：window)
+				success: function (imgObj) {},      // 加载图片成功后的回调函数(默认：不执行任何操作)
+				error: function (imgObj) { }         // 加载图片失败后的回调函数(默认：不执行任何操作)
+			});
+		});     
 	</script>
 </body>
 </html>
