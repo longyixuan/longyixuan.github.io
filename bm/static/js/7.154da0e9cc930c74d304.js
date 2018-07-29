@@ -1,0 +1,2 @@
+webpackJsonp([7],{"nr/F":function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r={render:function(){this.$createElement;this._self._c;return this._m(0)},staticRenderFns:[function(){var e=this.$createElement,t=this._self._c||e;return t("div",[t("h2",[this._v("路由1")])])}]},s=n("vSla")({name:"childRoute1",data:function(){return{msg:""}}},r,!1,null,null,null);t.default=s.exports}});
+//# sourceMappingURL=7.154da0e9cc930c74d304.js.map
