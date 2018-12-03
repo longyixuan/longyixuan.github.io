@@ -10,26 +10,31 @@
 </head>
 <body>
     <div id="app" class="xz-container" v-cloak>
-        <div class="xz-download-header">
-            您的适应能力测评
-        </div>
-        <div class="xz-download-title">不同分组人数占比情况</div>
-        <div class="xz-download-Img">
-            <canvas id="mountNode3" class="pie"></canvas>
-        </div>
-        <div class="xz-download-result">属于中分组</div>
-        <div class="xz-down-doc">
-            您的探索与发现事物的内部本质联系和规律的能力非常强，具有较强的思维力。这主要体现在您的逻辑思维上，您能很好的分析现有信息，综合总结要点并且理解一些较为抽象的概念和概括等方面，这对您的工作学习都有非常重要的作用。
-        </div>
-        <div class="xz-download-footer">
-            <div class="ewm" id="qrcodeCanvas"></div>
-            <div class="des">
-                这是我的 <span>适应能力测评</span> 的结果，想知道你的怎么样吗？<br> <span>长按二维码测一测吧！</span>
+        <van-popup v-model="docShow" class="xz-popup">
+            <div id="imgShare" class="xz-download-warp" v-if="!!!imgURL">
+                <div class="xz-download-header">
+                    您的适应能力测评
+                </div>
+                <div class="xz-download-title">不同分组人数占比情况</div>
+                <div class="xz-download-Img">
+                    <canvas id="mountNode3" class="pie"></canvas>
+                </div>
+                <div class="xz-download-result">属于中分组</div>
+                <div class="xz-down-doc">
+                    您的探索与发现事物的内部本质联系和规律的能力非常强，具有较强的思维力。这主要体现在您的逻辑思维上，您能很好的分析现有信息，综合总结要点并且理解一些较为抽象的概念和概括等方面，这对您的工作学习都有非常重要的作用。
+                </div>
+                <div class="xz-download-footer">
+                    <div class="ewm" id="qrcodeCanvas"></div>
+                    <div class="des">
+                        这是我的<span>适应能力测评</span>的结果，想知道你的怎么样吗？<br><span>长按二维码测一测吧！</span>
+                    </div>
+                    <div class="zw">
+                        <img src="../lib/sbewm.png" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="zw">
-                <img src="../lib/sbewm.png" alt="">
-            </div>
-        </div>
+            <img :src="imgURL" alt="" v-else width="100%">
+        </van-popup>
     </div>
     <script src="//t3.chei.com.cn/common/js/vue/2.5.6/vue.min.js"></script>
     <!-- <script src="//t3.chei.com.cn/common/js/vue-plugins/vant.min.js"></script> -->
@@ -54,7 +59,8 @@
         var mixin = {
             data: function () {
                 return {
-                    ewmSrc: '', 
+                    docShow: true,
+                    imgURL: '',
                     pieData: [{
                         name: '高分组',
                         percent: 83.59,
@@ -92,6 +98,7 @@
                             }
                         }
                     });
+                    chart.animate(false);
                     chart.tooltip(false);
                     chart.legend(false);
                     chart.coord('polar', {
@@ -117,6 +124,7 @@
                     chart.axis(false);
                     chart.interval().position('a*percent').color('name', ['#5bd78f', '#77b8ec', '#f7d87a']).adjust('stack');
                     chart.render();
+                    console.log(chart.render)
                 },
                 createCode: function () {
                     var qrnode = new AraleQRCode({
@@ -131,11 +139,35 @@
                         imageSize : 20
                     });
                     document.getElementById('qrcodeCanvas').appendChild(qrnode);
+                },
+                createImg: function () {
+                    var _this = this,
+                        baseFontSize = parseInt(document.querySelector('html').style.fontSize),
+                        canvas = document.createElement("canvas"),
+                        saveArae = document.querySelector('#imgShare'),
+                        w = parseInt(window.getComputedStyle(saveArae).width)*baseFontSize,
+                        h = parseInt(window.getComputedStyle(saveArae).height)*baseFontSize;
+                    // 将canvas画布放大若干倍，然后盛放在较小的容器内，就显得不模糊了
+                    canvas.width = w * 2;
+                    canvas.height = h * 2;
+                    canvas.style.width = w + "px";
+                    canvas.style.height = h + "px";
+                    //可以按照自己的需求，对context的参数修改,translate指的是偏移量
+                    var context = canvas.getContext("2d");
+                    context.scale(2,2);
+                    html2canvas(document.getElementById('imgShare'),{ canvas: canvas, async: false }).then(function(canvas) {
+                        var imgURL = canvas.toDataURL();
+                        _this.imgURL = imgURL;
+                    });
                 }
             },
             mounted: function () {
-                this.downloadPie(this.pieData);
                 this.createCode();
+                this.downloadPie(this.pieData);
+                var _this = this;
+                this.$nextTick().then(function() {
+                    _this.createImg();
+                }); 
             }
         }
     </script>
