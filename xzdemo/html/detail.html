@@ -15,7 +15,8 @@
         <div class="xz-header">
             思维力测评
         </div>
-        <div class="xz-content">
+        <img src="" alt="" id="test" />
+        <div class="xz-content" id="warp">
             <h2 class="xz-doc-title">您的思维力测评报告</h2>
             <div class="xz-doc-time">报告时间：2018-03-23</div>
             <div class="xz-doc-content">
@@ -46,8 +47,9 @@
                 <div class="xz-doc-des">
                     您的探索与发现事物的内部本质联系和规律的能力非常强，具有较强的思维力。这主要体现在您的逻辑思维上，您能很好的分析现有信息，综合总结要点并且理解一些较为抽象的概念和概括等方面，这对您的工作学习都有非常重要的作用。
                 </div>
+                <div id="qrcodeCanvas" style="text-align: center;margin-bottom: 20px;"></div>
                 <div class="xz-doc-btn">
-                    <van-button type="primary" size="large" round class="xz-btn">生成图片报告</van-button>
+                    <van-button type="primary" size="large" round class="xz-btn" @click="createImg">生成图片报告</van-button>
                     <van-button type="primary" size="large" plain round class="xz-btn">再来一次</van-button>
                 </div>
             </div>
@@ -63,6 +65,10 @@
     <script src="https://gw.alipayobjects.com/os/rmsportal/NjNldKHIVQRozfbAOJUW.js"></script>
     <script src="../assets/mobile/js/vendors.js"></script>
     <script src="../assets/mobile/js/app.js"></script>
+    <!-- 生成二维码 -->
+    <script src="../lib/qrcode.js"></script>
+    <!-- 生成图片 -->
+    <script src="../lib/html2canvas.min.js"></script>
     <script type="text/javascript">
         if (!Supports.arrow) {
             alert('您的手机浏览器不支持本系统正常运行，请更换其他浏览器再试。');
@@ -81,6 +87,31 @@
                         '外倾'
                     ]
                 }
+            },
+            methods: {
+                createCode: function () {
+                    var qrnode = new AraleQRCode({
+                        render: 'canvas',
+                        correctLevel: 0,
+                        text: location.href,
+                        size: 100,
+                        background: '#fff',
+                        foreground: '#333',
+                        pdground: '#333',
+                        image : '',
+                        imageSize : 20
+                    });
+                    document.getElementById('qrcodeCanvas').appendChild(qrnode);
+                },
+                createImg: function () {
+                    html2canvas(document.getElementById('warp')).then(function(canvas) {
+                        var imgURL = canvas.toDataURL();
+                        document.getElementById('test').setAttribute('src', imgURL);
+                    });
+                }
+            },
+            mounted: function () {
+               this.createCode(); 
             }
         }
     </script>
@@ -319,8 +350,8 @@
                     chart.legend(false);
                     chart.coord('polar', {
                         transposed: true,
-                        innerRadius: 0.7,
-                        radius: 0.85
+                        innerRadius: 0.75,
+                        radius: 0.7
                     });
                     chart.pieLabel({
                         sidePadding: 40,
