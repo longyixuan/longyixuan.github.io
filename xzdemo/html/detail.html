@@ -308,24 +308,24 @@
                             }
                         }
                     });
-                        chart.guide().tag({
-                            position: [5.0, 7503],
-                            content: '我',
-                            direct: 'tl',
-                            offsetY: -5,
-                            background: {
-                                fill: '#f7d87a'
-                            },
-                            pointStyle: {
-                                fill: '#f7d87a'
-                            }
-                        });
-                        chart.line({
-                            generatePoints: true
-                        }).position(['score','count']).color('type');
-                        chart.area({
-                            generatePoints: true
-                        }).position(['score','count']).color('type');
+                    chart.guide().tag({
+                        position: [5.0, 7503],
+                        content: '我',
+                        direct: 'tl',
+                        offsetY: -5,
+                        background: {
+                            fill: '#f7d87a'
+                        },
+                        pointStyle: {
+                            fill: '#f7d87a'
+                        }
+                    });
+                    chart.line({
+                        generatePoints: true
+                    }).position(['score','count']).color('type');
+                    chart.area({
+                        generatePoints: true
+                    }).position(['score','count']).color('type');
                     chart.render();
                 },
                 initPie: function (data) {

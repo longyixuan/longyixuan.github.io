@@ -11,7 +11,7 @@
 <body>
     <div id="app" class="xz-container" v-cloak>
         <van-popup v-model="docShow" class="xz-popup">
-            <div id="imgShare" class="xz-download-warp" v-if="!!!imgURL">
+            <div id="imgShare" class="xz-download-warp" v-if="!imgURL">
                 <div class="xz-download-header">
                     您的适应能力测评
                 </div>
@@ -63,16 +63,19 @@
                     imgURL: '',
                     pieData: [{
                         name: '高分组',
+                        self: false,
                         percent: 83.59,
                         a: '1'
                         },
                         {
                             name: '低分组',
+                            self: false,
                             percent: 2.17,
                             a: '1'
                             },
                         {
                             name: '中分组',
+                            self: true,
                             percent: 14.24,
                             a: '1'
                         }
@@ -109,8 +112,9 @@
                     chart.pieLabel({
                         sidePadding: 40,
                         label1: function label1(data, color) {
+                            var text = data.self?data.name+'（我）' : data.name;
                             return {
-                                text: data.name,
+                                text: text,
                                 fill: color
                             };
                         },
@@ -119,12 +123,17 @@
                                 text: data.percent+'%',
                                 fill: color
                             };
+                        },
+                        label3: function label3(data,color) {
+                            return {
+                                text: '我',
+                                fill: color
+                            };
                         }
                     });
                     chart.axis(false);
                     chart.interval().position('a*percent').color('name', ['#5bd78f', '#77b8ec', '#f7d87a']).adjust('stack');
                     chart.render();
-                    console.log(chart.render)
                 },
                 createCode: function () {
                     var qrnode = new AraleQRCode({
