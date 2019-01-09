@@ -150,8 +150,21 @@
                     document.getElementById('qrcodeCanvas').appendChild(qrnode);
                 },
                 createImg: function () {
-                    var _this = this;
-                    html2canvas(document.getElementById('imgShare'),{ canvas: canvas, async: false }).then(function(canvas) {
+                    var _this = this,
+                        baseFontSize = parseInt(document.querySelector('html').style.fontSize),
+                        canvasDraw = document.createElement('canvas'),
+                        saveArae = document.querySelector('#imgShare'),
+                        w = parseInt(window.getComputedStyle(saveArae).width)*baseFontSize,
+                        h = parseInt(window.getComputedStyle(saveArae).height)*baseFontSize;
+                    // 将canvas画布放大若干倍，然后盛放在较小的容器内，就显得不模糊了
+                    canvasDraw.width = w * 2;
+                    canvasDraw.height = h * 2;
+                    canvasDraw.style.width = w + "px";
+                    canvasDraw.style.height = h + "px";
+                    //可以按照自己的需求，对context的参数修改,translate指的是偏移量
+                    var context = canvasDraw.getContext('2d');
+                    context.scale(2,2);
+                    html2canvas(document.getElementById('imgShare'),{ canvas: canvasDraw, async: false }).then(function(canvas) {
                         var imgURL = canvas.toDataURL();
                         _this.imgURL = imgURL;
                     });
