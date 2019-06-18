@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no,viewport-fit=cover">
+    <title>生成图片报告</title>
+    <link rel="stylesheet" href="../assets/mobile/css/app.css">
+</head>
+<body>
+    <div id="app" class="xz-container" v-cloak>
+        <van-popup v-model="docShow" class="xz-popup">
+            <div id="imgShare" class="xz-download-warp" v-if="!imgURL">
+                <div class="xz-download-header">
+                    您的适应能力测评
+                </div>
+                <div class="xz-download-title">不同分组人数占比情况</div>
+                <div class="xz-download-Img">
+                    <canvas id="mountNode3" class="pie"></canvas>
+                </div>
+                <div class="xz-download-result">属于中分组</div>
+                <div class="xz-down-doc">
+                    您的探索与发现事物的内部本质联系和规律的能力非常强，具有较强的思维力。这主要体现在您的逻辑思维上，您能很好的分析现有信息，综合总结要点并且理解一些较为抽象的概念和概括等方面，这对您的工作学习都有非常重要的作用。
+                </div>
+                <div class="xz-download-footer">
+                    <div class="ewm" id="qrcodeCanvas"></div>
+                    <div class="des">
+                        这是我的<span>适应能力测评</span>的结果，想知道你的怎么样吗？<br><span>长按二维码测一测吧！</span>
+                    </div>
+                    <div class="zw">
+                        <img src="../lib/sbewm.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <img :src="imgURL" alt="" v-else width="100%">
+        </van-popup>
+    </div>
+    <script src="//t3.chei.com.cn/common/js/vue/2.5.6/vue.min.js"></script>
+    <!-- <script src="//t3.chei.com.cn/common/js/vue-plugins/vant.min.js"></script> -->
+    <script src="//t3.chei.com.cn/common/js/vue-plugins/moment.min.js"></script>
+    <script src="//t3.chei.com.cn/common/js/vue-plugins/es-checker.js"></script>
+    <script src="https://gw.alipayobjects.com/os/antv/assets/f2/3.3.0/f2-all.min.js"></script>
+    <script src="https://gw.alipayobjects.com/os/antv/assets/lib/jquery-3.2.1.min.js"></script>
+    <!-- 在 PC 上模拟 touch 事件 -->
+    <script src="https://gw.alipayobjects.com/os/rmsportal/NjNldKHIVQRozfbAOJUW.js"></script>
+    <script src="../assets/mobile/js/vendors.js"></script>
+    <script src="../assets/mobile/js/app.js"></script>
+    <!-- 生成二维码 -->
+    <script src="../lib/qrcode.js"></script>
+    <!-- 生成图片 -->
+    <script src="../lib/html2canvas.min.js"></script>
+    <script src="../lib/dom-to-image.min.js"></script>
+    <script type="text/javascript">
+        if (!Supports.arrow) {
+            alert('您的手机浏览器不支持本系统正常运行，请更换其他浏览器再试。');
+        }
+    </script>
+    <script>
+        var mixin = {
+            data: function () {
+                return {
+                    docShow: true,
+                    imgURL: '',
+                    pieData: [{
+                        name: '高分组',
+                        self: false,
+                        percent: 83.59,
+                        a: '1'
+                        },
+                        {
+                            name: '低分组',
+                            self: false,
+                            percent: 2.17,
+                            a: '1'
+                            },
+                        {
+                            name: '中分组',
+                            self: true,
+                            percent: 14.24,
+                            a: '1'
+                        }
+                    ]
+                }
+            },
+            methods: {
+                downloadPie: function (data) {
+                    var map = {};
+                    data.map(function(obj) {
+                        map[obj.name] = obj.percent + '%';
+                    });
+
+                    var chart = new F2.Chart({
+                        id: 'mountNode3',
+                        pixelRatio: window.devicePixelRatio,
+                        padding: [20, 'auto']
+                    });
+                    chart.source(data, {
+                        percent: {
+                            formatter: function formatter(val) {
+                            return val + '%';
+                            }
+                        }
+                    });
+                    chart.animate(false);
+                    chart.tooltip(false);
+                    chart.legend(false);
+                    chart.coord('polar', {
+                        transposed: true,
+                        innerRadius: 0.75,
+                        radius: 0.7
+                    });
+                    chart.pieLabel({
+                        sidePadding: 40,
+                        label1: function label1(data, color) {
+                            var text = data.self?data.name+'（我）' : data.name;
+                            return {
+                                text: text,
+                                fill: color
+                            };
+                        },
+                        label2: function label2(data,color) {
+                            return {
+                                text: data.percent+'%',
+                                fill: color
+                            };
+                        },
+                        label3: function label3(data,color) {
+                            return {
+                                text: '我',
+                                fill: color
+                            };
+                        }
+                    });
+                    chart.axis(false);
+                    chart.interval().position('a*percent').color('name', ['#5bd78f', '#77b8ec', '#f7d87a']).adjust('stack');
+                    chart.render();
+                },
+                createCode: function () {
+                    var qrnode = new AraleQRCode({
+                        render: 'canvas',
+                        correctLevel: 0,
+                        text: location.href,
+                        size: 75,
+                        background: '#fff',
+                        foreground: '#333',
+                        pdground: '#333',
+                        image : '',
+                        imageSize : 20
+                    });
+                    document.getElementById('qrcodeCanvas').appendChild(qrnode);
+                },
+                createImg: function () {
+//                     var _this = this,
+//                         baseFontSize = parseInt(document.querySelector('html').style.fontSize),
+//                         canvasDraw = document.createElement('canvas'),
+//                         saveArae = document.querySelector('#imgShare'),
+//                         w = parseInt(window.getComputedStyle(saveArae).width)*baseFontSize,
+//                         h = parseInt(window.getComputedStyle(saveArae).height)*baseFontSize;
+//                     // 将canvas画布放大若干倍，然后盛放在较小的容器内，就显得不模糊了
+//                     canvasDraw.width = w * 2;
+//                     canvasDraw.height = h * 2;
+//                     canvasDraw.style.width = w + "px";
+//                     canvasDraw.style.height = h + "px";
+//                     //可以按照自己的需求，对context的参数修改,translate指的是偏移量
+//                     var context = canvasDraw.getContext('2d');
+//                     context.scale(2,2);
+//                     html2canvas(document.getElementById('imgShare'),{ canvas: canvasDraw, async: false }).then(function(canvas) {
+//                         var imgURL = canvas.toDataURL();
+//                         _this.imgURL = imgURL;
+//                     });
+                    var node = document.getElementById('imgShare');
+                    var _this = this;
+                    domtoimage.toPng(node)
+                        .then(function (dataUrl) {
+                            _this.imgURL = dataUrl;
+                        })
+                        .catch(function (error) {
+                            console.error('oops, something went wrong!', error);
+                        });
+                }
+            },
+            mounted: function () {
+                this.createCode();
+                this.downloadPie(this.pieData);
+                var _this = this;
+                this.$nextTick().then(function() {
+                    _this.createImg();
+                }); 
+            }
+        }
+    </script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: function () {
+                return {
+
+                }
+            },
+            mixins: typeof mixin != 'undefined' ? [mixin] : {}
+        })
+    </script>
+</body>
+</html>
