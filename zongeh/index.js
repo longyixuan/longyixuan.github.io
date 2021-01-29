@@ -8905,13 +8905,13 @@ an.getComposition = function(id) {
 
 an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers) {		
 	var lastW, lastH, lastS=1;		
-	window.addEventListener('resize', resizeCanvas);		
+	window.addEventListener('resize', resizeCanvas);
 	resizeCanvas();		
-	function resizeCanvas() {			
+	function resizeCanvas() {	
 		var w = lib.properties.width, h = lib.properties.height;			
-		var iw = window.innerWidth, ih=window.innerHeight;			
+		var iw = window.innerWidth, ih=window.innerHeight;
 		var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
-		if(isResp) {                
+		if(isResp) {            
 			if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
 				sRatio = lastS;                
 			}				
@@ -8931,7 +8931,6 @@ an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers)
 		domContainers.forEach(function(container) {				
 			container.style.width = w * sRatio + 'px';				
 			container.style.height = h * sRatio + 'px';
-			container.style.tr
 		});	  
 		stage.scaleX = pRatio*sRatio;			
 		stage.scaleY = pRatio*sRatio;			
