@@ -8905,13 +8905,13 @@ an.getComposition = function(id) {
 
 an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers) {		
 	var lastW, lastH, lastS=1;		
-	window.addEventListener('resize', resizeCanvas);
+	window.addEventListener('resize', resizeCanvas);		
 	resizeCanvas();		
-	function resizeCanvas() {	
-		var w = lib.properties.width, h = lib.properties.height;			
+	function resizeCanvas() {			
+		var w = lib.properties.width, h = lib.properties.height;		
 		var iw = window.innerWidth, ih=window.innerHeight;
 		var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
-		if(isResp) {            
+		if(isResp) {                
 			if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
 				sRatio = lastS;                
 			}				
@@ -8925,18 +8925,29 @@ an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers)
 			else if(scaleType==2) {					
 				sRatio = Math.max(xRatio, yRatio);				
 			}			
-		}			
-		domContainers[0].width = w * pRatio * sRatio;			
-		domContainers[0].height = h * pRatio * sRatio;			
-		domContainers.forEach(function(container) {				
-			container.style.width = w * sRatio + 'px';				
-			container.style.height = h * sRatio + 'px';
-		});	  
+		}
+		console.log(domContainers[0].width,domContainers[0].height)
+		domContainers[0].width = h * pRatio * sRatio;		
+		domContainers[0].height = w * pRatio * sRatio;
+		domContainers[0].style.width = iw + 'px';
+		domContainers[0].style.height = ih + 'px';
+		
+		domContainers[1].style.width = iw + 'px';
+		domContainers[1].style.height = ih + 'px';
+		domContainers[2].style.width = iw + 'px';
+		domContainers[2].style.height = ih + 'px';
+		// domContainers.forEach(function(container) {	
+		// 	container.style.width = w * sRatio + 'px';				
+		// 	container.style.height = h * sRatio + 'px';
+		// });
 		stage.scaleX = pRatio*sRatio;			
 		stage.scaleY = pRatio*sRatio;			
 		lastW = iw; lastH = ih; lastS = sRatio;            
 		stage.tickOnUpdate = false;
-		stage.update();         
+		stage.x = h * pRatio * sRatio;
+		// stage.y = h * pRatio * sRatio; 
+		stage.rotation = 90;          
+		stage.update();            
 		stage.tickOnUpdate = true;		
 	}
 }
