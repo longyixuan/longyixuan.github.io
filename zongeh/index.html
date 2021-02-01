@@ -68,101 +68,54 @@
 			}
 		}
 		)();
-		var canvas, stage, stageWidth, stageHeight, container, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-
+		var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 		function init() {
 			canvas = document.getElementById("canvas");
 			anim_container = document.getElementById("animation_container");
 			dom_overlay_container = document.getElementById("dom_overlay_container");
-			var comp = AdobeAn.getComposition("A8A058922FCC493990D91243D07CB0A8");
-			var lib = comp.getLibrary();
+			var comp=AdobeAn.getComposition("A8A058922FCC493990D91243D07CB0A8");
+			var lib=comp.getLibrary();
 			var loader = new createjs.LoadQueue(false);
-			loader.addEventListener("fileload", function (evt) {
-				handleFileLoad(evt, comp)
-			});
-			loader.addEventListener("complete", function (evt) {
-				handleComplete(evt, comp)
-			});
-			var lib = comp.getLibrary();
+			loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+			loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+			var lib=comp.getLibrary();
 			loader.loadManifest(lib.properties.manifest);
 		}
-
 		function handleFileLoad(evt, comp) {
-			var images = comp.getImages();
-			if (evt && (evt.item.type == "image")) {
-				images[evt.item.id] = evt.result;
-			}
+			var images=comp.getImages();	
+			if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
 		}
-
-		function handleComplete(evt, comp) {
+		function handleComplete(evt,comp) {
 			//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-			var lib = comp.getLibrary();
-			var ss = comp.getSpriteSheet();
+			var lib=comp.getLibrary();
+			var ss=comp.getSpriteSheet();
 			var queue = evt.target;
 			var ssMetadata = lib.ssMetadata;
-			for (i = 0; i < ssMetadata.length; i++) {
-				ss[ssMetadata[i].name] = new createjs.SpriteSheet({
-					"images": [queue.getResult(ssMetadata[i].name)],
-					"frames": ssMetadata[i].frames
-				})
+			for(i=0; i<ssMetadata.length; i++) {
+				ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 			}
 			exportRoot = new lib.无标题1();
-			// exportRoot.rotation = 90;
-			container = new createjs.Container();
 			stage = new lib.Stage(canvas);
-			stage.enableMouseOver();
+			stage.enableMouseOver();	
 			//Registers the "tick" event listener.
-			fnStartAnimation = function () {
-				stage.addChild(container);
-				container.addChild(exportRoot);
-				stageBreakHandler();
+			fnStartAnimation = function() {
+				stage.addChild(exportRoot);
 				createjs.Ticker.framerate = lib.properties.fps;
-				createjs.Ticker.addEventListener("tick", stageBreakHandler);
-			}
+				createjs.Ticker.addEventListener("tick", stage);
+			}	    
 			//Code to support hidpi screens and responsive scaling.
-			// AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+			AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
 			AdobeAn.compositionLoaded(lib.properties.id);
 			fnStartAnimation();
 		}
-
-		function stageBreakHandler(event) {
-			if (stageWidth != document.documentElement.clientWidth || stageHeight != document.documentElement.clientHeight) {
-				stageWidth = document.documentElement.clientWidth;
-				stageHeight = document.documentElement.clientHeight;
-
-				//        新的自适应方式
-				canvas.width = stageWidth;
-				canvas.height = stageHeight;
-				if (stageWidth < stageHeight) {
-					stageScale = stageWidth / 750;
-					container.rotation = 90;
-					container.x = 750 * stageScale;
-					container.y = stageHeight / 2 - 1334 * stageScale / 2; //居中一下
-					container.scaleX = stageScale;
-					container.scaleY = stageScale;
-
-				} else {
-					stageScale = stageWidth / 1334;
-					container.rotation = 0;
-					container.x = 0;
-					container.scaleX = stageScale;
-					container.scaleY = stageScale;
-				}
-				stage.update();
-			}
-		}
-	</script>
-	<!-- write your code here -->
-</head>
-
-<body onload="init();" style="margin:0px;">
-	<!-- <div id="animation_container" style="background-color:rgba(27, 30, 43, 1.00); width:1280px; height:720px;"> -->
-		<canvas id="canvas" width="1280" height="720"
-			style="position: absolute; display: block; background-color:rgba(27, 30, 43, 1.00);"></canvas>
-		<!-- <div id="dom_overlay_container"
-			style="pointer-events:none; overflow:hidden; width:1280px; height:720px; position: absolute; left: 0px; top: 0px; display: block;">
-		</div> -->
-	<!-- </div> -->
-</body>
-
+		</script>
+		<!-- write your code here -->
+		</head>
+		<body onload="init();" style="margin:0px;">
+			<div id="animation_container" style="background-color:rgba(27, 30, 43, 1.00); width:1280px; height:720px">
+				<canvas id="canvas" width="1280" height="720" style="position: absolute; display: block; background-color:rgba(27, 30, 43, 1.00);"></canvas>
+				<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1280px; height:720px; position: absolute; left: 0px; top: 0px; display: block;">
+				</div>
+			</div>
+		</body>
 </html>
