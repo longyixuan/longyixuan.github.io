@@ -3,167 +3,167 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"无标题_1_atlas_", frames: [[0,968,1280,720],[0,0,1011,966]]},
-		{name:"无标题_1_atlas_2", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_3", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_4", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_5", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_6", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_7", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_8", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_9", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_10", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_11", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_12", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_13", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_14", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_15", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_16", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_17", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_18", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_19", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_20", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_21", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_22", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_23", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_24", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_25", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_26", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_27", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_28", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_29", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_30", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_31", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_32", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_33", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_34", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_35", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_36", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_37", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_38", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_39", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_40", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_41", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_42", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_43", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_44", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_45", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_46", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_47", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_48", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_49", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_50", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_51", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_52", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_53", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_54", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_55", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_56", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_57", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_58", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_59", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_60", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_61", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_62", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_63", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_64", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_65", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_66", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_67", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_68", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_69", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_70", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_71", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_72", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_73", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_74", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_75", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_76", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_77", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_78", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_79", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_80", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_81", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_82", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_83", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_84", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_85", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_86", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_87", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_88", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_89", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_90", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_91", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_92", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_93", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_94", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_95", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_96", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_97", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_98", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_99", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_100", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_101", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_102", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_103", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_104", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_105", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_106", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_107", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_108", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_109", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_110", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_111", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_112", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_113", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_114", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_115", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_116", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_117", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_118", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_119", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_120", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_121", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_122", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_123", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_124", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_125", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_126", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_127", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_128", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_129", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_130", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_131", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_132", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_133", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_134", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_135", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_136", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_137", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_138", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_139", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_140", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_141", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_142", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_143", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_144", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_145", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_146", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_147", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_148", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_149", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_150", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_151", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_152", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_153", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_154", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_155", frames: [[0,0,1280,720],[0,722,1280,720]]},
-		{name:"无标题_1_atlas_156", frames: [[1180,1487,635,559],[0,1644,1178,374],[975,0,336,1485],[0,0,973,784],[1313,0,641,671],[1313,673,676,552],[0,786,756,856]]},
-		{name:"无标题_1_atlas_157", frames: [[626,0,600,480],[1228,0,600,480],[626,482,600,480],[0,538,600,480],[1228,482,600,480],[0,1020,600,480],[0,1502,600,480],[602,964,600,480],[602,1446,600,480],[1204,964,600,480],[1204,1446,600,480],[0,0,624,536]]},
-		{name:"无标题_1_atlas_158", frames: [[0,1692,1901,136],[0,1446,1162,244],[602,1002,1378,194],[0,1830,1901,136],[0,0,600,480],[602,0,600,480],[1204,0,600,480],[0,482,600,480],[0,964,600,480],[1164,482,524,518],[602,482,526,516],[1164,1198,595,423]]},
-		{name:"无标题_1_atlas_159", frames: [[0,933,1901,98],[0,1033,1901,98],[0,1133,1901,98],[0,1233,1901,98],[0,1333,1901,98],[0,1433,1901,98],[0,1533,1901,98],[0,1633,1901,98],[0,1733,1901,98],[0,1833,1901,98],[0,1933,1901,98],[0,501,1178,196],[0,0,499,499],[501,0,499,499],[0,699,1909,115],[0,816,1687,115],[1002,0,482,480]]},
-		{name:"无标题_1_atlas_160", frames: [[0,0,1901,98],[0,1257,1183,115],[0,1832,1016,115],[0,1715,1019,115],[0,936,1349,115],[0,1374,1180,115],[671,1610,1198,103],[1021,1715,1018,115],[0,1142,1210,113],[671,1498,1204,110],[0,548,669,199],[0,1491,669,199],[0,1053,1673,87],[0,1949,1322,87],[0,847,1890,87],[1254,100,403,403],[1659,100,243,560],[1675,936,243,560],[793,474,448,371],[1212,1142,417,270],[397,100,394,446],[0,100,395,446],[793,100,459,372]]},
-		{name:"无标题_1_atlas_161", frames: [[2015,0,22,39],[311,454,884,103],[1197,579,664,81],[1410,365,173,84],[1799,1456,118,163],[1919,1456,118,163],[981,1496,118,163],[1585,365,173,84],[1042,0,863,115],[1180,117,863,115],[311,559,884,103],[0,0,1040,103],[0,105,1038,103],[1000,664,1007,85],[311,365,1097,87],[0,899,522,129],[0,1169,486,129],[1305,751,627,129],[1180,234,769,129],[736,1023,785,98],[1905,519,134,134],[1528,982,236,274],[311,299,475,54],[926,1747,178,67],[0,299,309,309],[728,1210,445,115],[1175,1258,397,115],[0,210,1178,87],[0,664,998,87],[1119,299,52,51],[2009,655,36,90],[1101,1496,118,163],[700,1540,118,163],[1574,1258,173,163],[820,1540,118,163],[1302,1375,173,163],[1221,1540,118,163],[0,1421,173,163],[1341,1540,118,163],[0,1586,118,163],[175,1421,173,163],[736,753,246,232],[0,1300,324,119],[728,1327,324,119],[1054,1375,246,119],[1766,1222,168,232],[1767,1621,173,84],[1477,1423,173,163],[120,1586,118,163],[940,1661,173,84],[350,1431,173,163],[1766,982,238,238],[1461,1588,118,163],[240,1596,118,163],[360,1596,118,163],[657,1705,173,84],[525,1431,173,163],[488,1191,238,238],[0,610,186,49],[0,1751,186,49],[1379,1753,186,49],[1649,1754,186,49],[188,1761,186,49],[188,610,112,44],[1305,882,689,98],[1934,815,112,44],[1175,1210,112,44],[1289,1210,112,44],[1403,1210,112,44],[1054,1327,112,44],[736,1123,790,85],[0,1030,463,137],[0,753,551,144],[1760,365,82,82],[1000,751,303,270],[1905,365,127,152],[1951,234,83,98],[1907,0,106,94],[1844,365,39,35],[1844,402,39,35],[788,299,224,56],[1934,751,80,62],[1652,1456,145,140],[553,753,181,436],[1174,1705,146,92],[1936,1358,64,64],[465,1030,62,68],[832,1705,92,137],[480,1596,116,154],[1649,1598,116,154],[1040,117,105,81],[1197,454,706,123],[2015,41,18,4],[2039,0,4,22],[1951,334,39,29],[1322,1705,55,175],[1936,1222,103,134],[1305,982,183,39],[1115,1661,57,236],[465,1100,83,50],[1014,299,103,63],[326,1300,151,92],[1837,1707,63,57],[1942,1621,57,237],[598,1596,57,298],[700,1448,279,90],[1581,1588,66,283]]}
+		{name:"kanbian_atlas_", frames: [[0,968,1280,720],[0,0,1011,966]]},
+		{name:"kanbian_atlas_2", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_3", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_4", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_5", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_6", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_7", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_8", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_9", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_10", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_11", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_12", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_13", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_14", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_15", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_16", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_17", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_18", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_19", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_20", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_21", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_22", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_23", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_24", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_25", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_26", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_27", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_28", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_29", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_30", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_31", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_32", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_33", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_34", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_35", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_36", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_37", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_38", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_39", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_40", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_41", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_42", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_43", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_44", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_45", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_46", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_47", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_48", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_49", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_50", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_51", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_52", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_53", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_54", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_55", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_56", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_57", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_58", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_59", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_60", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_61", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_62", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_63", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_64", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_65", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_66", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_67", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_68", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_69", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_70", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_71", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_72", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_73", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_74", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_75", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_76", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_77", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_78", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_79", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_80", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_81", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_82", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_83", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_84", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_85", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_86", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_87", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_88", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_89", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_90", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_91", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_92", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_93", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_94", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_95", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_96", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_97", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_98", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_99", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_100", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_101", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_102", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_103", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_104", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_105", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_106", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_107", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_108", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_109", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_110", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_111", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_112", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_113", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_114", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_115", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_116", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_117", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_118", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_119", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_120", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_121", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_122", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_123", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_124", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_125", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_126", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_127", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_128", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_129", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_130", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_131", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_132", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_133", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_134", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_135", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_136", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_137", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_138", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_139", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_140", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_141", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_142", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_143", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_144", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_145", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_146", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_147", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_148", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_149", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_150", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_151", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_152", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_153", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_154", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_155", frames: [[0,0,1280,720],[0,722,1280,720]]},
+		{name:"kanbian_atlas_156", frames: [[1180,1487,635,559],[0,1644,1178,374],[975,0,336,1485],[0,0,973,784],[1313,0,641,671],[1313,673,676,552],[0,786,756,856]]},
+		{name:"kanbian_atlas_157", frames: [[626,0,600,480],[1228,0,600,480],[626,482,600,480],[0,538,600,480],[1228,482,600,480],[0,1020,600,480],[0,1502,600,480],[602,964,600,480],[602,1446,600,480],[1204,964,600,480],[1204,1446,600,480],[0,0,624,536]]},
+		{name:"kanbian_atlas_158", frames: [[0,1692,1901,136],[0,1446,1162,244],[602,1002,1378,194],[0,1830,1901,136],[0,0,600,480],[602,0,600,480],[1204,0,600,480],[0,482,600,480],[0,964,600,480],[1164,482,524,518],[602,482,526,516],[1164,1198,595,423]]},
+		{name:"kanbian_atlas_159", frames: [[0,933,1901,98],[0,1033,1901,98],[0,1133,1901,98],[0,1233,1901,98],[0,1333,1901,98],[0,1433,1901,98],[0,1533,1901,98],[0,1633,1901,98],[0,1733,1901,98],[0,1833,1901,98],[0,1933,1901,98],[0,501,1178,196],[0,0,499,499],[501,0,499,499],[0,699,1909,115],[0,816,1687,115],[1002,0,482,480]]},
+		{name:"kanbian_atlas_160", frames: [[0,0,1901,98],[0,1257,1183,115],[0,1832,1016,115],[0,1715,1019,115],[0,936,1349,115],[0,1374,1180,115],[671,1610,1198,103],[1021,1715,1018,115],[0,1142,1210,113],[671,1498,1204,110],[0,548,669,199],[0,1491,669,199],[0,1053,1673,87],[0,1949,1322,87],[0,847,1890,87],[1254,100,403,403],[1659,100,243,560],[1675,936,243,560],[793,474,448,371],[1212,1142,417,270],[397,100,394,446],[0,100,395,446],[793,100,459,372]]},
+		{name:"kanbian_atlas_161", frames: [[2015,0,22,39],[311,454,884,103],[1197,579,664,81],[1410,365,173,84],[1799,1456,118,163],[1919,1456,118,163],[981,1496,118,163],[1585,365,173,84],[1042,0,863,115],[1180,117,863,115],[311,559,884,103],[0,0,1040,103],[0,105,1038,103],[1000,664,1007,85],[311,365,1097,87],[0,899,522,129],[0,1169,486,129],[1305,751,627,129],[1180,234,769,129],[736,1023,785,98],[1905,519,134,134],[1528,982,236,274],[311,299,475,54],[926,1747,178,67],[0,299,309,309],[728,1210,445,115],[1175,1258,397,115],[0,210,1178,87],[0,664,998,87],[1119,299,52,51],[2009,655,36,90],[1101,1496,118,163],[700,1540,118,163],[1574,1258,173,163],[820,1540,118,163],[1302,1375,173,163],[1221,1540,118,163],[0,1421,173,163],[1341,1540,118,163],[0,1586,118,163],[175,1421,173,163],[736,753,246,232],[0,1300,324,119],[728,1327,324,119],[1054,1375,246,119],[1766,1222,168,232],[1767,1621,173,84],[1477,1423,173,163],[120,1586,118,163],[940,1661,173,84],[350,1431,173,163],[1766,982,238,238],[1461,1588,118,163],[240,1596,118,163],[360,1596,118,163],[657,1705,173,84],[525,1431,173,163],[488,1191,238,238],[0,610,186,49],[0,1751,186,49],[1379,1753,186,49],[1649,1754,186,49],[188,1761,186,49],[188,610,112,44],[1305,882,689,98],[1934,815,112,44],[1175,1210,112,44],[1289,1210,112,44],[1403,1210,112,44],[1054,1327,112,44],[736,1123,790,85],[0,1030,463,137],[0,753,551,144],[1760,365,82,82],[1000,751,303,270],[1905,365,127,152],[1951,234,83,98],[1907,0,106,94],[1844,365,39,35],[1844,402,39,35],[788,299,224,56],[1934,751,80,62],[1652,1456,145,140],[553,753,181,436],[1174,1705,146,92],[1936,1358,64,64],[465,1030,62,68],[832,1705,92,137],[480,1596,116,154],[1649,1598,116,154],[1040,117,105,81],[1197,454,706,123],[2015,41,18,4],[2039,0,4,22],[1951,334,39,29],[1322,1705,55,175],[1936,1222,103,134],[1305,982,183,39],[1115,1661,57,236],[465,1100,83,50],[1014,299,103,63],[326,1300,151,92],[1837,1707,63,57],[1942,1621,57,237],[598,1596,57,298],[700,1448,279,90],[1581,1588,66,283]]}
 ];
 
 
@@ -172,98 +172,98 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_155 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_150 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_147 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_146 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_145 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_144 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_143 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_142 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_141 = function() {
-	this.initialize(ss["无标题_1_atlas_158"]);
+	this.initialize(ss["kanbian_atlas_158"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_140 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_139 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_138 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_137 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_136 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
@@ -276,175 +276,175 @@ p.nominalBounds = new cjs.Rectangle(0,0,3277,1857);
 
 
 (lib.CachedBmp_134 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_133 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_156 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_131 = function() {
-	this.initialize(ss["无标题_1_atlas_156"]);
+	this.initialize(ss["kanbian_atlas_156"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_126 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_124 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_122 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_120 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_118 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_116 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_115 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_114 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_113 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_112 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_111 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_110 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_109 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_108 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_107 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_106 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_105 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_104 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_103 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_102 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_101 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
@@ -457,203 +457,203 @@ p.nominalBounds = new cjs.Rectangle(0,0,3390,1755);
 
 
 (lib.CachedBmp_99 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_98 = function() {
-	this.initialize(ss["无标题_1_atlas_158"]);
+	this.initialize(ss["kanbian_atlas_158"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_96 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_95 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_94 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_93 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_92 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_91 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_90 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_89 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_88 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_87 = function() {
-	this.initialize(ss["无标题_1_atlas_156"]);
+	this.initialize(ss["kanbian_atlas_156"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_86 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_85 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_84 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_83 = function() {
-	this.initialize(ss["无标题_1_atlas_158"]);
+	this.initialize(ss["kanbian_atlas_158"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_82 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_81 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_80 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(26);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_79 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_78 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(27);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_77 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(28);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_76 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_75 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_74 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_73 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_72 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(29);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_71 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(30);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_153 = function() {
-	this.initialize(ss["无标题_1_atlas_156"]);
+	this.initialize(ss["kanbian_atlas_156"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
@@ -678,294 +678,294 @@ p.nominalBounds = new cjs.Rectangle(0,0,5168,5168);
 
 
 (lib.CachedBmp_66 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(31);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_64 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(32);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_62 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(33);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_60 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(34);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_58 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(35);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_56 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(36);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_54 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(37);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_52 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(38);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_50 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(39);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_48 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(40);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_46 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(41);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_44 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(42);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_42 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(43);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_40 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(44);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_38 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(45);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_45 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_36 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(46);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_34 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(47);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_32 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(48);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_30 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(49);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_28 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(50);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_35 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(51);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_26 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(52);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_24 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(53);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_22 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(54);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_20 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(55);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_18 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(56);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_125 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(57);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_16 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(58);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_15 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(59);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_14 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(60);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_13 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(61);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_12 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(62);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_11 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(63);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_10 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(64);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_9 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(65);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_8 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(66);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_7 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(67);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_6 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(68);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_5 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(69);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_4 = function() {
-	this.initialize(ss["无标题_1_atlas_158"]);
+	this.initialize(ss["kanbian_atlas_158"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_3 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(70);
 }).prototype = p = new cjs.Sprite();
 
@@ -978,2655 +978,2655 @@ p.nominalBounds = new cjs.Rectangle(0,0,3418,1867);
 
 
 (lib._0000 = function() {
-	this.initialize(ss["无标题_1_atlas_"]);
+	this.initialize(ss["kanbian_atlas_"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0000_1 = function() {
-	this.initialize(ss["无标题_1_atlas_2"]);
+	this.initialize(ss["kanbian_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0001 = function() {
-	this.initialize(ss["无标题_1_atlas_2"]);
+	this.initialize(ss["kanbian_atlas_2"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0001_1 = function() {
-	this.initialize(ss["无标题_1_atlas_3"]);
+	this.initialize(ss["kanbian_atlas_3"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0001_2 = function() {
-	this.initialize(ss["无标题_1_atlas_157"]);
+	this.initialize(ss["kanbian_atlas_157"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0001png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_3"]);
+	this.initialize(ss["kanbian_atlas_3"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0002 = function() {
-	this.initialize(ss["无标题_1_atlas_4"]);
+	this.initialize(ss["kanbian_atlas_4"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0002_1 = function() {
-	this.initialize(ss["无标题_1_atlas_4"]);
+	this.initialize(ss["kanbian_atlas_4"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0002png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_5"]);
+	this.initialize(ss["kanbian_atlas_5"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0003 = function() {
-	this.initialize(ss["无标题_1_atlas_5"]);
+	this.initialize(ss["kanbian_atlas_5"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0003_1 = function() {
-	this.initialize(ss["无标题_1_atlas_6"]);
+	this.initialize(ss["kanbian_atlas_6"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0003_2 = function() {
-	this.initialize(ss["无标题_1_atlas_6"]);
+	this.initialize(ss["kanbian_atlas_6"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0003_3 = function() {
-	this.initialize(ss["无标题_1_atlas_157"]);
+	this.initialize(ss["kanbian_atlas_157"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0004 = function() {
-	this.initialize(ss["无标题_1_atlas_7"]);
+	this.initialize(ss["kanbian_atlas_7"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0004_1 = function() {
-	this.initialize(ss["无标题_1_atlas_7"]);
+	this.initialize(ss["kanbian_atlas_7"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0004png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_8"]);
+	this.initialize(ss["kanbian_atlas_8"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0005 = function() {
-	this.initialize(ss["无标题_1_atlas_8"]);
+	this.initialize(ss["kanbian_atlas_8"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0005_1 = function() {
-	this.initialize(ss["无标题_1_atlas_9"]);
+	this.initialize(ss["kanbian_atlas_9"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0005_2 = function() {
-	this.initialize(ss["无标题_1_atlas_9"]);
+	this.initialize(ss["kanbian_atlas_9"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0005_3 = function() {
-	this.initialize(ss["无标题_1_atlas_157"]);
+	this.initialize(ss["kanbian_atlas_157"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0006 = function() {
-	this.initialize(ss["无标题_1_atlas_10"]);
+	this.initialize(ss["kanbian_atlas_10"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0006png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_10"]);
+	this.initialize(ss["kanbian_atlas_10"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0006png复制2 = function() {
-	this.initialize(ss["无标题_1_atlas_11"]);
+	this.initialize(ss["kanbian_atlas_11"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0007 = function() {
-	this.initialize(ss["无标题_1_atlas_11"]);
+	this.initialize(ss["kanbian_atlas_11"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0007_1 = function() {
-	this.initialize(ss["无标题_1_atlas_12"]);
+	this.initialize(ss["kanbian_atlas_12"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0007_2 = function() {
-	this.initialize(ss["无标题_1_atlas_157"]);
+	this.initialize(ss["kanbian_atlas_157"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0007png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_12"]);
+	this.initialize(ss["kanbian_atlas_12"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0008 = function() {
-	this.initialize(ss["无标题_1_atlas_13"]);
+	this.initialize(ss["kanbian_atlas_13"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0008_1 = function() {
-	this.initialize(ss["无标题_1_atlas_13"]);
+	this.initialize(ss["kanbian_atlas_13"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0008png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_14"]);
+	this.initialize(ss["kanbian_atlas_14"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0009 = function() {
-	this.initialize(ss["无标题_1_atlas_14"]);
+	this.initialize(ss["kanbian_atlas_14"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0009_1 = function() {
-	this.initialize(ss["无标题_1_atlas_15"]);
+	this.initialize(ss["kanbian_atlas_15"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0009_2 = function() {
-	this.initialize(ss["无标题_1_atlas_15"]);
+	this.initialize(ss["kanbian_atlas_15"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0009_3 = function() {
-	this.initialize(ss["无标题_1_atlas_157"]);
+	this.initialize(ss["kanbian_atlas_157"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0010 = function() {
-	this.initialize(ss["无标题_1_atlas_16"]);
+	this.initialize(ss["kanbian_atlas_16"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0010png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_16"]);
+	this.initialize(ss["kanbian_atlas_16"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0010png复制2 = function() {
-	this.initialize(ss["无标题_1_atlas_17"]);
+	this.initialize(ss["kanbian_atlas_17"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0011 = function() {
-	this.initialize(ss["无标题_1_atlas_17"]);
+	this.initialize(ss["kanbian_atlas_17"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0011_1 = function() {
-	this.initialize(ss["无标题_1_atlas_18"]);
+	this.initialize(ss["kanbian_atlas_18"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0011_2 = function() {
-	this.initialize(ss["无标题_1_atlas_18"]);
+	this.initialize(ss["kanbian_atlas_18"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0011_3 = function() {
-	this.initialize(ss["无标题_1_atlas_157"]);
+	this.initialize(ss["kanbian_atlas_157"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0012 = function() {
-	this.initialize(ss["无标题_1_atlas_19"]);
+	this.initialize(ss["kanbian_atlas_19"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0012_1 = function() {
-	this.initialize(ss["无标题_1_atlas_19"]);
+	this.initialize(ss["kanbian_atlas_19"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0012png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_20"]);
+	this.initialize(ss["kanbian_atlas_20"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0013 = function() {
-	this.initialize(ss["无标题_1_atlas_20"]);
+	this.initialize(ss["kanbian_atlas_20"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0013_1 = function() {
-	this.initialize(ss["无标题_1_atlas_21"]);
+	this.initialize(ss["kanbian_atlas_21"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0013_2 = function() {
-	this.initialize(ss["无标题_1_atlas_21"]);
+	this.initialize(ss["kanbian_atlas_21"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0013_3 = function() {
-	this.initialize(ss["无标题_1_atlas_157"]);
+	this.initialize(ss["kanbian_atlas_157"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0014 = function() {
-	this.initialize(ss["无标题_1_atlas_22"]);
+	this.initialize(ss["kanbian_atlas_22"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0014_1 = function() {
-	this.initialize(ss["无标题_1_atlas_22"]);
+	this.initialize(ss["kanbian_atlas_22"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0014png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_23"]);
+	this.initialize(ss["kanbian_atlas_23"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0015 = function() {
-	this.initialize(ss["无标题_1_atlas_23"]);
+	this.initialize(ss["kanbian_atlas_23"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0015_1 = function() {
-	this.initialize(ss["无标题_1_atlas_24"]);
+	this.initialize(ss["kanbian_atlas_24"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0015_2 = function() {
-	this.initialize(ss["无标题_1_atlas_24"]);
+	this.initialize(ss["kanbian_atlas_24"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0015_3 = function() {
-	this.initialize(ss["无标题_1_atlas_157"]);
+	this.initialize(ss["kanbian_atlas_157"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0016 = function() {
-	this.initialize(ss["无标题_1_atlas_25"]);
+	this.initialize(ss["kanbian_atlas_25"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0016_1 = function() {
-	this.initialize(ss["无标题_1_atlas_25"]);
+	this.initialize(ss["kanbian_atlas_25"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0016png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_26"]);
+	this.initialize(ss["kanbian_atlas_26"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0017 = function() {
-	this.initialize(ss["无标题_1_atlas_26"]);
+	this.initialize(ss["kanbian_atlas_26"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0017_1 = function() {
-	this.initialize(ss["无标题_1_atlas_27"]);
+	this.initialize(ss["kanbian_atlas_27"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0017_2 = function() {
-	this.initialize(ss["无标题_1_atlas_27"]);
+	this.initialize(ss["kanbian_atlas_27"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0017_3 = function() {
-	this.initialize(ss["无标题_1_atlas_157"]);
+	this.initialize(ss["kanbian_atlas_157"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0018 = function() {
-	this.initialize(ss["无标题_1_atlas_28"]);
+	this.initialize(ss["kanbian_atlas_28"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0018_1 = function() {
-	this.initialize(ss["无标题_1_atlas_28"]);
+	this.initialize(ss["kanbian_atlas_28"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0018png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_29"]);
+	this.initialize(ss["kanbian_atlas_29"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0019 = function() {
-	this.initialize(ss["无标题_1_atlas_29"]);
+	this.initialize(ss["kanbian_atlas_29"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0019_1 = function() {
-	this.initialize(ss["无标题_1_atlas_30"]);
+	this.initialize(ss["kanbian_atlas_30"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0019_2 = function() {
-	this.initialize(ss["无标题_1_atlas_30"]);
+	this.initialize(ss["kanbian_atlas_30"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0019_3 = function() {
-	this.initialize(ss["无标题_1_atlas_157"]);
+	this.initialize(ss["kanbian_atlas_157"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0020 = function() {
-	this.initialize(ss["无标题_1_atlas_31"]);
+	this.initialize(ss["kanbian_atlas_31"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0020_1 = function() {
-	this.initialize(ss["无标题_1_atlas_31"]);
+	this.initialize(ss["kanbian_atlas_31"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0020png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_32"]);
+	this.initialize(ss["kanbian_atlas_32"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0020png复制2 = function() {
-	this.initialize(ss["无标题_1_atlas_32"]);
+	this.initialize(ss["kanbian_atlas_32"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0021 = function() {
-	this.initialize(ss["无标题_1_atlas_33"]);
+	this.initialize(ss["kanbian_atlas_33"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0021_1 = function() {
-	this.initialize(ss["无标题_1_atlas_33"]);
+	this.initialize(ss["kanbian_atlas_33"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0021_2 = function() {
-	this.initialize(ss["无标题_1_atlas_34"]);
+	this.initialize(ss["kanbian_atlas_34"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0021_3 = function() {
-	this.initialize(ss["无标题_1_atlas_157"]);
+	this.initialize(ss["kanbian_atlas_157"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0022 = function() {
-	this.initialize(ss["无标题_1_atlas_34"]);
+	this.initialize(ss["kanbian_atlas_34"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0022_1 = function() {
-	this.initialize(ss["无标题_1_atlas_35"]);
+	this.initialize(ss["kanbian_atlas_35"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0022_2 = function() {
-	this.initialize(ss["无标题_1_atlas_35"]);
+	this.initialize(ss["kanbian_atlas_35"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0022png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_36"]);
+	this.initialize(ss["kanbian_atlas_36"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0023 = function() {
-	this.initialize(ss["无标题_1_atlas_36"]);
+	this.initialize(ss["kanbian_atlas_36"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0023_1 = function() {
-	this.initialize(ss["无标题_1_atlas_37"]);
+	this.initialize(ss["kanbian_atlas_37"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0023_2 = function() {
-	this.initialize(ss["无标题_1_atlas_158"]);
+	this.initialize(ss["kanbian_atlas_158"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0023png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_37"]);
+	this.initialize(ss["kanbian_atlas_37"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0024 = function() {
-	this.initialize(ss["无标题_1_atlas_38"]);
+	this.initialize(ss["kanbian_atlas_38"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0024_1 = function() {
-	this.initialize(ss["无标题_1_atlas_38"]);
+	this.initialize(ss["kanbian_atlas_38"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0024png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_39"]);
+	this.initialize(ss["kanbian_atlas_39"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0024png复制2 = function() {
-	this.initialize(ss["无标题_1_atlas_39"]);
+	this.initialize(ss["kanbian_atlas_39"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0025 = function() {
-	this.initialize(ss["无标题_1_atlas_40"]);
+	this.initialize(ss["kanbian_atlas_40"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0025_1 = function() {
-	this.initialize(ss["无标题_1_atlas_40"]);
+	this.initialize(ss["kanbian_atlas_40"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0025_2 = function() {
-	this.initialize(ss["无标题_1_atlas_41"]);
+	this.initialize(ss["kanbian_atlas_41"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0025_3 = function() {
-	this.initialize(ss["无标题_1_atlas_158"]);
+	this.initialize(ss["kanbian_atlas_158"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0026 = function() {
-	this.initialize(ss["无标题_1_atlas_41"]);
+	this.initialize(ss["kanbian_atlas_41"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0026_1 = function() {
-	this.initialize(ss["无标题_1_atlas_42"]);
+	this.initialize(ss["kanbian_atlas_42"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0026_2 = function() {
-	this.initialize(ss["无标题_1_atlas_42"]);
+	this.initialize(ss["kanbian_atlas_42"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0026png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_43"]);
+	this.initialize(ss["kanbian_atlas_43"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0027 = function() {
-	this.initialize(ss["无标题_1_atlas_43"]);
+	this.initialize(ss["kanbian_atlas_43"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0027_1 = function() {
-	this.initialize(ss["无标题_1_atlas_44"]);
+	this.initialize(ss["kanbian_atlas_44"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0027_2 = function() {
-	this.initialize(ss["无标题_1_atlas_44"]);
+	this.initialize(ss["kanbian_atlas_44"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0027_3 = function() {
-	this.initialize(ss["无标题_1_atlas_158"]);
+	this.initialize(ss["kanbian_atlas_158"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0028 = function() {
-	this.initialize(ss["无标题_1_atlas_45"]);
+	this.initialize(ss["kanbian_atlas_45"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0028_1 = function() {
-	this.initialize(ss["无标题_1_atlas_45"]);
+	this.initialize(ss["kanbian_atlas_45"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0028_2 = function() {
-	this.initialize(ss["无标题_1_atlas_46"]);
+	this.initialize(ss["kanbian_atlas_46"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0028png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_46"]);
+	this.initialize(ss["kanbian_atlas_46"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0029 = function() {
-	this.initialize(ss["无标题_1_atlas_47"]);
+	this.initialize(ss["kanbian_atlas_47"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0029_1 = function() {
-	this.initialize(ss["无标题_1_atlas_47"]);
+	this.initialize(ss["kanbian_atlas_47"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0029_2 = function() {
-	this.initialize(ss["无标题_1_atlas_48"]);
+	this.initialize(ss["kanbian_atlas_48"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0029_3 = function() {
-	this.initialize(ss["无标题_1_atlas_158"]);
+	this.initialize(ss["kanbian_atlas_158"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0030 = function() {
-	this.initialize(ss["无标题_1_atlas_48"]);
+	this.initialize(ss["kanbian_atlas_48"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0030_1 = function() {
-	this.initialize(ss["无标题_1_atlas_49"]);
+	this.initialize(ss["kanbian_atlas_49"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0030_2 = function() {
-	this.initialize(ss["无标题_1_atlas_49"]);
+	this.initialize(ss["kanbian_atlas_49"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0030_3 = function() {
-	this.initialize(ss["无标题_1_atlas_158"]);
+	this.initialize(ss["kanbian_atlas_158"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0030png复制 = function() {
-	this.initialize(ss["无标题_1_atlas_50"]);
+	this.initialize(ss["kanbian_atlas_50"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0031 = function() {
-	this.initialize(ss["无标题_1_atlas_50"]);
+	this.initialize(ss["kanbian_atlas_50"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0031_1 = function() {
-	this.initialize(ss["无标题_1_atlas_51"]);
+	this.initialize(ss["kanbian_atlas_51"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0031_2 = function() {
-	this.initialize(ss["无标题_1_atlas_51"]);
+	this.initialize(ss["kanbian_atlas_51"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0032 = function() {
-	this.initialize(ss["无标题_1_atlas_52"]);
+	this.initialize(ss["kanbian_atlas_52"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0032_1 = function() {
-	this.initialize(ss["无标题_1_atlas_52"]);
+	this.initialize(ss["kanbian_atlas_52"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0032_2 = function() {
-	this.initialize(ss["无标题_1_atlas_53"]);
+	this.initialize(ss["kanbian_atlas_53"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0032_3 = function() {
-	this.initialize(ss["无标题_1_atlas_53"]);
+	this.initialize(ss["kanbian_atlas_53"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0033 = function() {
-	this.initialize(ss["无标题_1_atlas_54"]);
+	this.initialize(ss["kanbian_atlas_54"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0033_1 = function() {
-	this.initialize(ss["无标题_1_atlas_54"]);
+	this.initialize(ss["kanbian_atlas_54"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0033_2 = function() {
-	this.initialize(ss["无标题_1_atlas_55"]);
+	this.initialize(ss["kanbian_atlas_55"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0034 = function() {
-	this.initialize(ss["无标题_1_atlas_55"]);
+	this.initialize(ss["kanbian_atlas_55"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0034_1 = function() {
-	this.initialize(ss["无标题_1_atlas_56"]);
+	this.initialize(ss["kanbian_atlas_56"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0034_2 = function() {
-	this.initialize(ss["无标题_1_atlas_56"]);
+	this.initialize(ss["kanbian_atlas_56"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0034_3 = function() {
-	this.initialize(ss["无标题_1_atlas_57"]);
+	this.initialize(ss["kanbian_atlas_57"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0035 = function() {
-	this.initialize(ss["无标题_1_atlas_57"]);
+	this.initialize(ss["kanbian_atlas_57"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0035_1 = function() {
-	this.initialize(ss["无标题_1_atlas_58"]);
+	this.initialize(ss["kanbian_atlas_58"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0035_2 = function() {
-	this.initialize(ss["无标题_1_atlas_58"]);
+	this.initialize(ss["kanbian_atlas_58"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0036 = function() {
-	this.initialize(ss["无标题_1_atlas_59"]);
+	this.initialize(ss["kanbian_atlas_59"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0036_1 = function() {
-	this.initialize(ss["无标题_1_atlas_59"]);
+	this.initialize(ss["kanbian_atlas_59"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0036_2 = function() {
-	this.initialize(ss["无标题_1_atlas_60"]);
+	this.initialize(ss["kanbian_atlas_60"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0036_3 = function() {
-	this.initialize(ss["无标题_1_atlas_60"]);
+	this.initialize(ss["kanbian_atlas_60"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0037 = function() {
-	this.initialize(ss["无标题_1_atlas_61"]);
+	this.initialize(ss["kanbian_atlas_61"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0037_1 = function() {
-	this.initialize(ss["无标题_1_atlas_61"]);
+	this.initialize(ss["kanbian_atlas_61"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0037_2 = function() {
-	this.initialize(ss["无标题_1_atlas_62"]);
+	this.initialize(ss["kanbian_atlas_62"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0038 = function() {
-	this.initialize(ss["无标题_1_atlas_62"]);
+	this.initialize(ss["kanbian_atlas_62"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0038_1 = function() {
-	this.initialize(ss["无标题_1_atlas_63"]);
+	this.initialize(ss["kanbian_atlas_63"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0038_2 = function() {
-	this.initialize(ss["无标题_1_atlas_63"]);
+	this.initialize(ss["kanbian_atlas_63"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0038_3 = function() {
-	this.initialize(ss["无标题_1_atlas_64"]);
+	this.initialize(ss["kanbian_atlas_64"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0039 = function() {
-	this.initialize(ss["无标题_1_atlas_64"]);
+	this.initialize(ss["kanbian_atlas_64"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0039_1 = function() {
-	this.initialize(ss["无标题_1_atlas_65"]);
+	this.initialize(ss["kanbian_atlas_65"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0039_2 = function() {
-	this.initialize(ss["无标题_1_atlas_65"]);
+	this.initialize(ss["kanbian_atlas_65"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0040 = function() {
-	this.initialize(ss["无标题_1_atlas_66"]);
+	this.initialize(ss["kanbian_atlas_66"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0040_1 = function() {
-	this.initialize(ss["无标题_1_atlas_66"]);
+	this.initialize(ss["kanbian_atlas_66"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0040_2 = function() {
-	this.initialize(ss["无标题_1_atlas_67"]);
+	this.initialize(ss["kanbian_atlas_67"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0040_3 = function() {
-	this.initialize(ss["无标题_1_atlas_67"]);
+	this.initialize(ss["kanbian_atlas_67"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0041 = function() {
-	this.initialize(ss["无标题_1_atlas_68"]);
+	this.initialize(ss["kanbian_atlas_68"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0041_1 = function() {
-	this.initialize(ss["无标题_1_atlas_68"]);
+	this.initialize(ss["kanbian_atlas_68"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0041_2 = function() {
-	this.initialize(ss["无标题_1_atlas_69"]);
+	this.initialize(ss["kanbian_atlas_69"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0042 = function() {
-	this.initialize(ss["无标题_1_atlas_69"]);
+	this.initialize(ss["kanbian_atlas_69"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0042_1 = function() {
-	this.initialize(ss["无标题_1_atlas_70"]);
+	this.initialize(ss["kanbian_atlas_70"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0042_2 = function() {
-	this.initialize(ss["无标题_1_atlas_70"]);
+	this.initialize(ss["kanbian_atlas_70"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0042_3 = function() {
-	this.initialize(ss["无标题_1_atlas_71"]);
+	this.initialize(ss["kanbian_atlas_71"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0043 = function() {
-	this.initialize(ss["无标题_1_atlas_71"]);
+	this.initialize(ss["kanbian_atlas_71"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0043_1 = function() {
-	this.initialize(ss["无标题_1_atlas_72"]);
+	this.initialize(ss["kanbian_atlas_72"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0043_2 = function() {
-	this.initialize(ss["无标题_1_atlas_72"]);
+	this.initialize(ss["kanbian_atlas_72"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0044 = function() {
-	this.initialize(ss["无标题_1_atlas_73"]);
+	this.initialize(ss["kanbian_atlas_73"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0044_1 = function() {
-	this.initialize(ss["无标题_1_atlas_73"]);
+	this.initialize(ss["kanbian_atlas_73"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0044_2 = function() {
-	this.initialize(ss["无标题_1_atlas_74"]);
+	this.initialize(ss["kanbian_atlas_74"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0044_3 = function() {
-	this.initialize(ss["无标题_1_atlas_74"]);
+	this.initialize(ss["kanbian_atlas_74"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0045 = function() {
-	this.initialize(ss["无标题_1_atlas_75"]);
+	this.initialize(ss["kanbian_atlas_75"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0045_1 = function() {
-	this.initialize(ss["无标题_1_atlas_75"]);
+	this.initialize(ss["kanbian_atlas_75"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0045_2 = function() {
-	this.initialize(ss["无标题_1_atlas_76"]);
+	this.initialize(ss["kanbian_atlas_76"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0046 = function() {
-	this.initialize(ss["无标题_1_atlas_76"]);
+	this.initialize(ss["kanbian_atlas_76"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0046_1 = function() {
-	this.initialize(ss["无标题_1_atlas_77"]);
+	this.initialize(ss["kanbian_atlas_77"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0046_2 = function() {
-	this.initialize(ss["无标题_1_atlas_77"]);
+	this.initialize(ss["kanbian_atlas_77"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0046_3 = function() {
-	this.initialize(ss["无标题_1_atlas_78"]);
+	this.initialize(ss["kanbian_atlas_78"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0047 = function() {
-	this.initialize(ss["无标题_1_atlas_78"]);
+	this.initialize(ss["kanbian_atlas_78"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0047_1 = function() {
-	this.initialize(ss["无标题_1_atlas_79"]);
+	this.initialize(ss["kanbian_atlas_79"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0047_2 = function() {
-	this.initialize(ss["无标题_1_atlas_79"]);
+	this.initialize(ss["kanbian_atlas_79"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0048 = function() {
-	this.initialize(ss["无标题_1_atlas_80"]);
+	this.initialize(ss["kanbian_atlas_80"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0048_1 = function() {
-	this.initialize(ss["无标题_1_atlas_80"]);
+	this.initialize(ss["kanbian_atlas_80"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0048_2 = function() {
-	this.initialize(ss["无标题_1_atlas_81"]);
+	this.initialize(ss["kanbian_atlas_81"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0048_3 = function() {
-	this.initialize(ss["无标题_1_atlas_81"]);
+	this.initialize(ss["kanbian_atlas_81"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0049 = function() {
-	this.initialize(ss["无标题_1_atlas_82"]);
+	this.initialize(ss["kanbian_atlas_82"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0049_1 = function() {
-	this.initialize(ss["无标题_1_atlas_82"]);
+	this.initialize(ss["kanbian_atlas_82"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0050 = function() {
-	this.initialize(ss["无标题_1_atlas_83"]);
+	this.initialize(ss["kanbian_atlas_83"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0050_1 = function() {
-	this.initialize(ss["无标题_1_atlas_83"]);
+	this.initialize(ss["kanbian_atlas_83"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0050_2 = function() {
-	this.initialize(ss["无标题_1_atlas_84"]);
+	this.initialize(ss["kanbian_atlas_84"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0051 = function() {
-	this.initialize(ss["无标题_1_atlas_84"]);
+	this.initialize(ss["kanbian_atlas_84"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0052 = function() {
-	this.initialize(ss["无标题_1_atlas_85"]);
+	this.initialize(ss["kanbian_atlas_85"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0052_1 = function() {
-	this.initialize(ss["无标题_1_atlas_85"]);
+	this.initialize(ss["kanbian_atlas_85"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0052_2 = function() {
-	this.initialize(ss["无标题_1_atlas_86"]);
+	this.initialize(ss["kanbian_atlas_86"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0053 = function() {
-	this.initialize(ss["无标题_1_atlas_86"]);
+	this.initialize(ss["kanbian_atlas_86"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0054 = function() {
-	this.initialize(ss["无标题_1_atlas_87"]);
+	this.initialize(ss["kanbian_atlas_87"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0054_1 = function() {
-	this.initialize(ss["无标题_1_atlas_87"]);
+	this.initialize(ss["kanbian_atlas_87"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0054_2 = function() {
-	this.initialize(ss["无标题_1_atlas_88"]);
+	this.initialize(ss["kanbian_atlas_88"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0055 = function() {
-	this.initialize(ss["无标题_1_atlas_88"]);
+	this.initialize(ss["kanbian_atlas_88"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0056 = function() {
-	this.initialize(ss["无标题_1_atlas_89"]);
+	this.initialize(ss["kanbian_atlas_89"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0056_1 = function() {
-	this.initialize(ss["无标题_1_atlas_89"]);
+	this.initialize(ss["kanbian_atlas_89"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0056_2 = function() {
-	this.initialize(ss["无标题_1_atlas_90"]);
+	this.initialize(ss["kanbian_atlas_90"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0057 = function() {
-	this.initialize(ss["无标题_1_atlas_90"]);
+	this.initialize(ss["kanbian_atlas_90"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0058 = function() {
-	this.initialize(ss["无标题_1_atlas_91"]);
+	this.initialize(ss["kanbian_atlas_91"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0058_1 = function() {
-	this.initialize(ss["无标题_1_atlas_91"]);
+	this.initialize(ss["kanbian_atlas_91"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0058_2 = function() {
-	this.initialize(ss["无标题_1_atlas_92"]);
+	this.initialize(ss["kanbian_atlas_92"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0059 = function() {
-	this.initialize(ss["无标题_1_atlas_92"]);
+	this.initialize(ss["kanbian_atlas_92"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0060 = function() {
-	this.initialize(ss["无标题_1_atlas_93"]);
+	this.initialize(ss["kanbian_atlas_93"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0060_1 = function() {
-	this.initialize(ss["无标题_1_atlas_93"]);
+	this.initialize(ss["kanbian_atlas_93"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0060_2 = function() {
-	this.initialize(ss["无标题_1_atlas_94"]);
+	this.initialize(ss["kanbian_atlas_94"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0061 = function() {
-	this.initialize(ss["无标题_1_atlas_94"]);
+	this.initialize(ss["kanbian_atlas_94"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0062 = function() {
-	this.initialize(ss["无标题_1_atlas_95"]);
+	this.initialize(ss["kanbian_atlas_95"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0062_1 = function() {
-	this.initialize(ss["无标题_1_atlas_95"]);
+	this.initialize(ss["kanbian_atlas_95"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0062_2 = function() {
-	this.initialize(ss["无标题_1_atlas_96"]);
+	this.initialize(ss["kanbian_atlas_96"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0063 = function() {
-	this.initialize(ss["无标题_1_atlas_96"]);
+	this.initialize(ss["kanbian_atlas_96"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0064 = function() {
-	this.initialize(ss["无标题_1_atlas_97"]);
+	this.initialize(ss["kanbian_atlas_97"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0064_1 = function() {
-	this.initialize(ss["无标题_1_atlas_97"]);
+	this.initialize(ss["kanbian_atlas_97"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0064_2 = function() {
-	this.initialize(ss["无标题_1_atlas_98"]);
+	this.initialize(ss["kanbian_atlas_98"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0065 = function() {
-	this.initialize(ss["无标题_1_atlas_98"]);
+	this.initialize(ss["kanbian_atlas_98"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0066 = function() {
-	this.initialize(ss["无标题_1_atlas_99"]);
+	this.initialize(ss["kanbian_atlas_99"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0066_1 = function() {
-	this.initialize(ss["无标题_1_atlas_99"]);
+	this.initialize(ss["kanbian_atlas_99"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0066_2 = function() {
-	this.initialize(ss["无标题_1_atlas_100"]);
+	this.initialize(ss["kanbian_atlas_100"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0067 = function() {
-	this.initialize(ss["无标题_1_atlas_100"]);
+	this.initialize(ss["kanbian_atlas_100"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0068 = function() {
-	this.initialize(ss["无标题_1_atlas_101"]);
+	this.initialize(ss["kanbian_atlas_101"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0068_1 = function() {
-	this.initialize(ss["无标题_1_atlas_101"]);
+	this.initialize(ss["kanbian_atlas_101"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0068_2 = function() {
-	this.initialize(ss["无标题_1_atlas_102"]);
+	this.initialize(ss["kanbian_atlas_102"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0069 = function() {
-	this.initialize(ss["无标题_1_atlas_102"]);
+	this.initialize(ss["kanbian_atlas_102"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0070 = function() {
-	this.initialize(ss["无标题_1_atlas_103"]);
+	this.initialize(ss["kanbian_atlas_103"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0070_1 = function() {
-	this.initialize(ss["无标题_1_atlas_103"]);
+	this.initialize(ss["kanbian_atlas_103"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0070_2 = function() {
-	this.initialize(ss["无标题_1_atlas_104"]);
+	this.initialize(ss["kanbian_atlas_104"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0071 = function() {
-	this.initialize(ss["无标题_1_atlas_104"]);
+	this.initialize(ss["kanbian_atlas_104"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0072 = function() {
-	this.initialize(ss["无标题_1_atlas_105"]);
+	this.initialize(ss["kanbian_atlas_105"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0072_1 = function() {
-	this.initialize(ss["无标题_1_atlas_105"]);
+	this.initialize(ss["kanbian_atlas_105"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0072_2 = function() {
-	this.initialize(ss["无标题_1_atlas_106"]);
+	this.initialize(ss["kanbian_atlas_106"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0073 = function() {
-	this.initialize(ss["无标题_1_atlas_106"]);
+	this.initialize(ss["kanbian_atlas_106"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0074 = function() {
-	this.initialize(ss["无标题_1_atlas_107"]);
+	this.initialize(ss["kanbian_atlas_107"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0074_1 = function() {
-	this.initialize(ss["无标题_1_atlas_107"]);
+	this.initialize(ss["kanbian_atlas_107"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0074_2 = function() {
-	this.initialize(ss["无标题_1_atlas_108"]);
+	this.initialize(ss["kanbian_atlas_108"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0075 = function() {
-	this.initialize(ss["无标题_1_atlas_108"]);
+	this.initialize(ss["kanbian_atlas_108"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0076 = function() {
-	this.initialize(ss["无标题_1_atlas_109"]);
+	this.initialize(ss["kanbian_atlas_109"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0076_1 = function() {
-	this.initialize(ss["无标题_1_atlas_109"]);
+	this.initialize(ss["kanbian_atlas_109"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0076_2 = function() {
-	this.initialize(ss["无标题_1_atlas_110"]);
+	this.initialize(ss["kanbian_atlas_110"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0077 = function() {
-	this.initialize(ss["无标题_1_atlas_110"]);
+	this.initialize(ss["kanbian_atlas_110"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0078 = function() {
-	this.initialize(ss["无标题_1_atlas_111"]);
+	this.initialize(ss["kanbian_atlas_111"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0078_1 = function() {
-	this.initialize(ss["无标题_1_atlas_111"]);
+	this.initialize(ss["kanbian_atlas_111"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0078_2 = function() {
-	this.initialize(ss["无标题_1_atlas_112"]);
+	this.initialize(ss["kanbian_atlas_112"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0079 = function() {
-	this.initialize(ss["无标题_1_atlas_112"]);
+	this.initialize(ss["kanbian_atlas_112"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0080 = function() {
-	this.initialize(ss["无标题_1_atlas_113"]);
+	this.initialize(ss["kanbian_atlas_113"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0080_1 = function() {
-	this.initialize(ss["无标题_1_atlas_113"]);
+	this.initialize(ss["kanbian_atlas_113"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0080_2 = function() {
-	this.initialize(ss["无标题_1_atlas_114"]);
+	this.initialize(ss["kanbian_atlas_114"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0081 = function() {
-	this.initialize(ss["无标题_1_atlas_114"]);
+	this.initialize(ss["kanbian_atlas_114"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0082 = function() {
-	this.initialize(ss["无标题_1_atlas_115"]);
+	this.initialize(ss["kanbian_atlas_115"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0082_1 = function() {
-	this.initialize(ss["无标题_1_atlas_115"]);
+	this.initialize(ss["kanbian_atlas_115"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0082_2 = function() {
-	this.initialize(ss["无标题_1_atlas_116"]);
+	this.initialize(ss["kanbian_atlas_116"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0083 = function() {
-	this.initialize(ss["无标题_1_atlas_116"]);
+	this.initialize(ss["kanbian_atlas_116"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0084 = function() {
-	this.initialize(ss["无标题_1_atlas_117"]);
+	this.initialize(ss["kanbian_atlas_117"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0084_1 = function() {
-	this.initialize(ss["无标题_1_atlas_117"]);
+	this.initialize(ss["kanbian_atlas_117"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0084_2 = function() {
-	this.initialize(ss["无标题_1_atlas_118"]);
+	this.initialize(ss["kanbian_atlas_118"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0085 = function() {
-	this.initialize(ss["无标题_1_atlas_118"]);
+	this.initialize(ss["kanbian_atlas_118"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0086 = function() {
-	this.initialize(ss["无标题_1_atlas_119"]);
+	this.initialize(ss["kanbian_atlas_119"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0086_1 = function() {
-	this.initialize(ss["无标题_1_atlas_119"]);
+	this.initialize(ss["kanbian_atlas_119"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0086_2 = function() {
-	this.initialize(ss["无标题_1_atlas_120"]);
+	this.initialize(ss["kanbian_atlas_120"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0087 = function() {
-	this.initialize(ss["无标题_1_atlas_120"]);
+	this.initialize(ss["kanbian_atlas_120"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0088 = function() {
-	this.initialize(ss["无标题_1_atlas_121"]);
+	this.initialize(ss["kanbian_atlas_121"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0088_1 = function() {
-	this.initialize(ss["无标题_1_atlas_121"]);
+	this.initialize(ss["kanbian_atlas_121"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0088_2 = function() {
-	this.initialize(ss["无标题_1_atlas_122"]);
+	this.initialize(ss["kanbian_atlas_122"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0089 = function() {
-	this.initialize(ss["无标题_1_atlas_122"]);
+	this.initialize(ss["kanbian_atlas_122"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0090 = function() {
-	this.initialize(ss["无标题_1_atlas_123"]);
+	this.initialize(ss["kanbian_atlas_123"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0090_1 = function() {
-	this.initialize(ss["无标题_1_atlas_123"]);
+	this.initialize(ss["kanbian_atlas_123"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0090_2 = function() {
-	this.initialize(ss["无标题_1_atlas_124"]);
+	this.initialize(ss["kanbian_atlas_124"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0091 = function() {
-	this.initialize(ss["无标题_1_atlas_124"]);
+	this.initialize(ss["kanbian_atlas_124"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0092 = function() {
-	this.initialize(ss["无标题_1_atlas_125"]);
+	this.initialize(ss["kanbian_atlas_125"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0092_1 = function() {
-	this.initialize(ss["无标题_1_atlas_125"]);
+	this.initialize(ss["kanbian_atlas_125"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0092_2 = function() {
-	this.initialize(ss["无标题_1_atlas_126"]);
+	this.initialize(ss["kanbian_atlas_126"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0094 = function() {
-	this.initialize(ss["无标题_1_atlas_126"]);
+	this.initialize(ss["kanbian_atlas_126"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0094_1 = function() {
-	this.initialize(ss["无标题_1_atlas_127"]);
+	this.initialize(ss["kanbian_atlas_127"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0096 = function() {
-	this.initialize(ss["无标题_1_atlas_127"]);
+	this.initialize(ss["kanbian_atlas_127"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0096_1 = function() {
-	this.initialize(ss["无标题_1_atlas_128"]);
+	this.initialize(ss["kanbian_atlas_128"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0098 = function() {
-	this.initialize(ss["无标题_1_atlas_128"]);
+	this.initialize(ss["kanbian_atlas_128"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0098_1 = function() {
-	this.initialize(ss["无标题_1_atlas_129"]);
+	this.initialize(ss["kanbian_atlas_129"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0100 = function() {
-	this.initialize(ss["无标题_1_atlas_129"]);
+	this.initialize(ss["kanbian_atlas_129"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0100_1 = function() {
-	this.initialize(ss["无标题_1_atlas_130"]);
+	this.initialize(ss["kanbian_atlas_130"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0102 = function() {
-	this.initialize(ss["无标题_1_atlas_130"]);
+	this.initialize(ss["kanbian_atlas_130"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0102_1 = function() {
-	this.initialize(ss["无标题_1_atlas_131"]);
+	this.initialize(ss["kanbian_atlas_131"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0104 = function() {
-	this.initialize(ss["无标题_1_atlas_131"]);
+	this.initialize(ss["kanbian_atlas_131"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0104_1 = function() {
-	this.initialize(ss["无标题_1_atlas_132"]);
+	this.initialize(ss["kanbian_atlas_132"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0106 = function() {
-	this.initialize(ss["无标题_1_atlas_132"]);
+	this.initialize(ss["kanbian_atlas_132"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0106_1 = function() {
-	this.initialize(ss["无标题_1_atlas_133"]);
+	this.initialize(ss["kanbian_atlas_133"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0108 = function() {
-	this.initialize(ss["无标题_1_atlas_133"]);
+	this.initialize(ss["kanbian_atlas_133"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0108_1 = function() {
-	this.initialize(ss["无标题_1_atlas_134"]);
+	this.initialize(ss["kanbian_atlas_134"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0110 = function() {
-	this.initialize(ss["无标题_1_atlas_134"]);
+	this.initialize(ss["kanbian_atlas_134"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0110_1 = function() {
-	this.initialize(ss["无标题_1_atlas_135"]);
+	this.initialize(ss["kanbian_atlas_135"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0112 = function() {
-	this.initialize(ss["无标题_1_atlas_135"]);
+	this.initialize(ss["kanbian_atlas_135"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0112_1 = function() {
-	this.initialize(ss["无标题_1_atlas_136"]);
+	this.initialize(ss["kanbian_atlas_136"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0114 = function() {
-	this.initialize(ss["无标题_1_atlas_136"]);
+	this.initialize(ss["kanbian_atlas_136"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0114_1 = function() {
-	this.initialize(ss["无标题_1_atlas_137"]);
+	this.initialize(ss["kanbian_atlas_137"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0116 = function() {
-	this.initialize(ss["无标题_1_atlas_137"]);
+	this.initialize(ss["kanbian_atlas_137"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0116_1 = function() {
-	this.initialize(ss["无标题_1_atlas_138"]);
+	this.initialize(ss["kanbian_atlas_138"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0118 = function() {
-	this.initialize(ss["无标题_1_atlas_138"]);
+	this.initialize(ss["kanbian_atlas_138"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0118_1 = function() {
-	this.initialize(ss["无标题_1_atlas_139"]);
+	this.initialize(ss["kanbian_atlas_139"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0120 = function() {
-	this.initialize(ss["无标题_1_atlas_139"]);
+	this.initialize(ss["kanbian_atlas_139"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0120_1 = function() {
-	this.initialize(ss["无标题_1_atlas_140"]);
+	this.initialize(ss["kanbian_atlas_140"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0122 = function() {
-	this.initialize(ss["无标题_1_atlas_140"]);
+	this.initialize(ss["kanbian_atlas_140"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0122_1 = function() {
-	this.initialize(ss["无标题_1_atlas_141"]);
+	this.initialize(ss["kanbian_atlas_141"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0124 = function() {
-	this.initialize(ss["无标题_1_atlas_141"]);
+	this.initialize(ss["kanbian_atlas_141"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0124_1 = function() {
-	this.initialize(ss["无标题_1_atlas_142"]);
+	this.initialize(ss["kanbian_atlas_142"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0126 = function() {
-	this.initialize(ss["无标题_1_atlas_142"]);
+	this.initialize(ss["kanbian_atlas_142"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0126_1 = function() {
-	this.initialize(ss["无标题_1_atlas_143"]);
+	this.initialize(ss["kanbian_atlas_143"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0128 = function() {
-	this.initialize(ss["无标题_1_atlas_143"]);
+	this.initialize(ss["kanbian_atlas_143"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0128_1 = function() {
-	this.initialize(ss["无标题_1_atlas_144"]);
+	this.initialize(ss["kanbian_atlas_144"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0130 = function() {
-	this.initialize(ss["无标题_1_atlas_144"]);
+	this.initialize(ss["kanbian_atlas_144"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0132 = function() {
-	this.initialize(ss["无标题_1_atlas_145"]);
+	this.initialize(ss["kanbian_atlas_145"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0134 = function() {
-	this.initialize(ss["无标题_1_atlas_145"]);
+	this.initialize(ss["kanbian_atlas_145"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0136 = function() {
-	this.initialize(ss["无标题_1_atlas_146"]);
+	this.initialize(ss["kanbian_atlas_146"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0138 = function() {
-	this.initialize(ss["无标题_1_atlas_146"]);
+	this.initialize(ss["kanbian_atlas_146"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0140 = function() {
-	this.initialize(ss["无标题_1_atlas_147"]);
+	this.initialize(ss["kanbian_atlas_147"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0142 = function() {
-	this.initialize(ss["无标题_1_atlas_147"]);
+	this.initialize(ss["kanbian_atlas_147"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0210 = function() {
-	this.initialize(ss["无标题_1_atlas_148"]);
+	this.initialize(ss["kanbian_atlas_148"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0212 = function() {
-	this.initialize(ss["无标题_1_atlas_148"]);
+	this.initialize(ss["kanbian_atlas_148"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0215 = function() {
-	this.initialize(ss["无标题_1_atlas_149"]);
+	this.initialize(ss["kanbian_atlas_149"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0217 = function() {
-	this.initialize(ss["无标题_1_atlas_149"]);
+	this.initialize(ss["kanbian_atlas_149"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0219 = function() {
-	this.initialize(ss["无标题_1_atlas_150"]);
+	this.initialize(ss["kanbian_atlas_150"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0221 = function() {
-	this.initialize(ss["无标题_1_atlas_150"]);
+	this.initialize(ss["kanbian_atlas_150"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0224 = function() {
-	this.initialize(ss["无标题_1_atlas_151"]);
+	this.initialize(ss["kanbian_atlas_151"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0226 = function() {
-	this.initialize(ss["无标题_1_atlas_151"]);
+	this.initialize(ss["kanbian_atlas_151"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0228 = function() {
-	this.initialize(ss["无标题_1_atlas_152"]);
+	this.initialize(ss["kanbian_atlas_152"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0230 = function() {
-	this.initialize(ss["无标题_1_atlas_152"]);
+	this.initialize(ss["kanbian_atlas_152"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0232 = function() {
-	this.initialize(ss["无标题_1_atlas_153"]);
+	this.initialize(ss["kanbian_atlas_153"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0234 = function() {
-	this.initialize(ss["无标题_1_atlas_153"]);
+	this.initialize(ss["kanbian_atlas_153"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0237 = function() {
-	this.initialize(ss["无标题_1_atlas_154"]);
+	this.initialize(ss["kanbian_atlas_154"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0239 = function() {
-	this.initialize(ss["无标题_1_atlas_154"]);
+	this.initialize(ss["kanbian_atlas_154"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._0241 = function() {
-	this.initialize(ss["无标题_1_atlas_155"]);
+	this.initialize(ss["kanbian_atlas_155"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.anniu = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(71);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.bc1 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.bc2 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.bg = function() {
-	this.initialize(ss["无标题_1_atlas_158"]);
+	this.initialize(ss["kanbian_atlas_158"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.bg_1 = function() {
-	this.initialize(ss["无标题_1_atlas_156"]);
+	this.initialize(ss["kanbian_atlas_156"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.bgpng复制 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(72);
 }).prototype = p = new cjs.Sprite();
 
 
 
+(lib.bgm = function() {
+	this.initialize(img.bgm);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,4001,1459);
+
+
 (lib.biao = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(73);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.bihuang = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(74);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.datou = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(75);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.dong2 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(76);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.eee1 = function() {
-	this.initialize(ss["无标题_1_atlas_156"]);
+	this.initialize(ss["kanbian_atlas_156"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.fechuan = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(77);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.guangxian = function() {
-	this.initialize(ss["无标题_1_atlas_"]);
+	this.initialize(ss["kanbian_atlas_"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.h1 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(78);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.h2 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(79);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.heying副本 = function() {
-	this.initialize(ss["无标题_1_atlas_155"]);
+	this.initialize(ss["kanbian_atlas_155"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.jiantu = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(80);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.jusang = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.luan = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(81);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.mao = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(82);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.ren = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.renpng复制 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(83);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.ss = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(84);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.taishou11 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.taishou12 = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.tongkong = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(85);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.tou = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(86);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.uuy2 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(87);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.yanbai = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(88);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.yanbaiz = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(89);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.yanjing = function() {
-	this.initialize(ss["无标题_1_atlas_160"]);
+	this.initialize(ss["kanbian_atlas_160"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.yanjingz = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(90);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.yu = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(91);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.z1 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(92);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.z2 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(93);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.zui = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(94);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.位图524 = function() {
-	this.initialize(ss["无标题_1_atlas_159"]);
+	this.initialize(ss["kanbian_atlas_159"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.位图525 = function() {
-	this.initialize(ss["无标题_1_atlas_158"]);
+	this.initialize(ss["kanbian_atlas_158"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.位图526 = function() {
-	this.initialize(ss["无标题_1_atlas_156"]);
+	this.initialize(ss["kanbian_atlas_156"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.位图527 = function() {
-	this.initialize(ss["无标题_1_atlas_157"]);
+	this.initialize(ss["kanbian_atlas_157"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.位图528 = function() {
-	this.initialize(ss["无标题_1_atlas_156"]);
+	this.initialize(ss["kanbian_atlas_156"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.创造力 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(95);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.动1 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(96);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.动2 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(97);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.图层41 = function() {
-	this.initialize(ss["无标题_1_atlas_158"]);
+	this.initialize(ss["kanbian_atlas_158"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.大五人格 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(98);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.形状1 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(99);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.形状11拷贝2 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(100);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.形状12拷贝 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(101);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.形状20 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(102);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.数学能力 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(103);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.最优化倾向 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(104);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.椭圆1拷贝 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(105);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.职业兴趣 = function() {
-	this.initialize(ss["无标题_1_atlas_161"]);
+	this.initialize(ss["kanbian_atlas_161"]);
 	this.gotoAndStop(106);
 }).prototype = p = new cjs.Sprite();
-
-
-
-(lib.蓝色简约扁平化太空星球banner = function() {
-	this.initialize(img.蓝色简约扁平化太空星球banner);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,4001,1459);// helper functions:
+// helper functions:
 
 function mc_symbol_clone() {
 	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop));
@@ -5217,7 +5217,7 @@ p.nominalBounds = new cjs.Rectangle(-888.9,-467,1778,934);
 	this.initialize(mode,startPosition,loop,{});
 
 	// 图层_1
-	this.instance = new lib.蓝色简约扁平化太空星球banner();
+	this.instance = new lib.bgm();
 	this.instance.setTransform(-335,-408,0.5491,0.5491);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -6151,7 +6151,7 @@ p.nominalBounds = new cjs.Rectangle(-32.7,-18.8,45.800000000000004,45);
 
 
 // stage content:
-(lib.无标题1 = function(mode,startPosition,loop) {
+(lib.zonghe = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
@@ -6170,6 +6170,7 @@ p.nominalBounds = new cjs.Rectangle(-32.7,-18.8,45.800000000000004,45);
 		
 		function fl_ClickToGoToAndPlayFromFrame_27()
 		{
+			createjs.Sound.play('bgm');
 			this.gotoAndPlay(202);
 		}
 	}
@@ -6192,6 +6193,8 @@ p.nominalBounds = new cjs.Rectangle(-32.7,-18.8,45.800000000000004,45);
 		
 		function fl_ClickToGoToAndPlayFromFrame_7()
 		{
+			createjs.Sound.stop('bgm');
+			createjs.Sound.play('bgm2');
 			this.gotoAndPlay(307);
 		}
 	}
@@ -8126,7 +8129,7 @@ p.nominalBounds = new cjs.Rectangle(-32.7,-18.8,45.800000000000004,45);
 	this.instance_433.setTransform(1172.75,250.2,0.5,0.5);
 
 	this.instance_434 = new lib.jiantu();
-	this.instance_434.setTransform(1160,286,0.3576,0.3576);
+	this.instance_434.setTransform(1160,274,0.3576,0.3576);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_434},{t:this.instance_433}]},170).to({state:[]},34).wait(1826));
 
@@ -8685,168 +8688,168 @@ lib.properties = {
 		{src:"images/CachedBmp_68.png", id:"CachedBmp_68"},
 		{src:"images/CachedBmp_67.png", id:"CachedBmp_67"},
 		{src:"images/CachedBmp_2.png", id:"CachedBmp_2"},
-		{src:"images/蓝色简约扁平化太空星球banner.png", id:"蓝色简约扁平化太空星球banner"},
-		{src:"images/无标题_1_atlas_.png", id:"无标题_1_atlas_"},
-		{src:"images/无标题_1_atlas_2.png", id:"无标题_1_atlas_2"},
-		{src:"images/无标题_1_atlas_3.png", id:"无标题_1_atlas_3"},
-		{src:"images/无标题_1_atlas_4.png", id:"无标题_1_atlas_4"},
-		{src:"images/无标题_1_atlas_5.png", id:"无标题_1_atlas_5"},
-		{src:"images/无标题_1_atlas_6.png", id:"无标题_1_atlas_6"},
-		{src:"images/无标题_1_atlas_7.png", id:"无标题_1_atlas_7"},
-		{src:"images/无标题_1_atlas_8.png", id:"无标题_1_atlas_8"},
-		{src:"images/无标题_1_atlas_9.png", id:"无标题_1_atlas_9"},
-		{src:"images/无标题_1_atlas_10.png", id:"无标题_1_atlas_10"},
-		{src:"images/无标题_1_atlas_11.png", id:"无标题_1_atlas_11"},
-		{src:"images/无标题_1_atlas_12.png", id:"无标题_1_atlas_12"},
-		{src:"images/无标题_1_atlas_13.png", id:"无标题_1_atlas_13"},
-		{src:"images/无标题_1_atlas_14.png", id:"无标题_1_atlas_14"},
-		{src:"images/无标题_1_atlas_15.png", id:"无标题_1_atlas_15"},
-		{src:"images/无标题_1_atlas_16.png", id:"无标题_1_atlas_16"},
-		{src:"images/无标题_1_atlas_17.png", id:"无标题_1_atlas_17"},
-		{src:"images/无标题_1_atlas_18.png", id:"无标题_1_atlas_18"},
-		{src:"images/无标题_1_atlas_19.png", id:"无标题_1_atlas_19"},
-		{src:"images/无标题_1_atlas_20.png", id:"无标题_1_atlas_20"},
-		{src:"images/无标题_1_atlas_21.png", id:"无标题_1_atlas_21"},
-		{src:"images/无标题_1_atlas_22.png", id:"无标题_1_atlas_22"},
-		{src:"images/无标题_1_atlas_23.png", id:"无标题_1_atlas_23"},
-		{src:"images/无标题_1_atlas_24.png", id:"无标题_1_atlas_24"},
-		{src:"images/无标题_1_atlas_25.png", id:"无标题_1_atlas_25"},
-		{src:"images/无标题_1_atlas_26.png", id:"无标题_1_atlas_26"},
-		{src:"images/无标题_1_atlas_27.png", id:"无标题_1_atlas_27"},
-		{src:"images/无标题_1_atlas_28.png", id:"无标题_1_atlas_28"},
-		{src:"images/无标题_1_atlas_29.png", id:"无标题_1_atlas_29"},
-		{src:"images/无标题_1_atlas_30.png", id:"无标题_1_atlas_30"},
-		{src:"images/无标题_1_atlas_31.png", id:"无标题_1_atlas_31"},
-		{src:"images/无标题_1_atlas_32.png", id:"无标题_1_atlas_32"},
-		{src:"images/无标题_1_atlas_33.png", id:"无标题_1_atlas_33"},
-		{src:"images/无标题_1_atlas_34.png", id:"无标题_1_atlas_34"},
-		{src:"images/无标题_1_atlas_35.png", id:"无标题_1_atlas_35"},
-		{src:"images/无标题_1_atlas_36.png", id:"无标题_1_atlas_36"},
-		{src:"images/无标题_1_atlas_37.png", id:"无标题_1_atlas_37"},
-		{src:"images/无标题_1_atlas_38.png", id:"无标题_1_atlas_38"},
-		{src:"images/无标题_1_atlas_39.png", id:"无标题_1_atlas_39"},
-		{src:"images/无标题_1_atlas_40.png", id:"无标题_1_atlas_40"},
-		{src:"images/无标题_1_atlas_41.png", id:"无标题_1_atlas_41"},
-		{src:"images/无标题_1_atlas_42.png", id:"无标题_1_atlas_42"},
-		{src:"images/无标题_1_atlas_43.png", id:"无标题_1_atlas_43"},
-		{src:"images/无标题_1_atlas_44.png", id:"无标题_1_atlas_44"},
-		{src:"images/无标题_1_atlas_45.png", id:"无标题_1_atlas_45"},
-		{src:"images/无标题_1_atlas_46.png", id:"无标题_1_atlas_46"},
-		{src:"images/无标题_1_atlas_47.png", id:"无标题_1_atlas_47"},
-		{src:"images/无标题_1_atlas_48.png", id:"无标题_1_atlas_48"},
-		{src:"images/无标题_1_atlas_49.png", id:"无标题_1_atlas_49"},
-		{src:"images/无标题_1_atlas_50.png", id:"无标题_1_atlas_50"},
-		{src:"images/无标题_1_atlas_51.png", id:"无标题_1_atlas_51"},
-		{src:"images/无标题_1_atlas_52.png", id:"无标题_1_atlas_52"},
-		{src:"images/无标题_1_atlas_53.png", id:"无标题_1_atlas_53"},
-		{src:"images/无标题_1_atlas_54.png", id:"无标题_1_atlas_54"},
-		{src:"images/无标题_1_atlas_55.png", id:"无标题_1_atlas_55"},
-		{src:"images/无标题_1_atlas_56.png", id:"无标题_1_atlas_56"},
-		{src:"images/无标题_1_atlas_57.png", id:"无标题_1_atlas_57"},
-		{src:"images/无标题_1_atlas_58.png", id:"无标题_1_atlas_58"},
-		{src:"images/无标题_1_atlas_59.png", id:"无标题_1_atlas_59"},
-		{src:"images/无标题_1_atlas_60.png", id:"无标题_1_atlas_60"},
-		{src:"images/无标题_1_atlas_61.png", id:"无标题_1_atlas_61"},
-		{src:"images/无标题_1_atlas_62.png", id:"无标题_1_atlas_62"},
-		{src:"images/无标题_1_atlas_63.png", id:"无标题_1_atlas_63"},
-		{src:"images/无标题_1_atlas_64.png", id:"无标题_1_atlas_64"},
-		{src:"images/无标题_1_atlas_65.png", id:"无标题_1_atlas_65"},
-		{src:"images/无标题_1_atlas_66.png", id:"无标题_1_atlas_66"},
-		{src:"images/无标题_1_atlas_67.png", id:"无标题_1_atlas_67"},
-		{src:"images/无标题_1_atlas_68.png", id:"无标题_1_atlas_68"},
-		{src:"images/无标题_1_atlas_69.png", id:"无标题_1_atlas_69"},
-		{src:"images/无标题_1_atlas_70.png", id:"无标题_1_atlas_70"},
-		{src:"images/无标题_1_atlas_71.png", id:"无标题_1_atlas_71"},
-		{src:"images/无标题_1_atlas_72.png", id:"无标题_1_atlas_72"},
-		{src:"images/无标题_1_atlas_73.png", id:"无标题_1_atlas_73"},
-		{src:"images/无标题_1_atlas_74.png", id:"无标题_1_atlas_74"},
-		{src:"images/无标题_1_atlas_75.png", id:"无标题_1_atlas_75"},
-		{src:"images/无标题_1_atlas_76.png", id:"无标题_1_atlas_76"},
-		{src:"images/无标题_1_atlas_77.png", id:"无标题_1_atlas_77"},
-		{src:"images/无标题_1_atlas_78.png", id:"无标题_1_atlas_78"},
-		{src:"images/无标题_1_atlas_79.png", id:"无标题_1_atlas_79"},
-		{src:"images/无标题_1_atlas_80.png", id:"无标题_1_atlas_80"},
-		{src:"images/无标题_1_atlas_81.png", id:"无标题_1_atlas_81"},
-		{src:"images/无标题_1_atlas_82.png", id:"无标题_1_atlas_82"},
-		{src:"images/无标题_1_atlas_83.png", id:"无标题_1_atlas_83"},
-		{src:"images/无标题_1_atlas_84.png", id:"无标题_1_atlas_84"},
-		{src:"images/无标题_1_atlas_85.png", id:"无标题_1_atlas_85"},
-		{src:"images/无标题_1_atlas_86.png", id:"无标题_1_atlas_86"},
-		{src:"images/无标题_1_atlas_87.png", id:"无标题_1_atlas_87"},
-		{src:"images/无标题_1_atlas_88.png", id:"无标题_1_atlas_88"},
-		{src:"images/无标题_1_atlas_89.png", id:"无标题_1_atlas_89"},
-		{src:"images/无标题_1_atlas_90.png", id:"无标题_1_atlas_90"},
-		{src:"images/无标题_1_atlas_91.png", id:"无标题_1_atlas_91"},
-		{src:"images/无标题_1_atlas_92.png", id:"无标题_1_atlas_92"},
-		{src:"images/无标题_1_atlas_93.png", id:"无标题_1_atlas_93"},
-		{src:"images/无标题_1_atlas_94.png", id:"无标题_1_atlas_94"},
-		{src:"images/无标题_1_atlas_95.png", id:"无标题_1_atlas_95"},
-		{src:"images/无标题_1_atlas_96.png", id:"无标题_1_atlas_96"},
-		{src:"images/无标题_1_atlas_97.png", id:"无标题_1_atlas_97"},
-		{src:"images/无标题_1_atlas_98.png", id:"无标题_1_atlas_98"},
-		{src:"images/无标题_1_atlas_99.png", id:"无标题_1_atlas_99"},
-		{src:"images/无标题_1_atlas_100.png", id:"无标题_1_atlas_100"},
-		{src:"images/无标题_1_atlas_101.png", id:"无标题_1_atlas_101"},
-		{src:"images/无标题_1_atlas_102.png", id:"无标题_1_atlas_102"},
-		{src:"images/无标题_1_atlas_103.png", id:"无标题_1_atlas_103"},
-		{src:"images/无标题_1_atlas_104.png", id:"无标题_1_atlas_104"},
-		{src:"images/无标题_1_atlas_105.png", id:"无标题_1_atlas_105"},
-		{src:"images/无标题_1_atlas_106.png", id:"无标题_1_atlas_106"},
-		{src:"images/无标题_1_atlas_107.png", id:"无标题_1_atlas_107"},
-		{src:"images/无标题_1_atlas_108.png", id:"无标题_1_atlas_108"},
-		{src:"images/无标题_1_atlas_109.png", id:"无标题_1_atlas_109"},
-		{src:"images/无标题_1_atlas_110.png", id:"无标题_1_atlas_110"},
-		{src:"images/无标题_1_atlas_111.png", id:"无标题_1_atlas_111"},
-		{src:"images/无标题_1_atlas_112.png", id:"无标题_1_atlas_112"},
-		{src:"images/无标题_1_atlas_113.png", id:"无标题_1_atlas_113"},
-		{src:"images/无标题_1_atlas_114.png", id:"无标题_1_atlas_114"},
-		{src:"images/无标题_1_atlas_115.png", id:"无标题_1_atlas_115"},
-		{src:"images/无标题_1_atlas_116.png", id:"无标题_1_atlas_116"},
-		{src:"images/无标题_1_atlas_117.png", id:"无标题_1_atlas_117"},
-		{src:"images/无标题_1_atlas_118.png", id:"无标题_1_atlas_118"},
-		{src:"images/无标题_1_atlas_119.png", id:"无标题_1_atlas_119"},
-		{src:"images/无标题_1_atlas_120.png", id:"无标题_1_atlas_120"},
-		{src:"images/无标题_1_atlas_121.png", id:"无标题_1_atlas_121"},
-		{src:"images/无标题_1_atlas_122.png", id:"无标题_1_atlas_122"},
-		{src:"images/无标题_1_atlas_123.png", id:"无标题_1_atlas_123"},
-		{src:"images/无标题_1_atlas_124.png", id:"无标题_1_atlas_124"},
-		{src:"images/无标题_1_atlas_125.png", id:"无标题_1_atlas_125"},
-		{src:"images/无标题_1_atlas_126.png", id:"无标题_1_atlas_126"},
-		{src:"images/无标题_1_atlas_127.png", id:"无标题_1_atlas_127"},
-		{src:"images/无标题_1_atlas_128.png", id:"无标题_1_atlas_128"},
-		{src:"images/无标题_1_atlas_129.png", id:"无标题_1_atlas_129"},
-		{src:"images/无标题_1_atlas_130.png", id:"无标题_1_atlas_130"},
-		{src:"images/无标题_1_atlas_131.png", id:"无标题_1_atlas_131"},
-		{src:"images/无标题_1_atlas_132.png", id:"无标题_1_atlas_132"},
-		{src:"images/无标题_1_atlas_133.png", id:"无标题_1_atlas_133"},
-		{src:"images/无标题_1_atlas_134.png", id:"无标题_1_atlas_134"},
-		{src:"images/无标题_1_atlas_135.png", id:"无标题_1_atlas_135"},
-		{src:"images/无标题_1_atlas_136.png", id:"无标题_1_atlas_136"},
-		{src:"images/无标题_1_atlas_137.png", id:"无标题_1_atlas_137"},
-		{src:"images/无标题_1_atlas_138.png", id:"无标题_1_atlas_138"},
-		{src:"images/无标题_1_atlas_139.png", id:"无标题_1_atlas_139"},
-		{src:"images/无标题_1_atlas_140.png", id:"无标题_1_atlas_140"},
-		{src:"images/无标题_1_atlas_141.png", id:"无标题_1_atlas_141"},
-		{src:"images/无标题_1_atlas_142.png", id:"无标题_1_atlas_142"},
-		{src:"images/无标题_1_atlas_143.png", id:"无标题_1_atlas_143"},
-		{src:"images/无标题_1_atlas_144.png", id:"无标题_1_atlas_144"},
-		{src:"images/无标题_1_atlas_145.png", id:"无标题_1_atlas_145"},
-		{src:"images/无标题_1_atlas_146.png", id:"无标题_1_atlas_146"},
-		{src:"images/无标题_1_atlas_147.png", id:"无标题_1_atlas_147"},
-		{src:"images/无标题_1_atlas_148.png", id:"无标题_1_atlas_148"},
-		{src:"images/无标题_1_atlas_149.png", id:"无标题_1_atlas_149"},
-		{src:"images/无标题_1_atlas_150.png", id:"无标题_1_atlas_150"},
-		{src:"images/无标题_1_atlas_151.png", id:"无标题_1_atlas_151"},
-		{src:"images/无标题_1_atlas_152.png", id:"无标题_1_atlas_152"},
-		{src:"images/无标题_1_atlas_153.png", id:"无标题_1_atlas_153"},
-		{src:"images/无标题_1_atlas_154.png", id:"无标题_1_atlas_154"},
-		{src:"images/无标题_1_atlas_155.png", id:"无标题_1_atlas_155"},
-		{src:"images/无标题_1_atlas_156.png", id:"无标题_1_atlas_156"},
-		{src:"images/无标题_1_atlas_157.png", id:"无标题_1_atlas_157"},
-		{src:"images/无标题_1_atlas_158.png", id:"无标题_1_atlas_158"},
-		{src:"images/无标题_1_atlas_159.png", id:"无标题_1_atlas_159"},
-		{src:"images/无标题_1_atlas_160.png", id:"无标题_1_atlas_160"},
-		{src:"images/无标题_1_atlas_161.png", id:"无标题_1_atlas_161"}
+		{src:"images/bgm.png", id:"bgm"},
+		{src:"images/kanbian_atlas_.png", id:"kanbian_atlas_"},
+		{src:"images/kanbian_atlas_2.png", id:"kanbian_atlas_2"},
+		{src:"images/kanbian_atlas_3.png", id:"kanbian_atlas_3"},
+		{src:"images/kanbian_atlas_4.png", id:"kanbian_atlas_4"},
+		{src:"images/kanbian_atlas_5.png", id:"kanbian_atlas_5"},
+		{src:"images/kanbian_atlas_6.png", id:"kanbian_atlas_6"},
+		{src:"images/kanbian_atlas_7.png", id:"kanbian_atlas_7"},
+		{src:"images/kanbian_atlas_8.png", id:"kanbian_atlas_8"},
+		{src:"images/kanbian_atlas_9.png", id:"kanbian_atlas_9"},
+		{src:"images/kanbian_atlas_10.png", id:"kanbian_atlas_10"},
+		{src:"images/kanbian_atlas_11.png", id:"kanbian_atlas_11"},
+		{src:"images/kanbian_atlas_12.png", id:"kanbian_atlas_12"},
+		{src:"images/kanbian_atlas_13.png", id:"kanbian_atlas_13"},
+		{src:"images/kanbian_atlas_14.png", id:"kanbian_atlas_14"},
+		{src:"images/kanbian_atlas_15.png", id:"kanbian_atlas_15"},
+		{src:"images/kanbian_atlas_16.png", id:"kanbian_atlas_16"},
+		{src:"images/kanbian_atlas_17.png", id:"kanbian_atlas_17"},
+		{src:"images/kanbian_atlas_18.png", id:"kanbian_atlas_18"},
+		{src:"images/kanbian_atlas_19.png", id:"kanbian_atlas_19"},
+		{src:"images/kanbian_atlas_20.png", id:"kanbian_atlas_20"},
+		{src:"images/kanbian_atlas_21.png", id:"kanbian_atlas_21"},
+		{src:"images/kanbian_atlas_22.png", id:"kanbian_atlas_22"},
+		{src:"images/kanbian_atlas_23.png", id:"kanbian_atlas_23"},
+		{src:"images/kanbian_atlas_24.png", id:"kanbian_atlas_24"},
+		{src:"images/kanbian_atlas_25.png", id:"kanbian_atlas_25"},
+		{src:"images/kanbian_atlas_26.png", id:"kanbian_atlas_26"},
+		{src:"images/kanbian_atlas_27.png", id:"kanbian_atlas_27"},
+		{src:"images/kanbian_atlas_28.png", id:"kanbian_atlas_28"},
+		{src:"images/kanbian_atlas_29.png", id:"kanbian_atlas_29"},
+		{src:"images/kanbian_atlas_30.png", id:"kanbian_atlas_30"},
+		{src:"images/kanbian_atlas_31.png", id:"kanbian_atlas_31"},
+		{src:"images/kanbian_atlas_32.png", id:"kanbian_atlas_32"},
+		{src:"images/kanbian_atlas_33.png", id:"kanbian_atlas_33"},
+		{src:"images/kanbian_atlas_34.png", id:"kanbian_atlas_34"},
+		{src:"images/kanbian_atlas_35.png", id:"kanbian_atlas_35"},
+		{src:"images/kanbian_atlas_36.png", id:"kanbian_atlas_36"},
+		{src:"images/kanbian_atlas_37.png", id:"kanbian_atlas_37"},
+		{src:"images/kanbian_atlas_38.png", id:"kanbian_atlas_38"},
+		{src:"images/kanbian_atlas_39.png", id:"kanbian_atlas_39"},
+		{src:"images/kanbian_atlas_40.png", id:"kanbian_atlas_40"},
+		{src:"images/kanbian_atlas_41.png", id:"kanbian_atlas_41"},
+		{src:"images/kanbian_atlas_42.png", id:"kanbian_atlas_42"},
+		{src:"images/kanbian_atlas_43.png", id:"kanbian_atlas_43"},
+		{src:"images/kanbian_atlas_44.png", id:"kanbian_atlas_44"},
+		{src:"images/kanbian_atlas_45.png", id:"kanbian_atlas_45"},
+		{src:"images/kanbian_atlas_46.png", id:"kanbian_atlas_46"},
+		{src:"images/kanbian_atlas_47.png", id:"kanbian_atlas_47"},
+		{src:"images/kanbian_atlas_48.png", id:"kanbian_atlas_48"},
+		{src:"images/kanbian_atlas_49.png", id:"kanbian_atlas_49"},
+		{src:"images/kanbian_atlas_50.png", id:"kanbian_atlas_50"},
+		{src:"images/kanbian_atlas_51.png", id:"kanbian_atlas_51"},
+		{src:"images/kanbian_atlas_52.png", id:"kanbian_atlas_52"},
+		{src:"images/kanbian_atlas_53.png", id:"kanbian_atlas_53"},
+		{src:"images/kanbian_atlas_54.png", id:"kanbian_atlas_54"},
+		{src:"images/kanbian_atlas_55.png", id:"kanbian_atlas_55"},
+		{src:"images/kanbian_atlas_56.png", id:"kanbian_atlas_56"},
+		{src:"images/kanbian_atlas_57.png", id:"kanbian_atlas_57"},
+		{src:"images/kanbian_atlas_58.png", id:"kanbian_atlas_58"},
+		{src:"images/kanbian_atlas_59.png", id:"kanbian_atlas_59"},
+		{src:"images/kanbian_atlas_60.png", id:"kanbian_atlas_60"},
+		{src:"images/kanbian_atlas_61.png", id:"kanbian_atlas_61"},
+		{src:"images/kanbian_atlas_62.png", id:"kanbian_atlas_62"},
+		{src:"images/kanbian_atlas_63.png", id:"kanbian_atlas_63"},
+		{src:"images/kanbian_atlas_64.png", id:"kanbian_atlas_64"},
+		{src:"images/kanbian_atlas_65.png", id:"kanbian_atlas_65"},
+		{src:"images/kanbian_atlas_66.png", id:"kanbian_atlas_66"},
+		{src:"images/kanbian_atlas_67.png", id:"kanbian_atlas_67"},
+		{src:"images/kanbian_atlas_68.png", id:"kanbian_atlas_68"},
+		{src:"images/kanbian_atlas_69.png", id:"kanbian_atlas_69"},
+		{src:"images/kanbian_atlas_70.png", id:"kanbian_atlas_70"},
+		{src:"images/kanbian_atlas_71.png", id:"kanbian_atlas_71"},
+		{src:"images/kanbian_atlas_72.png", id:"kanbian_atlas_72"},
+		{src:"images/kanbian_atlas_73.png", id:"kanbian_atlas_73"},
+		{src:"images/kanbian_atlas_74.png", id:"kanbian_atlas_74"},
+		{src:"images/kanbian_atlas_75.png", id:"kanbian_atlas_75"},
+		{src:"images/kanbian_atlas_76.png", id:"kanbian_atlas_76"},
+		{src:"images/kanbian_atlas_77.png", id:"kanbian_atlas_77"},
+		{src:"images/kanbian_atlas_78.png", id:"kanbian_atlas_78"},
+		{src:"images/kanbian_atlas_79.png", id:"kanbian_atlas_79"},
+		{src:"images/kanbian_atlas_80.png", id:"kanbian_atlas_80"},
+		{src:"images/kanbian_atlas_81.png", id:"kanbian_atlas_81"},
+		{src:"images/kanbian_atlas_82.png", id:"kanbian_atlas_82"},
+		{src:"images/kanbian_atlas_83.png", id:"kanbian_atlas_83"},
+		{src:"images/kanbian_atlas_84.png", id:"kanbian_atlas_84"},
+		{src:"images/kanbian_atlas_85.png", id:"kanbian_atlas_85"},
+		{src:"images/kanbian_atlas_86.png", id:"kanbian_atlas_86"},
+		{src:"images/kanbian_atlas_87.png", id:"kanbian_atlas_87"},
+		{src:"images/kanbian_atlas_88.png", id:"kanbian_atlas_88"},
+		{src:"images/kanbian_atlas_89.png", id:"kanbian_atlas_89"},
+		{src:"images/kanbian_atlas_90.png", id:"kanbian_atlas_90"},
+		{src:"images/kanbian_atlas_91.png", id:"kanbian_atlas_91"},
+		{src:"images/kanbian_atlas_92.png", id:"kanbian_atlas_92"},
+		{src:"images/kanbian_atlas_93.png", id:"kanbian_atlas_93"},
+		{src:"images/kanbian_atlas_94.png", id:"kanbian_atlas_94"},
+		{src:"images/kanbian_atlas_95.png", id:"kanbian_atlas_95"},
+		{src:"images/kanbian_atlas_96.png", id:"kanbian_atlas_96"},
+		{src:"images/kanbian_atlas_97.png", id:"kanbian_atlas_97"},
+		{src:"images/kanbian_atlas_98.png", id:"kanbian_atlas_98"},
+		{src:"images/kanbian_atlas_99.png", id:"kanbian_atlas_99"},
+		{src:"images/kanbian_atlas_100.png", id:"kanbian_atlas_100"},
+		{src:"images/kanbian_atlas_101.png", id:"kanbian_atlas_101"},
+		{src:"images/kanbian_atlas_102.png", id:"kanbian_atlas_102"},
+		{src:"images/kanbian_atlas_103.png", id:"kanbian_atlas_103"},
+		{src:"images/kanbian_atlas_104.png", id:"kanbian_atlas_104"},
+		{src:"images/kanbian_atlas_105.png", id:"kanbian_atlas_105"},
+		{src:"images/kanbian_atlas_106.png", id:"kanbian_atlas_106"},
+		{src:"images/kanbian_atlas_107.png", id:"kanbian_atlas_107"},
+		{src:"images/kanbian_atlas_108.png", id:"kanbian_atlas_108"},
+		{src:"images/kanbian_atlas_109.png", id:"kanbian_atlas_109"},
+		{src:"images/kanbian_atlas_110.png", id:"kanbian_atlas_110"},
+		{src:"images/kanbian_atlas_111.png", id:"kanbian_atlas_111"},
+		{src:"images/kanbian_atlas_112.png", id:"kanbian_atlas_112"},
+		{src:"images/kanbian_atlas_113.png", id:"kanbian_atlas_113"},
+		{src:"images/kanbian_atlas_114.png", id:"kanbian_atlas_114"},
+		{src:"images/kanbian_atlas_115.png", id:"kanbian_atlas_115"},
+		{src:"images/kanbian_atlas_116.png", id:"kanbian_atlas_116"},
+		{src:"images/kanbian_atlas_117.png", id:"kanbian_atlas_117"},
+		{src:"images/kanbian_atlas_118.png", id:"kanbian_atlas_118"},
+		{src:"images/kanbian_atlas_119.png", id:"kanbian_atlas_119"},
+		{src:"images/kanbian_atlas_120.png", id:"kanbian_atlas_120"},
+		{src:"images/kanbian_atlas_121.png", id:"kanbian_atlas_121"},
+		{src:"images/kanbian_atlas_122.png", id:"kanbian_atlas_122"},
+		{src:"images/kanbian_atlas_123.png", id:"kanbian_atlas_123"},
+		{src:"images/kanbian_atlas_124.png", id:"kanbian_atlas_124"},
+		{src:"images/kanbian_atlas_125.png", id:"kanbian_atlas_125"},
+		{src:"images/kanbian_atlas_126.png", id:"kanbian_atlas_126"},
+		{src:"images/kanbian_atlas_127.png", id:"kanbian_atlas_127"},
+		{src:"images/kanbian_atlas_128.png", id:"kanbian_atlas_128"},
+		{src:"images/kanbian_atlas_129.png", id:"kanbian_atlas_129"},
+		{src:"images/kanbian_atlas_130.png", id:"kanbian_atlas_130"},
+		{src:"images/kanbian_atlas_131.png", id:"kanbian_atlas_131"},
+		{src:"images/kanbian_atlas_132.png", id:"kanbian_atlas_132"},
+		{src:"images/kanbian_atlas_133.png", id:"kanbian_atlas_133"},
+		{src:"images/kanbian_atlas_134.png", id:"kanbian_atlas_134"},
+		{src:"images/kanbian_atlas_135.png", id:"kanbian_atlas_135"},
+		{src:"images/kanbian_atlas_136.png", id:"kanbian_atlas_136"},
+		{src:"images/kanbian_atlas_137.png", id:"kanbian_atlas_137"},
+		{src:"images/kanbian_atlas_138.png", id:"kanbian_atlas_138"},
+		{src:"images/kanbian_atlas_139.png", id:"kanbian_atlas_139"},
+		{src:"images/kanbian_atlas_140.png", id:"kanbian_atlas_140"},
+		{src:"images/kanbian_atlas_141.png", id:"kanbian_atlas_141"},
+		{src:"images/kanbian_atlas_142.png", id:"kanbian_atlas_142"},
+		{src:"images/kanbian_atlas_143.png", id:"kanbian_atlas_143"},
+		{src:"images/kanbian_atlas_144.png", id:"kanbian_atlas_144"},
+		{src:"images/kanbian_atlas_145.png", id:"kanbian_atlas_145"},
+		{src:"images/kanbian_atlas_146.png", id:"kanbian_atlas_146"},
+		{src:"images/kanbian_atlas_147.png", id:"kanbian_atlas_147"},
+		{src:"images/kanbian_atlas_148.png", id:"kanbian_atlas_148"},
+		{src:"images/kanbian_atlas_149.png", id:"kanbian_atlas_149"},
+		{src:"images/kanbian_atlas_150.png", id:"kanbian_atlas_150"},
+		{src:"images/kanbian_atlas_151.png", id:"kanbian_atlas_151"},
+		{src:"images/kanbian_atlas_152.png", id:"kanbian_atlas_152"},
+		{src:"images/kanbian_atlas_153.png", id:"kanbian_atlas_153"},
+		{src:"images/kanbian_atlas_154.png", id:"kanbian_atlas_154"},
+		{src:"images/kanbian_atlas_155.png", id:"kanbian_atlas_155"},
+		{src:"images/kanbian_atlas_156.png", id:"kanbian_atlas_156"},
+		{src:"images/kanbian_atlas_157.png", id:"kanbian_atlas_157"},
+		{src:"images/kanbian_atlas_158.png", id:"kanbian_atlas_158"},
+		{src:"images/kanbian_atlas_159.png", id:"kanbian_atlas_159"},
+		{src:"images/kanbian_atlas_160.png", id:"kanbian_atlas_160"},
+		{src:"images/kanbian_atlas_161.png", id:"kanbian_atlas_161"}
 	],
 	preloads: []
 };
@@ -8908,8 +8911,8 @@ an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers)
 	window.addEventListener('resize', resizeCanvas);		
 	resizeCanvas();		
 	function resizeCanvas() {			
-		var w = lib.properties.width, h = lib.properties.height;		
-		var iw = window.innerWidth, ih=window.innerHeight;
+		var w = lib.properties.width, h = lib.properties.height;			
+		var iw = window.innerWidth, ih=window.innerHeight;			
 		var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
 		if(isResp) {                
 			if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
@@ -8925,8 +8928,7 @@ an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers)
 			else if(scaleType==2) {					
 				sRatio = Math.max(xRatio, yRatio);				
 			}			
-		}
-		console.log(domContainers[0].width,domContainers[0].height)
+		}			
 		domContainers[0].width = h * pRatio * sRatio;		
 		domContainers[0].height = w * pRatio * sRatio;
 		domContainers[0].style.width = iw + 'px';
@@ -8948,7 +8950,7 @@ an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers)
 		// stage.y = h * pRatio * sRatio; 
 		stage.rotation = 90;          
 		stage.update();            
-		stage.tickOnUpdate = true;		
+		stage.tickOnUpdate = true;			
 	}
 }
 
