@@ -38,7 +38,7 @@ body {
     width: 100%;
     left: 0;
     top: 0;
-    background: url(/images/bgm.png) center center no-repeat;
+    background: url(/images/part2/bgm.png) center center no-repeat;
     object-fit: scale-down;
 }
 .canvas-btn {

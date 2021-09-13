@@ -8,16 +8,18 @@
     <title>学职平台宣传动画</title>
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/createjs.min.js"></script>
+    <script>
+        var model =  new createjs.EventDispatcher();
+    </script>
     <script src="./fen1/fen1.js"></script>
     <script src="./fen2/fen2.js"></script>
-    <script src="./fen3/fen3.js"></script>
     <script src="https://t1.chei.com.cn/common/js/vue/2.5.6/vue.min.js"></script>
 </head>
 <body>
     <div class="xz-layout-h5" id="app">
         <canvas id="canvas"></canvas>
         <div class="img" v-if="100>load"></div>
-        <div class="canvas-btn" @click="changeC">LOADING...{{load}}</div>
+        <!-- <div class="canvas-btn" @click="changeC">LOADING...{{load}}</div> -->
     </div>
     <script src="./js/init.js"></script>
 </body>
