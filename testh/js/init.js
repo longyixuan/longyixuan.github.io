@@ -12,7 +12,7 @@ var vm = new Vue({
             cur: 0,
             libList: [
                 {
-                    id: 'A8A058922FCC493990D91243D07CB0A8',
+                    id: 'part1',
                     width: 1406,
                     height: 720,
                     fps: 24,
@@ -26,7 +26,7 @@ var vm = new Vue({
                     preloads: []
                 },
                 {
-                    id: 'A8A058922FCC493990D91243D07CB0A8',
+                    id: 'part2',
                     width: 1406,
                     height: 720,
                     fps: 24,
@@ -64,7 +64,7 @@ var vm = new Vue({
                     preloads: []
                 },
                 {
-                    id: 'A8A058922FCC493990D91243D07CB0A8',
+                    id: 'part3',
                     width: 1406,
                     height: 720,
                     fps: 24,
@@ -112,7 +112,7 @@ var vm = new Vue({
                     preloads: []
                 },
                 {
-                    id: 'A8A058922FCC493990D91243D07CB0A8',
+                    id: 'part4',
                     width: 1406,
                     height: 720,
                     fps: 24,
@@ -171,7 +171,7 @@ var vm = new Vue({
                     preloads: []
                 },
                 {
-                    id: 'A8A058922FCC493990D91243D07CB0A8',
+                    id: 'part5',
                     width: 1406,
                     height: 720,
                     fps: 24,
@@ -196,7 +196,7 @@ var vm = new Vue({
                     preloads: []
                 },
                 {
-                    id: 'A8A058922FCC493990D91243D07CB0A8',
+                    id: 'part6',
                     width: 1406,
                     height: 720,
                     fps: 24,
@@ -251,7 +251,7 @@ var vm = new Vue({
             this.setLib(0);
         },
         changeC: function(num,msg) {
-            console.log(msg);
+            console.log(num,msg);
             this.setLib(num);
         },
         preload: function(index) {
@@ -281,22 +281,15 @@ var vm = new Vue({
             }
             var comp= AdobeAn.getComposition(this.libList[num].id);
             var loader = new createjs.LoadQueue(false);
-            loader.addEventListener("fileload", function(evt){ _this.handleFileLoad(evt,comp)});
             loader.addEventListener("complete", function(evt){ _this.handleComplete(evt,comp,num)});
             loader.addEventListener("progress", function (evt) {_this.handleProgress(evt, comp)});
-            loader.addEventListener("palyEnd",function() {
-                alert('播放完了')
-            });
             loader.loadManifest(this.libList[num].manifest);
         },
         handleProgress: function(evt) {
             this.load = parseInt(evt.progress*100);
         },
-        handleFileLoad: function(evt, comp) {
-            var images= comp.getImages();
-            if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }
-        },
         handleComplete: function(evt, comp,num) {
+            this.preload(num);
             var lib = comp.getLibrary();
             var ss = comp.getSpriteSheet();
             var queue = evt.target;
@@ -304,16 +297,17 @@ var vm = new Vue({
             for(i=0; i<ssMetadata.length; i++) {
                 ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
             }
+            if (this.exportRoot) {
+                this.stage.removeChild(this.exportRoot);
+            }
             this.exportRoot = new lib.fen();
             this.stage = new createjs.Stage(this.canvas);
-            this.stage.addChild(this.exportRoot);
             this.stage.addChild(this.exportRoot);
 	        this.stage.enableMouseOver();
             this.makeResponsive(this.libList[num],true,'both',true,1);
             createjs.Ticker.setFPS(this.libList[num].fps);
             createjs.Ticker.addEventListener("tick", this.stage);
             AdobeAn.compositionLoaded(this.libList[num].id);
-            this.preload(num+1);
         },
         makeResponsive: function (lib,isResp, respDim, isScale, scaleType) {
             this.stage.tickOnUpdate = false;

@@ -1,5 +1,5 @@
 function getLib6(cjs, an) {
-
+	console.log('加载动画6')
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
@@ -1250,7 +1250,6 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_1952 = function() {
 		this.stop();
-		
 		alert('播放完了')
 	}
 
@@ -1649,7 +1648,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-84.5,-592.4,1954.1,2338.6);
 // library properties:
 lib.properties = {
-	id: 'A8A058922FCC493990D91243D07CB0A8',
+	id: 'part6',
 	width: 1406,
 	height: 720,
 	fps: 24,
@@ -1728,7 +1727,7 @@ an.bootstrapCallback=function(fnCallback) {
 };
 
 an.compositions = an.compositions || {};
-an.compositions['A8A058922FCC493990D91243D07CB0A8'] = {
+an.compositions['part6'] = {
 	getStage: function() { return exportRoot.stage; },
 	getLibrary: function() { return lib; },
 	getSpriteSheet: function() { return ss; },

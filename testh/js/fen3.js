@@ -1,5 +1,5 @@
 function getLib3(cjs, an) {
-
+	console.log('加载动画3')
 	var p; // shortcut to reference prototypes
 	var lib={};var ss={};var img={};
 	lib.ssMetadata = [
@@ -1619,7 +1619,7 @@ function getLib3(cjs, an) {
 	p.nominalBounds = new cjs.Rectangle(-84,-592.4,1953.6,2338.6);
 	// library properties:
 	lib.properties = {
-		id: 'A8A058922FCC493990D91243D07CB0A8',
+		id: 'part3',
 		width: 1406,
 		height: 720,
 		fps: 24,
@@ -1700,7 +1700,7 @@ function getLib3(cjs, an) {
 	};
 	
 	an.compositions = an.compositions || {};
-	an.compositions['A8A058922FCC493990D91243D07CB0A8'] = {
+	an.compositions['part3'] = {
 		getStage: function() { return exportRoot.stage; },
 		getLibrary: function() { return lib; },
 		getSpriteSheet: function() { return ss; },
