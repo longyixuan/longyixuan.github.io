@@ -20,7 +20,27 @@
 <body>
     <div class="xz-layout-h5" id="app">
         <canvas id="canvas"></canvas>
-        <div class="canvas-btn">加载中...{{load>100?100:load}}</div>
+        <template v-if="cur>0&&!finshed">
+            <div class="mp3-icon close" v-if="close" @click="playMusic"></div>
+            <div class="mp3-icon rotate" v-else @click="stopMusic"></div>
+        </template>
+        <div class="next-share up" v-if="finshed">
+            <div class="next">
+                <img src="https://t1.chei.com.cn/xz/h5/20210915/images/alert-2.png" alt="" class="hide-img">
+                <div class="next-share-btn" :style="{'bottom': px }">
+                    <button class="share" @click="share"></button>
+                    <button class="get" @click="getDoc"></button>
+                </div>
+            </div>
+        </div>
+        <div class="share-alert" @click="doc=false" v-if="doc">
+            <img src="https://t1.chei.com.cn/xz/h5/20210915/images/share.png" alt="" class="share-animation">
+        </div>
+        <div class="loading" v-if="100>load">
+            <div class="loading-text">{{load>100?100:load}}%</div>
+        </div>
+        <audio id="mp3-1" src="https://t1.chei.com.cn/xz/h5/20210915/mp3/mp3-1.mp3" loop="loop" autoplay></audio>
+        <audio id="mp3-2" src="https://t1.chei.com.cn/xz/h5/20210915/mp3/mp3-2.m4a" loop="loop" autoplay></audio>
     </div>
     <script src="./js/init.js"></script>
 </body>
