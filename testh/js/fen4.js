@@ -1369,7 +1369,7 @@ function getLib4 (cjs, an) {
             this.button_qqqq.addEventListener("click", fl_ClickToGoToWebPage);
             
             function fl_ClickToGoToWebPage() {
-                vm.changeC(4,'跳到5段');
+                vm.changeC(5,'跳到5段');
             }
         }
         this.frame_1459 = function() {

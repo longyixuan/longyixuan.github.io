@@ -1858,7 +1858,7 @@ function getLib2(cjs, an) {
 			this.button_qq.addEventListener("click", fl_ClickToGoToWebPage);
 			
 			function fl_ClickToGoToWebPage() {
-				vm.changeC(2,'跳到3段');
+				vm.changeC(3,'跳到3段');
 			}
 		}
 		this.frame_992 = function() {

@@ -944,7 +944,7 @@ if (reversed == null) { reversed = false; }
 		this.button_qqqqq.addEventListener("click", fl_ClickToGoToWebPage);
 		
 		function fl_ClickToGoToWebPage() {
-			vm.changeC(5,'跳到6段');
+			vm.changeC(6,'跳到6段');
 		}
 	}
 	this.frame_1669 = function() {

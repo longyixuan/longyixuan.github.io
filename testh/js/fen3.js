@@ -1246,7 +1246,8 @@ function getLib3(cjs, an) {
 			this.button_qqq.addEventListener("click", fl_ClickToGoToWebPage);
 			
 			function fl_ClickToGoToWebPage() {
-				vm.changeC(3,'跳到4段');
+				vm.changeC(4,'跳到4段');
+				vm.playMusic();
 			}
 		}
 		this.frame_1242 = function() {
@@ -1255,7 +1256,6 @@ function getLib3(cjs, an) {
 	
 		// actions tween:
 		this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(996).call(this.frame_996).wait(47).call(this.frame_1043).wait(56).call(this.frame_1099).wait(143).call(this.frame_1242).wait(1));
-	
 		// Layer_54
 		this.button_ert = new lib.qwedsa();
 		this.button_ert.name = "button_ert";
