@@ -362,19 +362,19 @@ var vm = new Vue({
             this.makeResponsive(this.libList[num],true,'both',true,1);
         },
         playMusic: function() { 
-            // this.close = false;
-            // if (this.cur>2) {
-            //     document.getElementById('mp3-1').pause();
-            //     document.getElementById('mp3-2').play();
-            // } else {
-            //     document.getElementById('mp3-2').pause();
-            //     document.getElementById('mp3-1').play();
-            // }
+            this.close = false;
+            if (this.cur>2) {
+                document.getElementById('mp3-1').pause();
+                document.getElementById('mp3-2').play();
+            } else {
+                document.getElementById('mp3-2').pause();
+                document.getElementById('mp3-1').play();
+            }
         },
         stopMusic: function() {
-            // this.close = true;
-            // document.getElementById('mp3-1').pause();
-            // document.getElementById('mp3-2').pause();
+            this.close = true;
+            document.getElementById('mp3-1').pause();
+            document.getElementById('mp3-2').pause();
         },
         handleProgress: function(evt) {
             this.load = parseInt(evt.progress*100);
