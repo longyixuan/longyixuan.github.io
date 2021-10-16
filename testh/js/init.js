@@ -266,7 +266,14 @@ var vm = new Vue({
             evt3: null,
             evt4: null,
             evt5: null,
-            evt6: null
+            evt6: null,
+            load0: 0,
+            load1: 0,
+            load2: 0,
+            load3: 0,
+            load4: 0,
+            load5: 0,
+            load6: 0
         }
     },
     methods: {
@@ -293,6 +300,9 @@ var vm = new Vue({
                 loader.addEventListener("complete", function(evt){
                     _this['evt'+index] = evt;
                     _this.preload(index+1);
+                });
+                loader.addEventListener("progress", function (evt) {
+                    _this['load'+index] = parseInt(evt.progress*100);
                 });
             }   
         },
@@ -321,19 +331,34 @@ var vm = new Vue({
                 getLib6(createjs = createjs||{}, AdobeAn = AdobeAn||{});
             }
             var comp= AdobeAn.getComposition(this.libList[num].id);
-            if (this['evt'+num]!=null) {
-                console.log(num,22222222222222)
-                this.getCache(this['evt'+num],comp,num);
-            } else {
-                console.log(num,11111111111111)
+            if (num==0) {
+                console.log(num,'直接加载');
                 var loader = new createjs.LoadQueue(false);
                 loader.addEventListener("fileload", function(evt){_this.handleFileLoad(evt,comp)});
                 loader.addEventListener("complete", function(evt){ _this.handleComplete(evt,comp,num)});
                 loader.addEventListener("progress", function (evt) {_this.handleProgress(evt, comp)});
                 loader.loadManifest(this.libList[num].manifest);
+            } else {
+                if (this['evt'+num]==null) {
+                    this.askFinshed(comp,num);
+                } else { //还没加载完
+                    console.log(num,'缓存中取');
+                    this.getCache(this['evt'+num],comp,num);
+                }
             }
         },
-
+        askFinshed: function(comp,num) {
+            console.log('加载中')
+            var _this = this;
+            if (this['evt'+num]==null) {
+                setTimeout(function() {
+                    _this.askFinshed(comp,num);
+                    _this.load = _this['load'+num];
+                },1000);
+            } else {
+                this.getCache(this['evt'+num],comp,num);
+            }
+        },
         handleFileLoad: function(evt, comp) {
             var images = comp.getImages();	
             if (evt && (evt.item.type == "image")) { 
@@ -341,7 +366,6 @@ var vm = new Vue({
             }
         },
         getCache: function (evt,comp,num) {
-            console.log(evt,comp,num)
             var lib = comp.getLibrary();
             var ss = comp.getSpriteSheet();
             var queue = evt.target;
@@ -381,9 +405,7 @@ var vm = new Vue({
         },
         handleComplete: function(evt, comp,num) {
             this.evt0 = evt;
-            if (num == 0) {
-                this.preload(num+1);
-            }
+            this.preload(num+1);
             var lib = comp.getLibrary();
             var ss = comp.getSpriteSheet();
             var queue = evt.target;

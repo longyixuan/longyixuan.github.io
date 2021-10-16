@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>学职平台宣传动画</title>
-    <link rel="stylesheet" href="https://t1.chei.com.cn/xz/h5/20210915/css/index.css?20210924">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" href='https://t1.chei.com.cn/xz/favicon.ico' type="image/x-icon" />
-    <script src="https://t1.chei.com.cn/xz/h5/20210915/js/createjs.min.js"></script>
-    <script src="https://t1.chei.com.cn/xz/h5/20210915/js/fen0.js?20210924"></script>
-    <script src="https://t1.chei.com.cn/xz/h5/20210915/js/fen1.js?20210924"></script>
-    <script src="https://t1.chei.com.cn/xz/h5/20210915/js/fen2.js?20210924"></script>
-    <script src="https://t1.chei.com.cn/xz/h5/20210915/js/fen3.js?20210924"></script>
-    <script src="https://t1.chei.com.cn/xz/h5/20210915/js/fen4.js?20210924"></script>
-    <script src="https://t1.chei.com.cn/xz/h5/20210915/js/fen5.js?20210924"></script>
-    <script src="https://t1.chei.com.cn/xz/h5/20210915/js/fen6.js"></script>
+    <script src="./js/createjs.min.js"></script>
+    <script src="./js/fen0.js?20210924"></script>
+    <script src="./js/fen1.js?20210924"></script>
+    <script src="./js/fen2.js?20210924"></script>
+    <script src="./js/fen3.js?20210924"></script>
+    <script src="./js/fen4.js?20210924"></script>
+    <script src="./js/fen5.js?20210924"></script>
+    <script src="./js/fen6.js"></script>
     <script src="https://t1.chei.com.cn/common/js/vue/2.5.6/vue.min.js"></script>
 </head>
 <body>
@@ -28,7 +28,7 @@
         </template>
         <div class="next-share up" v-if="finshed">
             <div class="next">
-                <img src="https://t1.chei.com.cn/xz/h5/20210915/images/alert-2.png" alt="" class="hide-img">
+                <img src="./images/alert-2.png" alt="" class="hide-img">
                 <div class="next-share-btn" :style="{'bottom': px }">
                     <button class="share" @click="share"></button>
                     <button class="get" @click="getDoc"></button>
@@ -36,13 +36,13 @@
             </div>
         </div>
         <div class="share-alert" @click="doc=false" v-if="doc">
-            <img src="https://t1.chei.com.cn/xz/h5/20210915/images/share.png" alt="" class="share-animation">
+            <img src="./images/share.png" alt="" class="share-animation">
         </div>
         <div class="loading" v-if="100>load">
             <div class="loading-text">{{load>100?100:load}}%</div>
         </div>
-        <audio id="mp3-1" src="https://t1.chei.com.cn/xz/h5/20210915/mp3/mp3-1.mp3" loop="loop" autoplay></audio>
-        <audio id="mp3-2" src="https://t1.chei.com.cn/xz/h5/20210915/mp3/mp3-2.m4a" loop="loop" autoplay></audio>
+        <audio id="mp3-1" src="./mp3/mp3-1.mp3" loop="loop" autoplay></audio>
+        <audio id="mp3-2" src="./mp3/mp3-2.m4a" loop="loop" autoplay></audio>
     </div>
     <script src="./js/init.js"></script>
 </body>
