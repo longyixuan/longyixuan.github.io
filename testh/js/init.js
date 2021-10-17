@@ -387,11 +387,11 @@ var vm = new Vue({
         },
         playMusic: function() { 
             this.close = false;
+            document.getElementById('mp3-1').pause();
+            document.getElementById('mp3-2').pause();
             if (this.cur>2) {
-                document.getElementById('mp3-1').pause();
                 document.getElementById('mp3-2').play();
             } else {
-                document.getElementById('mp3-2').pause();
                 document.getElementById('mp3-1').play();
             }
         },
