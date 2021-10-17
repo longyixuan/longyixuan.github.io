@@ -294,7 +294,10 @@ var vm = new Vue({
         },
         preload: function(index) {
             if (7>index) {
-                var loader = new createjs.LoadQueue(false);
+                var loader = new createjs.LoadQueue(true);
+                loader.maintainScriptOrder = true;
+                // 设置并发数  
+                loader.setMaxConnections(4);
                 var _this = this;
                 loader.loadManifest(this.libList[index].manifest);
                 loader.addEventListener("complete", function(evt){
