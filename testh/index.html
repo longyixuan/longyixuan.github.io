@@ -20,7 +20,7 @@
     <script src="https://t1.chei.com.cn/common/js/vue/2.5.6/vue.min.js"></script>
 </head>
 <body>
-    <div class="xz-layout-h5" id="app">
+    <div class="xz-layout-h5" id="app" v-cloak>
         <canvas id="canvas"></canvas>
         <template v-if="cur>0&&!finshed">
             <div class="mp3-icon close" v-if="close" @click="playMusic"></div>
