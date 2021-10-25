@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学职平台宣传动画</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href='https://t1.chei.com.cn/xz/favicon.ico' type="image/x-icon" />
+    <script src="./js/createjs.min.js"></script>
+    <script src="./js/fen0.js"></script>
+    <script src="./js/fen1.js"></script>
+    <script src="./js/fen2.js"></script>
+    <script src="./js/fen3.js"></script>
+    <script src="./js/fen4.js"></script>
+    <script src="./js/fen5.js"></script>
+    <script src="./js/fen6.js"></script>
+    <script src="https://t1.chei.com.cn/common/js/vue/2.5.6/vue.min.js"></script>
+    <script src="https://t1.chei.com.cn/common/wap/js/flexible.js"></script>
+</head>
+<body>
+    <div class="xz-layout-h5" id="app" v-cloak>
+        <canvas id="canvas"></canvas>
+        <template v-if="cur>0">
+            <div class="mp3-icon close" v-if="close" @click="openMusic"></div>
+            <div class="mp3-icon rotate" v-else @click="stopMusic"></div>
+        </template>
+        <div class="next-share up" v-if="finshed">
+            <div class="next" :style="style">
+                <img src="./images/alert-2.png" alt="" class="hide-img">
+                <div class="next-share-btn">
+                    <button class="share" @click="share"></button>
+                    <button class="get" @click="getDoc"></button>
+                </div>
+            </div>
+        </div>
+        <div class="share-alert" @click="doc=false" v-if="doc">
+            <img src="./images/share.png" alt="" class="share-animation">
+        </div>
+        <div class="loading" v-if="100>load">
+            <div class="loading-text">{{load>100?100:load}}%</div>
+        </div>
+        <audio id="mp3" :src="num==1?'./mp3/mp3-1.mp3':'./mp3/mp3-2.mp3'" loop="loop" :autoplay="!close"></audio>
+    </div>
+    <script src="./js/init.js"></script>
+</body>
+</html>
